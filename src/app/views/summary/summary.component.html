@@ -1,4 +1,4 @@
-<mat-drawer-container class="drawer-frame" autosize>
+<!-- <mat-drawer-container class="drawer-frame" autosize>
     <mat-drawer #drawer class="options-sidenav" position="start" mode="side" opened="true">
 
         <div>
@@ -29,13 +29,54 @@
     </mat-drawer>
 
     <div class="categories-container">
-
-      
-        <div id="pipe" style="height: 400px;" ></div>
-
-        <!-- <button type="button" mat-button (click)="drawer.toggle()">
-            Toggle sidenav
-          </button> -->
     </div>
 
+</mat-drawer-container> -->
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <div class="options-sidenav">
+            <div>
+                <h3>Select Catogories ({{cats.selectedOptions.selected.length}})</h3>
+                <mat-selection-list #cats>
+                    <mat-list-option *ngFor="let cats of typesOfCategories">
+                        {{cats}}
+                    </mat-list-option>
+                </mat-selection-list>
+            </div>
+            <div>
+                <h3>Select Clients ({{clients.selectedOptions.selected.length}})</h3>
+                <mat-selection-list #clients>
+                    <mat-list-option *ngFor="let clients of typesOfClients">
+                        {{clients}}
+                    </mat-list-option>
+                </mat-selection-list>
+            </div>
+            <button mat-raised-button color="primary">
+                Visualise
+            </button>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="summary-content">
+            <div class="visualisation">
+                <div id="pipe" echarts theme="dark" style="height:46vh;"></div>
+            </div>
+            <div class="summary-container">
+                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+            </div>
+        </div>
+
+        <div class="report-nav">
+                <button mat-raised-button  [routerLink]="['/age-summary']">Age</button>
+                <button mat-raised-button  [routerLink]="['/ethnicty-summary']">Ethincity</button>
+                <button mat-raised-button  [routerLink]="['/gender-summary']">Gender</button>
+        </div>
+
+    </mat-drawer-content>
 </mat-drawer-container>

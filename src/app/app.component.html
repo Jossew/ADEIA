@@ -1,11 +1,11 @@
 <div class="wrapper">
    <header>
      <h1 [routerLink]="['']">diversity, equity and inclusion</h1>
-     <div class="nav">
+     <!-- <div class="nav">
         <button [routerLink]="['/age-summary']">Age</button>
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
         <button [routerLink]="['/gender-summary']">Gender</button>
-     </div>
+     </div> -->
     </header>
    <div class="main" [@routeAnim]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
