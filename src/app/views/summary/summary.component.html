@@ -1,0 +1,39 @@
+<mat-drawer-container class="drawer-frame" autosize>
+    <mat-drawer #drawer class="options-sidenav" position="start" mode="side" opened="true">
+
+        <div>
+            <h3>Select Catogories ({{cats.selectedOptions.selected.length}})</h3>
+            <mat-selection-list #cats>
+                <mat-list-option *ngFor="let cats of typesOfCategories">
+                    {{cats}}
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+
+        <div>
+            <h3>Select Clients ({{clients.selectedOptions.selected.length}})</h3>
+            <mat-selection-list #clients>
+                <mat-list-option *ngFor="let clients of typesOfClients">
+                    {{clients}}
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+
+        <button (click)="showFiller = !showFiller" mat-raised-button color="primary">
+            Visualise
+        </button>
+
+        <p *ngIf="showFiller">Lorem, ipsum dolor</p>
+
+
+    </mat-drawer>
+
+    <div class="categories-container">
+
+
+        <!-- <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+          </button> -->
+    </div>
+
+</mat-drawer-container>

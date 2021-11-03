@@ -1,0 +1,41 @@
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+    header{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        padding-left: 2rem;
+        h1{
+            margin: 1rem 0 1rem -1rem !important;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .nav{
+            button:nth-child(2){
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+    .main{
+   //     background-image: url("../assets/images/justapic.jpeg");
+  // background-image: url("../assets/images/start.jpeg");
+        padding-bottom: 2.5rem;
+        background-size: cover;
+        width: 100%;
+        height: calc(100vh - 2.5rem);
+        position: relative;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        padding-left:4rem;
+    }  
+  }
+  
