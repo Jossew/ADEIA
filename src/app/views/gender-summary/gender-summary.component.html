@@ -1,8 +1,11 @@
+
+        <div class="report-nav">
+                <button mat-button  [routerLink]="['/summary']">&#8592; Back</button>
+                <button mat-button  [routerLink]="['/age-summary']">Age</button>
+                <button mat-button  [routerLink]="['/ethnicty-summary']">Ethincity</button>
+        </div>
+
 <div class="gender-wrap">
-
-
-
-
     <div class="cat-1">
         <h2>Females</h2>
         <div class="img-grid">
@@ -57,7 +60,7 @@
 
     <mat-card class="highlights">
         <div>
-            <p><b>Filter</b></p>
+            <p style="    color: rgba(255,255,255,0.35);"><b>Filter</b></p>
             <mat-form-field appearance="fill">
                 <mat-label>Ethnicity</mat-label>
                 <mat-select>
@@ -74,10 +77,11 @@
                     <mat-option value="invalid">Invalid option</mat-option>
                 </mat-select>
             </mat-form-field>
+        </div>
             <div>
                 <p><b>3,569</b> Videos analysed</p>
-                <button mat-raised-button [routerLink]="['/media-library']">View all Videos</button>
+                <button mat-button [routerLink]="['/media-library']">View all Videos</button>
             </div>
-            <p>Data sources: @unilever, and <a href="/">22 more..</a></p>
-        </div>
+            <p>Data sources: @unilever, <br> and 22 more..</p>
+       
     </mat-card>
