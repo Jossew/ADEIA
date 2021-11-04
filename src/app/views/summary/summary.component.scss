@@ -12,6 +12,8 @@
         padding: 0 0 1rem 0;
         h3{
             margin: 1.5rem 0 0 0;
+            opacity: 0.3;
+            font-weight: normal !important;
         }
     }
     button{
@@ -30,10 +32,17 @@
   .summary-container{
     flex: 2;
     padding: 0 2rem 0 0;
+    h2{
+      opacity: 0.35;
+    }
     p{
-      padding: 0.5rem 0rem;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.7);
+      padding: 0.5rem;
+          font-size: 0.8rem;
+          color: rgba(255, 255, 255, 0.7);
+          border: thin solid rgba(255, 255, 255, 0.2);
+          border-radius: 0.3
+      rem
+      ;
     }
   }
 }
