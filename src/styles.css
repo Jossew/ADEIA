@@ -14,10 +14,11 @@ button, a {
   font-family: 'Roboto Slab', serif;
 }
 
-button {
+.mat-raised-button {
   padding: 0.3rem 2rem !important;
   text-transform: uppercase;
   font-size: 13px !important;
+  background: black !important;
 }
 
 h3 {
@@ -40,6 +41,7 @@ h3 {
   opacity: 0;
   animation: flicker 3s ease alternate forwards;
   transition: transform 0.1s;
+  position: relative;
 }
 
 .img-grid .card:hover {

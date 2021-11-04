@@ -48,6 +48,7 @@
 }
 
 .highlights {
+  height: 80vh;
   border: thin solid black;
   padding: 2rem;
   margin: 1rem;
@@ -63,11 +64,9 @@
 }
 
 .highlights div {
-  border-top: thin solid black;
   border-bottom: thin solid black;
   padding: 1rem 0;
   text-align: center;
-  margin: 1rem 0;
 }
 
 .highlights button {

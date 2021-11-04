@@ -20,36 +20,38 @@
             font-size: 3rem;
             line-height: 1.3;
         }
+     
         .wrap{
             margin-top: 2rem;
             h2{
                 margin-bottom: 0.8rem;
                 margin-top: 1.5rem;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 1rem;
+                text-transform: uppercase;
             }
             p{
                 opacity: 0;
-                color: rgba(0,0,0,0.7)
+
             }
         
             .gender{
-                animation: headliner 1.5s ease  1.5s;
+                animation: headliner 1s ease  1s;
             }
             .gender-info{
-                animation: info 1.5s ease 1.5s;
+                animation: info 1s ease 1s;
             }
             .ethnicity{
-                animation: headliner 1.5s ease 3s;
+                animation: headliner 1s ease 2s;
             }
             .ethnicity-info{
-                animation: info 1.5s ease 3s;
+                animation: info 1s ease 2s;
             }
             .age{
-                animation: headliner 1.5s ease 4.5s;
+                animation: headliner 1s ease 3s;
             }
             .age-info{
-                animation: info 1.5s ease 4.5s;
+                animation: info 1s ease 3s;
             }
         }
      
@@ -101,4 +103,11 @@
     to {
       opacity: 1;
     }
+}
+
+
+
+// Temp stuff
+.intro {
+    color: rgba(0, 0, 0, 0.35);
 }

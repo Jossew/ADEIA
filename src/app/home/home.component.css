@@ -31,37 +31,37 @@
 .home-wrap .headline .wrap h2 {
   margin-bottom: 0.8rem;
   margin-top: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .home-wrap .headline .wrap p {
   opacity: 0;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .home-wrap .headline .wrap .gender {
-  animation: headliner 1.5s ease  1.5s;
+  animation: headliner 1s ease  1s;
 }
 
 .home-wrap .headline .wrap .gender-info {
-  animation: info 1.5s ease 1.5s;
+  animation: info 1s ease 1s;
 }
 
 .home-wrap .headline .wrap .ethnicity {
-  animation: headliner 1.5s ease 3s;
+  animation: headliner 1s ease 2s;
 }
 
 .home-wrap .headline .wrap .ethnicity-info {
-  animation: info 1.5s ease 3s;
+  animation: info 1s ease 2s;
 }
 
 .home-wrap .headline .wrap .age {
-  animation: headliner 1.5s ease 4.5s;
+  animation: headliner 1s ease 3s;
 }
 
 .home-wrap .headline .wrap .age-info {
-  animation: info 1.5s ease 4.5s;
+  animation: info 1s ease 3s;
 }
 
 .home-wrap .start {
@@ -111,4 +111,8 @@
   to {
     opacity: 1;
   }
+}
+
+.intro {
+  color: rgba(0, 0, 0, 0.35);
 }
