@@ -20,6 +20,7 @@ import {MatListModule} from '@angular/material/list';
 import * as echarts from 'echarts';
 import {NgxEchartsModule } from 'ngx-echarts';
 import { VideoInsightsComponent } from './views/video-insights/video-insights.component';
+import {MatTreeModule} from '@angular/material/tree';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { VideoInsightsComponent } from './views/video-insights/video-insights.co
     MatSidenavModule,
     MatSelectModule,
     MatListModule,
+    MatTreeModule,
     NgxEchartsModule.forRoot({
       echarts
     }),
