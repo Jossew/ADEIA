@@ -21,6 +21,7 @@ import * as echarts from 'echarts';
 import {NgxEchartsModule } from 'ngx-echarts';
 import { VideoInsightsComponent } from './views/video-insights/video-insights.component';
 import {MatTreeModule} from '@angular/material/tree';
+import { StartMenuComponent } from './start-menu/start-menu.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {MatTreeModule} from '@angular/material/tree';
     AgeSummaryComponent,
     MediaLibraryComponent,
     VideoInsightsComponent,
+    StartMenuComponent,
   ],
   imports: [
     BrowserModule,

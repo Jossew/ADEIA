@@ -18,44 +18,11 @@
     </div>
 
 
-    <div class="absolute ml-2 left-0 bottom-0 details">
+    <div> <!-- Pop up start -->
         <details>
             <summary class="start-button">Start</summary>
             <div class="content">
-                <h2>Filter</h2>
-                <div class="filter-panels">
-                <div>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Market</mat-label>
-                        <mat-select>
-                            <mat-option>Clear</mat-option>
-                            <mat-option value="valid">Valid option</mat-option>
-                            <mat-option value="invalid">Invalid option</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-                <div>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Benchmark</mat-label>
-                        <mat-select>
-                            <mat-option>Clear</mat-option>
-                            <mat-option value="valid">Valid option</mat-option>
-                            <mat-option value="invalid">Invalid option</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-                <div>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Industry</mat-label>
-                        <mat-select>
-                            <mat-option>Clear</mat-option>
-                            <mat-option value="valid">Valid option</mat-option>
-                            <mat-option value="invalid">Invalid option</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-            </div>
-                <button class="visualize-button" mat-raised-button [routerLink]="['/summary']">Visualize</button>
+                <app-start-menu></app-start-menu>
             </div>
         </details>
     </div> <!-- Pop up end -->
