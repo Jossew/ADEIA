@@ -6,6 +6,7 @@ import {AgeSummaryComponent} from './views/age-summary/age-summary.component';
 import {EthnicitySummaryComponent} from './views/ethnicity-summary/ethnicity-summary.component';
 import {GenderSummaryComponent} from './views/gender-summary/gender-summary.component';
 import {MediaLibraryComponent} from './views/media-library/media-library.component';
+import {VideoInsightsComponent} from './views/video-insights/video-insights.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'media-library',
     component:MediaLibraryComponent
+  },
+  {
+    path: 'video-insights',
+    component:VideoInsightsComponent
   },
 ];
 

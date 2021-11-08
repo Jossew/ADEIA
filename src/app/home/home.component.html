@@ -1,24 +1,63 @@
 <div class="home-wrap">
 
-   <p style="position:absolute; top:1.5rem; left:1.5rem">--LOGO--</p> 
-<div style="position: absolute; right: 3rem; top:10vh">
+    <p style="position:absolute; top:1.5rem; left:1.5rem">--LOGO--</p>
+    <div style="position: absolute; right: 3rem; top:10vh">
         <h1>DIVERSITY, EQUITY and INCLUSION</h1>
         <p class="intro">Start - into - page </p>
-</div>
+    </div>
     <div class="headline">
-       
+
         <div class="wrap">
             <h2 class="gender">Gender</h2>
             <p class="gender-info">Et harum quidem rerum facilis est et expedita distinctio.</p>
             <h2 class="ethnicity">Ethnicity</h2>
-            <p  class="ethnicity-info">Et harum quidem rerum facilis est et expedita distinctio.</p>
+            <p class="ethnicity-info">Et harum quidem rerum facilis est et expedita distinctio.</p>
             <h2 class="age">Age</h2>
-            <p  class="age-info">Et harum quidem rerum facilis est et expedita distinctio.</p>
+            <p class="age-info">Et harum quidem rerum facilis est et expedita distinctio.</p>
         </div>
     </div>
 
-    <div class="start">
-        <button mat-raised-button [routerLink]="['/summary']">Start</button>
-    </div>
+
+    <div class="absolute ml-2 left-0 bottom-0 details">
+        <details>
+            <summary class="start-button">Start</summary>
+            <div class="content">
+                <h2>Filter</h2>
+                <div class="filter-panels">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Market</mat-label>
+                        <mat-select>
+                            <mat-option>Clear</mat-option>
+                            <mat-option value="valid">Valid option</mat-option>
+                            <mat-option value="invalid">Invalid option</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Benchmark</mat-label>
+                        <mat-select>
+                            <mat-option>Clear</mat-option>
+                            <mat-option value="valid">Valid option</mat-option>
+                            <mat-option value="invalid">Invalid option</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Industry</mat-label>
+                        <mat-select>
+                            <mat-option>Clear</mat-option>
+                            <mat-option value="valid">Valid option</mat-option>
+                            <mat-option value="invalid">Invalid option</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+                <button class="visualize-button" mat-raised-button [routerLink]="['/summary']">Visualize</button>
+            </div>
+        </details>
+    </div> <!-- Pop up end -->
 
 </div>

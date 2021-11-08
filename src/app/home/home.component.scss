@@ -25,7 +25,7 @@
             margin-top: 2rem;
             h2{
                 margin-bottom: 0.8rem;
-                margin-top: 2.5rem;
+                margin-top: 1.5rem;
                 font-weight: 500;
                 font-size: 1rem;
                 text-transform: uppercase;
@@ -111,3 +111,110 @@
 .intro {
     color: rgba(0, 0, 0, 0.35);
 }
+
+
+
+
+
+    .start-button{
+        text-align: center;
+        padding: 0.8rem 1.5rem 0.8rem 1rem;
+        border-radius: 3em;
+        color: white;
+        cursor: pointer;
+        background: #242629;
+        width: 9rem;
+        margin: 2rem 0 0 64px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+     }
+
+  
+  details > .content {
+    width: 20em;
+    padding: 24px;
+    border-radius: 4px;
+    position: fixed;
+    width: 90%;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #242629;
+    overflow-y: scroll;
+    z-index: 3;
+    box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+   
+    animation-name: privacymove;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+   
+    text-align: center;
+    h2{
+        color: white;
+        text-align: center;
+    }
+    .filter-panels{
+        display:flex;
+        justify-content: center;
+        min-height: 20vh;
+        flex-wrap: wrap;
+        div{
+            margin: 1rem;
+        }
+    }
+    .visualize-button{
+        background: white !important;
+        color: black;
+    }
+  }
+  summary::marker{
+      color:transparent;
+  }
+  details[open] .start-button::after { 
+    content: "×"; 
+    font-size: 20px;  
+    position: fixed; 
+    right: 6vh;
+    top: 4vh;
+    padding: 5pt 10pt;
+    z-index: 9;
+    color:white;
+    animation-name: privacyclose;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+  }
+  details[open] .start-button::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  @keyframes privacymove {
+    from {
+      bottom: -1000%;
+    }
+    to {
+        top: 0;
+    }
+  }
+  @keyframes privacyclose{
+    from {
+      top: -1000%;
+    }
+    to {
+        top: 8%;
+    }
+  }
+
+

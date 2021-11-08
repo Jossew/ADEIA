@@ -19,6 +19,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import * as echarts from 'echarts';
 import {NgxEchartsModule } from 'ngx-echarts';
+import { VideoInsightsComponent } from './views/video-insights/video-insights.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {NgxEchartsModule } from 'ngx-echarts';
     EthnicitySummaryComponent,
     AgeSummaryComponent,
     MediaLibraryComponent,
+    VideoInsightsComponent,
   ],
   imports: [
     BrowserModule,

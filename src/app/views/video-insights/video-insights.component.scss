@@ -41,6 +41,29 @@
       bottom: 0rem;
     }
 }
+.highlights{
+    height: 80vh;
+    border: thin solid black;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+    p{
+        padding: 1rem 0;
+        margin: 0;
+    }
+    div{
+        //border-top: thin solid black;
+        border-bottom: thin solid rgba(255,255,255, 0.35);
+        padding: 0;
+        text-align: center;
+    }
+    button{
+        margin: 1rem 0;
+    }
+}
 
 
 

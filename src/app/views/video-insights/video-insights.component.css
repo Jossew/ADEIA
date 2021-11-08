@@ -47,6 +47,32 @@
   }
 }
 
+.highlights {
+  height: 80vh;
+  border: thin solid black;
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.highlights p {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.highlights div {
+  border-bottom: thin solid rgba(255, 255, 255, 0.35);
+  padding: 0;
+  text-align: center;
+}
+
+.highlights button {
+  margin: 1rem 0;
+}
+
 .report-nav {
   display: flex;
   justify-content: flex-end;
