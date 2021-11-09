@@ -22,6 +22,8 @@ import {NgxEchartsModule } from 'ngx-echarts';
 import { VideoInsightsComponent } from './views/video-insights/video-insights.component';
 import {MatTreeModule} from '@angular/material/tree';
 import { StartMenuComponent } from './start-menu/start-menu.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { StartMenuComponent } from './start-menu/start-menu.component';
     MatSelectModule,
     MatListModule,
     MatTreeModule,
+    MatCheckboxModule,
+    MatIconModule,
     NgxEchartsModule.forRoot({
       echarts
     }),

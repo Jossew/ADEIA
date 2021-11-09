@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start-menu.component.scss']
 })
 export class StartMenuComponent implements OnInit {
+  
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
   constructor() { }
 
@@ -13,3 +15,4 @@ export class StartMenuComponent implements OnInit {
   }
 
 }
+

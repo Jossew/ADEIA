@@ -14,6 +14,10 @@ h2 {
   margin: 1rem;
 }
 
+.filter-panels .filter-box {
+  border: thin solid black;
+}
+
 .visualize-button {
   background: white !important;
   color: black;
