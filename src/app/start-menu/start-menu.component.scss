@@ -5,13 +5,28 @@ h2{
 .filter-panels{
     display:flex;
     justify-content: center;
-    min-height: 20vh;
     flex-wrap: wrap;
-    div{
-        margin: 1rem;
-    }
+ 
     .filter-box{
-        border: thin solid black;
+        width:21rem;
+        margin: 1rem;
+        padding: 1rem 3rem 3rem 3rem;
+        background: #121212;
+        border-radius: 3px;
+        text-align: left;
+        align-self: self-start;
+        h3{
+            color:white;
+            padding:1rem 0 0 0;
+            margin-bottom:0.5rem;
+        }
+        .filter-wrap{
+            border: thin solid #5C5C5C;
+            height: 20rem;
+            overflow-y: scroll;
+            border-radius: 3px;
+            padding: 0 1.5rem 0.5rem  1.5rem;
+        }
     }
 }
 .visualize-button{

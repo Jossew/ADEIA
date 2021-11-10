@@ -6,12 +6,18 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5,
+p, .mat-list-option {
+  font-family: 'Noto Sans', sans-serif !important;
+  text-transform: uppercase;
 }
 
 button, a {
   cursor: pointer;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Noto Sans', serif;
 }
 
 .mat-raised-button {
@@ -87,4 +93,13 @@ p {
   color: black !important;
   font-size: 13px;
   text-transform: uppercase;
+}
+
+.mat-selection-list {
+  margin: 0;
+}
+
+.mat-list-option {
+  text-transform: capitalize;
+  font-size: 13px;
 }

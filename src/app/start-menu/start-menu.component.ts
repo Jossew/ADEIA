@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartMenuComponent implements OnInit {
   
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  typesOfMarkets: string[] = ['Argentina', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Bangladesh ', 'Barbados', 'Belgium ', 'Belize', 'Benin', 'Bermuda', 'Bolivia' ];
 
   constructor() { }
 

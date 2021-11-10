@@ -1,6 +1,6 @@
 <h2>Filter</h2>
 <div class="filter-panels">
-<!-- <div>
+  <!-- <div>
     <mat-form-field appearance="fill">
         <mat-label>Market</mat-label>
         <mat-select>
@@ -30,34 +30,22 @@
         </mat-select>
     </mat-form-field>
 </div> -->
-<div>
-    <div class="filter-box">
-        <h3>Select Country</h3>
-            <mat-selection-list #shoes>
-                    <mat-list-option *ngFor="let shoe of typesOfShoes">
-                      {{shoe}}
-                    </mat-list-option>
-                  <p>
-                    Options selected: {{shoes.selectedOptions.selected.length}}
-                  </p>
-                </mat-selection-list>
-    </div>
-    <div class="filter-box">
-            <h3>Select Benchmark</h3>
-                <mat-selection-list #shoes>
-                        <mat-list-option *ngFor="let shoe of typesOfShoes">
-                          {{shoe}}
-                        </mat-list-option>
-                      <p>
-                        Options selected: {{shoes.selectedOptions.selected.length}}
-                      </p>
-                    </mat-selection-list>
-        </div>
-</div>
 
+  <div class="filter-box">
+      <h3>Markets ({{markets.selectedOptions.selected.length}})</h3>
+      <div class="filter-wrap">
+      <mat-selection-list #markets>
+        <mat-list-option *ngFor="let market of typesOfMarkets">
+          {{market}}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+  </div>
+  <div class="filter-box">
+      <h3>Benchmarks</h3>
+      <div class="filter-wrap">
+   
+    </div>
+  </div>
 </div>
 <button class="visualize-button" mat-raised-button [routerLink]="['/summary']">Visualize</button>
-
-
-      
-

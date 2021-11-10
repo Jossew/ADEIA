@@ -1,11 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Slab:wght@400;600;700&display=swap');
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Noto Sans', sans-serif; }
+
+h1,h2,h3,h4,h5,
+p, .mat-list-option
+{
+    font-family: 'Noto Sans', sans-serif !important; 
+    text-transform: uppercase;
+}
+       
+    
+
 
 button, a{
     cursor: pointer;
-    font-family: 'Roboto Slab', serif; 
+    font-family: 'Noto Sans', serif; 
 }
 
 .mat-raised-button{
@@ -62,9 +72,20 @@ h1{
     font-family: 'Noto Sans', sans-serif;
   }
 
+
+
+
+  //material stuff
   .mat-button{
       background-color: white;
       color:black !important;
       font-size: 13px;
       text-transform: uppercase;
+  }
+  .mat-selection-list{
+      margin:0
+  }
+  .mat-list-option{
+      text-transform: capitalize;
+      font-size: 13px;
   }
