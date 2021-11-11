@@ -8,6 +8,7 @@ import * as echarts from 'echarts';
 })
 
 
+
 export class SummaryComponent implements OnInit {
 
   typesOfCategories: string[] = ['Beauty', 'Fashion', 'Space', 'Finance' ];
@@ -132,101 +133,72 @@ const lineStyle = {
 };
 
 const option = {
-  backgroundColor: 'transparent',
   title: {
-    text: ' Visualise Selection',
-    left: 'center',
-    textStyle: {
-      color: '#eee'
+    text: 'Bar Chart with Negative Value'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
     }
   },
-  legend: {
-    bottom: 5,
-    data: ['Gender', 'Age', 'Ethnicity'],
-    itemGap: 20,
-    textStyle: {
-      color: '#fff',
-      fontSize: 14
-    },
-    selectedMode: 'single'
+  grid: {
+    top: 80,
+    bottom: 30
   },
-  radar: {
-    indicator: [
-      { name: 'AQI', max: 300 },
-      { name: 'PM2.5', max: 250 },
-      { name: 'PM10', max: 300 },
-      { name: 'CO', max: 5 },
-      { name: 'NO2', max: 200 },
-      { name: 'SO2', max: 100 }
-    ],
-    shape: 'circle',
-    splitNumber: 5,
-    axisName: {
-      color: 'rgb(238, 197, 102)'
-    },
+  xAxis: {
+    type: 'value',
+    position: 'top',
     splitLine: {
       lineStyle: {
-        color: [
-          'rgba(238, 197, 102, 0.1)',
-          'rgba(238, 197, 102, 0.2)',
-          'rgba(238, 197, 102, 0.4)',
-          'rgba(238, 197, 102, 0.6)',
-          'rgba(238, 197, 102, 0.8)',
-          'rgba(238, 197, 102, 1)'
-        ].reverse()
-      }
-    },
-    splitArea: {
-      show: false
-    },
-    axisLine: {
-      lineStyle: {
-        color: 'rgba(238, 197, 102, 0.5)'
+        type: 'dashed'
       }
     }
+  },
+  yAxis: {
+    type: 'category',
+    axisLine: { show: false },
+    axisLabel: { show: false },
+    axisTick: { show: false },
+    splitLine: { show: false },
+    data: [
+      'ten',
+      'nine',
+      'eight',
+      'seven',
+      'six',
+      'five',
+      'four',
+      'three',
+      'two',
+      'one'
+    ]
   },
   series: [
     {
-      name: 'Gender',
-      type: 'radar',
-      lineStyle: lineStyle,
-      data: dataBJ,
-      symbol: 'none',
-      itemStyle: {
-        color: 'rgb(238, 197, 102)'
+      name: 'Cost',
+      type: 'bar',
+      stack: 'Total',
+      label: {
+        show: true,
+        formatter: '{b}'
       },
-      areaStyle: {
-        opacity: 0.1
-      }
-    },
-    {
-      name: 'Age',
-      type: 'radar',
-      lineStyle: lineStyle,
-      data: dataSH,
-      symbol: 'none',
-      itemStyle: {
-        color: '#B3E4A1'
-      },
-      areaStyle: {
-        opacity: 0.05
-      }
-    },
-    {
-      name: 'Ethnicity',
-      type: 'radar',
-      lineStyle: lineStyle,
-      data: dataGZ,
-      symbol: 'none',
-      itemStyle: {
-        color: '#fff'
-      },
-      areaStyle: {
-        opacity: 0.05
-      }
+      data: [
+        { value: -0.07, },
+        { value: -0.09, },
+        0.2,
+        0.44,
+        { value: -0.23,  },
+        0.08,
+        { value: -0.17,  },
+        0.47,
+        { value: -0.36,},
+        0.18
+      ]
     }
   ]
 };
+
 
 
     // const option = {
