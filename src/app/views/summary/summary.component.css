@@ -53,6 +53,7 @@
   justify-content: center;
   align-items: center;
   margin: 3rem auto 0 auto;
+  flex-wrap: wrap;
 }
 
 .container .summary-content .chart-titles {

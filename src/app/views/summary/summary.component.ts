@@ -25,82 +25,10 @@ export class SummaryComponent implements OnInit {
   }
 
  private InitPipe(): void {
- // this.myChart = echarts.init((document.getElementById('pipe')) as any);
- this.agePie = echarts.init((document.getElementById('piechartage')) as any);
- this.genderPie = echarts.init((document.getElementById('piechartgender')) as any);
- this.ethnicityPie = echarts.init((document.getElementById('piechartetnicity')) as any);
+    this.agePie = echarts.init((document.getElementById('piechartage')) as any);
+    this.genderPie = echarts.init((document.getElementById('piechartgender')) as any);
+    this.ethnicityPie = echarts.init((document.getElementById('piechartetnicity')) as any);
 
-const lineStyle = {
-  width: 1,
-  opacity: 0.5
-};
-const indexchart = {
-  title: {
-  //  text: 'Bar Chart with Negative Value'
-  },
-  tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
-    }
-  },
-  grid: {
-    top: 80,
-    bottom: 30
-  },
-  xAxis: {
-    type: 'value',
-    position: 'top',
-    splitLine: {
-      lineStyle: {
-        type: 'dashed'
-      }
-    }
-  },
-  yAxis: {
-    type: 'category',
-    axisLine: { show: false },
-    axisLabel: { show: false },
-    axisTick: { show: false },
-    splitLine: { show: false },
-    data: [
-      'ten',
-      'nine',
-      'eight',
-      'seven',
-      'six',
-      'five',
-      'four',
-      'three',
-      'two',
-      'one'
-    ]
-  },
-
-  series: [
-    {
-      name: 'Cost',
-      type: 'bar',
-      stack: 'Total',
-      label: {
-        show: true,
-        formatter: '{b}'
-      },
-      data: [
-        { value: -0.07, },
-        { value: -0.09, },
-        0.2,
-        0.44,
-        { value: -0.23,  },
-        0.08,
-        { value: -0.17,  },
-        0.47,
-        { value: -0.36,},
-        0.18
-      ]
-    }
-  ]
-};
 
 const fontWeight = {
   fontWeight: 'bold',
@@ -143,7 +71,6 @@ const piecharts = {
     }
   ]
 };
-  //  this.myChart.setOption(indexchart);
     this.agePie.setOption(piecharts);
     this.genderPie.setOption(piecharts);
     this.ethnicityPie.setOption(piecharts);
