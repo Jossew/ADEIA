@@ -7,10 +7,16 @@ html, body {
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-weight: bold !important;
 }
 
 h1, h2, h3, h4, h5,
-p, .mat-list-option {
+p, .mat-list-option, .mat-checkbox-label {
   font-family: 'Noto Sans', sans-serif !important;
   text-transform: uppercase;
 }
@@ -102,4 +108,8 @@ p {
 .mat-list-option {
   text-transform: capitalize;
   font-size: 13px;
+}
+
+.mat-tree {
+  background: transparent;
 }

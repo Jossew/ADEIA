@@ -1,10 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Slab:wght@400;600;700&display=swap');
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Noto Sans', sans-serif; }
+body { 
+    margin: 0; 
+    font-family: 'Noto Sans', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 
+h1{
+    font-weight: bold !important;
+}
 h1,h2,h3,h4,h5,
-p, .mat-list-option
+p, .mat-list-option, .mat-checkbox-label 
 {
     font-family: 'Noto Sans', sans-serif !important; 
     text-transform: uppercase;
@@ -88,4 +96,7 @@ h1{
   .mat-list-option{
       text-transform: capitalize;
       font-size: 13px;
+  }
+  .mat-tree{
+      background: transparent;
   }

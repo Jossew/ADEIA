@@ -1,6 +1,13 @@
+h1 {
+  color: white;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
 h2 {
   color: white;
-  text-align: center;
+  margin: 2rem 0 3rem 0;
+  font-size: 2rem;
 }
 
 .filter-panels {
@@ -19,7 +26,7 @@ h2 {
   align-self: self-start;
 }
 
-.filter-panels .filter-box h3 {
+.filter-panels .filter-box p {
   color: white;
   padding: 1rem 0 0 0;
   margin-bottom: 0.5rem;
@@ -33,7 +40,17 @@ h2 {
   padding: 0 1.5rem 0.5rem  1.5rem;
 }
 
-.visualize-button {
-  background: white !important;
-  color: black;
+.wrap {
+  width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.wrap .visualize-button {
+  background: #5B34D5 !important;
+  color: white;
+  align-self: flex-end;
+  margin-top: -1rem;
+  float: right;
+  letter-spacing: 4px;
 }
