@@ -101,13 +101,17 @@ const indexchart = {
     }
   ]
 };
+
+const fontWeight = {
+  fontWeight: 'bold',
+};
+const color = {};
 const piecharts = {
   tooltip: {
     trigger: 'item'
   },
   legend: {
-    top: '5%',
-    left: 'center'
+    show: false,
   },
   series: [
     {
@@ -122,8 +126,8 @@ const piecharts = {
       emphasis: {
         label: {
           show: true,
-          fontSize: '40',
-          fontWeight: 'bold'
+          fontWeight:  fontWeight,
+          color: color,
         }
       },
       labelLine: {

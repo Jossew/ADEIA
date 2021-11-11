@@ -1,9 +1,3 @@
-.example-container {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
 .options-sidenav {
   padding: 20px;
 }
@@ -23,31 +17,56 @@
   margin-top: 1rem;
 }
 
-.summary-content {
+.main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  padding: 1rem;
   display: flex;
-  height: 85%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.container .subtext {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-transform: initial;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container .summary-content {
+  display: flex;
+  max-width: 1440px;
+  width: 80%;
+  justify-content: center;
   align-items: center;
+  margin: 3rem auto 0 auto;
 }
 
-.summary-content .visualisation {
-  flex: 3;
+.container .summary-content .chart-titles {
+  text-align: center;
+  font-weight: bold;
 }
 
-.summary-content .summary-container {
-  flex: 2;
-  padding: 0 2rem 0 0;
+.container .summary-content .chart-box {
+  width: 20%;
 }
 
-.summary-content .summary-container h2 {
-  opacity: 0.35;
-}
-
-.summary-content .summary-container p {
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.7);
-  border: thin solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.3rem;
+.container .summary-content .chart-box .pies {
+  width: 100%;
+  height: 15rem;
 }
 
 .report-nav {
