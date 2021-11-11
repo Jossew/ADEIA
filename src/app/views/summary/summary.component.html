@@ -34,33 +34,14 @@
 </mat-drawer-container> -->
 
 <mat-drawer-container class="example-container">
-    <!-- <mat-drawer mode="side" opened>
-        <div class="options-sidenav">
-            <div>
-                <h3>Select Catogories ({{cats.selectedOptions.selected.length}})</h3>
-                <mat-selection-list #cats>
-                    <mat-list-option *ngFor="let cats of typesOfCategories">
-                        {{cats}}
-                    </mat-list-option>
-                </mat-selection-list>
-            </div>
-            <div>
-                <h3>Select Clients ({{clients.selectedOptions.selected.length}})</h3>
-                <mat-selection-list #clients>
-                    <mat-list-option *ngFor="let clients of typesOfClients">
-                        {{clients}}
-                    </mat-list-option>
-                </mat-selection-list>
-            </div>
-            <button mat-button color="primary">
-                Visualise
-            </button>
-        </div>
-    </mat-drawer> -->
     <mat-drawer-content>
         <div class="summary-content">
             <div class="visualisation">
-                <div id="pipe" echarts theme="dark" style="height:46vh;"></div>
+               
+                        <div id="piechartage" echarts theme="dark" style="height:20vh;"></div>
+                        <div id="piechartgender" echarts theme="dark" style="height:20vh;"></div>
+                        <div id="piechartetnicity" echarts theme="dark" style="height:20vh;"></div>
+              
             </div>
             <div class="summary-container">
                 <h2>Summary points here..</h2>
