@@ -7,26 +7,31 @@
   flex: 1;
 }
 
-.cat-1, .cat-2 {
-  flex: 3;
-  margin: 0 2rem;
+.gender-wrap {
+  margin: 2rem;
 }
 
-.cat-1 h2, .cat-2 h2 {
+.gender-wrap h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 6px;
 }
 
+.report-section {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
 .cat-1 {
   animation: catone 1.5s ease;
-  position: relative;
 }
 
 .cat-2 {
   animation: cattwo 1.5s ease;
-  position: relative;
 }
 
 @keyframes catone {

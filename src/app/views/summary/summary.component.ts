@@ -38,7 +38,7 @@ export class SummaryComponent implements OnInit {
 const fontWeight = {
   fontWeight: 'bold',
 };
-const color = {};
+const color = {color:'#5B34D5'};
 const piecharts = {
   tooltip: {
     trigger: 'item'
@@ -46,6 +46,20 @@ const piecharts = {
   legend: {
     show: false,
   },
+    title: [
+    {
+      left: 'center',
+      text: 'Gradient along the y axis'
+    },
+    {
+      top: '55%',
+      left: 'center',
+      text: 'Gradient along the x axis'
+    }
+  ],
+  color:[ '#5B34D5','#fff','#FF9800','#81C784','#c4ccd3','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
+
+  '#FFF18C'],
   series: [
     {
       name: 'Access From',
@@ -67,11 +81,10 @@ const piecharts = {
         show: false
       },
       data: [
-        { value: 1048, name: 'Search Engine' },
-        { value: 735, name: 'Direct' },
-        { value: 580, name: 'Email' },
-        { value: 484, name: 'Union Ads' },
-        { value: 300, name: 'Video Ads' }
+        { value: 1048, name: 'Male' },
+        { value: 735, name: 'Female' },
+        { value: 580, name: 'Unknown'},
+        { value: 580, name: 'Something else',},
       ]
     }
   ]

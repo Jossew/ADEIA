@@ -18,24 +18,20 @@
   }
 
 .main{
-  width: 100%;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
  .container{
-   padding:1rem;
    display:flex;
    flex-direction: column;
    justify-content: center;
    width: 100%;
    text-align: center;
    h1{
-     font-size: 2rem;
+     font-size: 3rem;
      margin: 2rem 0 0.5rem 0;
    }
    .subtext{
-     font-size: 1.5rem;
      line-height: 1.5rem;
      text-transform: initial;
      max-width: 60%;
@@ -44,12 +40,12 @@
    }
   .summary-content{
     display: flex;
-    max-width: 1440px;
-    width:80%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin: 3rem auto 0 auto;
     flex-wrap: wrap;
+    border-bottom: thin solid white;
     .chart-titles{
       text-align: center;
       font-weight: bold;
@@ -76,15 +72,14 @@
 
 
 .wrapper {
-  max-width: 50rem;
   width: 100%;
   margin: 0 auto;
 }
 .tabs {
   position: relative;
-  margin: 3rem 0;
-  background: #1abc9c;
-  height: 14.75rem;
+  min-height: 100vh;
+  display: flex;
+ justify-content: space-between;
 }
 .tabs::before,
 .tabs::after {
@@ -95,7 +90,14 @@
   clear: both;
 }
 .tab {
-  float: left;
+  flex: 1;
+  text-align: left;
+  &:nth-child(2){
+    text-align: center;
+  }
+  &:nth-child(3){
+    text-align: right;
+  }
 }
 .tab-switch {
   display: none;
@@ -106,38 +108,38 @@
   line-height: 2.75em;
   height: 3em;
   padding: 0 1.618em;
-  background: #1abc9c;
-  border-right: 0.125rem solid #16a085;
-  color: #fff;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
+  text-transform: uppercase;
+  color: #616161;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
+
 .tab-label:hover {
   top: -0.25rem;
   transition: top 0.25s;
 }
 .tab-content {
-  height: 12rem;
+  width: 100%;
   position: absolute;
   z-index: 1;
-  top: 2.75em;
+  top: 3rem;
   left: 0;
   padding: 1.618rem;
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0.25rem solid #bdc3c7;
   opacity: 0;
   transition: all 0.35s;
 }
 .tab-switch:checked + .tab-label {
-  background: #fff;
-  color: #2c3e50;
   border-bottom: 0;
-  border-right: 0.125rem solid #fff;
   transition: all 0.35s;
   z-index: 1;
   top: -0.0625rem;
+  font-weight: 700;
+  color:white;
+  text-decoration: none;
 }
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
