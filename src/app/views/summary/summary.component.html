@@ -1,43 +1,12 @@
-<!-- <mat-drawer-container class="drawer-frame" autosize>
-    <mat-drawer #drawer class="options-sidenav" position="start" mode="side" opened="true">
-
-        <div>
-            <h3>Select Catogories ({{cats.selectedOptions.selected.length}})</h3>
-            <mat-selection-list #cats>
-                <mat-list-option *ngFor="let cats of typesOfCategories">
-                    {{cats}}
-                </mat-list-option>
-            </mat-selection-list>
-        </div>
-
-        <div>
-            <h3>Select Clients ({{clients.selectedOptions.selected.length}})</h3>
-            <mat-selection-list #clients>
-                <mat-list-option *ngFor="let clients of typesOfClients">
-                    {{clients}}
-                </mat-list-option>
-            </mat-selection-list>
-        </div>
-
-        <button (click)="showFiller = !showFiller" mat-raised-button color="primary">
-            Visualise
-        </button>
-
-        <p *ngIf="showFiller">Lorem, ipsum dolor</p>
-
-
-    </mat-drawer>
-
-    <div class="categories-container">
-    </div>
-
-</mat-drawer-container> -->
 
 <div class="main">
     <div class="container">
         <h1>Overview </h1>
         <p class="subtext">Pug brunch lomo vice pour-over coloring book cronut street art put a bird on it pork belly
         </p>
+        <div class="report-nav">
+                <button mat-button [routerLink]="['/media-library']">View all Videos</button>
+            </div>
         <div class="summary-content">
             <div class="chart-box">
                 <p class="chart-titles">Gender</p>
@@ -53,9 +22,50 @@
             </div>
         </div>
     </div>
+
+  
+
     <!-- <div class="report-nav">
             <button mat-button [routerLink]="['/age-summaryyy']">Age</button>
             <button mat-button [routerLink]="['/ethnicty-summaryyy']">Ethincity</button>
             <button mat-button [routerLink]="['/gender-summary']">Gender</button>
-        </div> -->
+        </div>  -->
+
+
+
+    <!-- <div>
+        <p><b>3,569</b> Videos analysed</p>
+        <button mat-button [routerLink]="['/media-library']">View all Videos</button>
+    </div>
+    <p>Data sources: @unilever, <br> and 22 more..</p> -->
+
+</div>
+
+
+
+<div class="wrapper">
+    <div class="tabs">
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">Gender</label>
+            <div class="tab-content">
+                <!-- <div id="piechartage" echarts theme="dark" class="pies" style="min-height: 50rem; height: 50rem; width: 50rem;"></div> -->
+                <app-gender-summary></app-gender-summary>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">Age</label>
+            <div class="tab-content">
+                <app-age-summary></app-age-summary>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+            <label for="tab-3" class="tab-label">Ethnicity</label>
+            <div class="tab-content">
+                <app-ethnicity-summary></app-ethnicity-summary>
+            </div>
+        </div>
+    </div>
 </div>

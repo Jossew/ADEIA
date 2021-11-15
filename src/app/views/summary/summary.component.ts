@@ -14,15 +14,20 @@ export class SummaryComponent implements OnInit {
   typesOfCategories: string[] = ['Beauty', 'Fashion', 'Space', 'Finance' ];
   typesOfClients: string[] = ['Loreal', 'Maybelline', 'Urban Decay', 'Clyde Space','Global Invacom Waveguide'];
   
-  
+
+
  // private myChart: any = null;
  private agePie: any = null;
  private genderPie: any = null;
  private ethnicityPie: any = null;
 
+
   ngOnInit() {
    this.InitPipe();
   }
+
+
+
 
  private InitPipe(): void {
     this.agePie = echarts.init((document.getElementById('piechartage')) as any);
@@ -79,7 +84,7 @@ const piecharts = {
   
   constructor() { }
 
-  showFiller = false;
+
 
 
 

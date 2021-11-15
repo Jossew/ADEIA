@@ -1,13 +1,10 @@
-<div class="report-nav">
-    <button mat-button [routerLink]="['/summary']">&#8592; Back</button>
-    <button mat-button [routerLink]="['/age-summary']">Age</button>
-    <button mat-button [routerLink]="['/ethnicty-summary']">Ethincity</button>
-    <button mat-button [routerLink]="['/media-library']">View all Videos</button>
-</div>
+
 
 <div class="gender-wrap">
     <div class="cat-1">
-        <h2>Females</h2>
+            <div id="genderchart" echarts theme="dark" class="pies" style="min-height: 300px; max-height: 300px; width: 500px"></div>
+          
+       <h2>Females</h2>
         <div class="img-grid">
             <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
             </div>
@@ -33,7 +30,7 @@
             </div>
             <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
             </div>
-        </div>
+        </div> 
     </div>
 
     <div class="cat-2">
@@ -62,8 +59,4 @@
         </div>
     </div>
 
-    <!-- <div>
-        <p><b>3,569</b> Videos analysed</p>
-        <button mat-button [routerLink]="['/media-library']">View all Videos</button>
-    </div>
-    <p>Data sources: @unilever, <br> and 22 more..</p> -->
+  

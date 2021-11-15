@@ -24,6 +24,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import { StartMenuComponent } from './start-menu/start-menu.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatTreeModule,
     MatCheckboxModule,
     MatIconModule,
+    MatTabsModule,
     NgxEchartsModule.forRoot({
       echarts
     }),
