@@ -1,5 +1,19 @@
-.gender-wrap {
+.filters {
   display: flex;
+  justify-content: center;
+  width: 22rem;
+  border: thin solid #616161;
+  border-radius: 3px;
+  margin: 2rem auto 0 auto;
+}
+
+.filters p {
+  transform: translateY(15px);
+}
+
+.filters .mat-form-field {
+  margin: 0 0 0 1rem;
+  width: 6rem;
 }
 
 .top-bucket {
@@ -8,14 +22,15 @@
 }
 
 .gender-wrap {
-  margin: 2rem;
+  margin: 3rem 2rem 2rem 2rem;
+  width: 100%;
+  display: flex;
 }
 
 .gender-wrap h2 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 6px;
+  font-size: 14px;
 }
 
 .report-section {
@@ -23,7 +38,7 @@
   position: relative;
   flex: 1;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 3rem;
 }
 
 .cat-1 {
@@ -32,6 +47,10 @@
 
 .cat-2 {
   animation: cattwo 1.5s ease;
+}
+
+.chart-wrap {
+  flex: 1;
 }
 
 @keyframes catone {

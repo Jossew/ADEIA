@@ -23,46 +23,63 @@ export class GenderSummaryComponent implements OnInit {
       data.push(Math.round(Math.random() * 200));
     }
     const barcharts = {
+      title: [
+        {
+          left: 'center',
+          text: 'GENDER SOMETHING SPLIT',
+          textStyle: {
+            fontSize: 14,
+            color: '#fff'
+          }
+        }],
       xAxis: {
-        max: 'dataMax'
+        max: 'dataMax',
+        textStyle: {
+          fontSize: 14,
+          color: '#fff'
+        },
+        splitLine:{
+          show:true,
+          lineStyle: {
+            color:'#616161'
+          },
+        },
       },
       yAxis: {
         type: 'category',
-        data: ['A', 'B', 'C', 'D', 'E'],
-        inverse: true,
+        data: ['Male', 'Female', 'Mixed',],
         animationDuration: 300,
         animationDurationUpdate: 300,
-        max: 2 // only the largest 3 bars will be displayed
       },
       series: [
         {
           realtimeSort: true,
-          name: 'X',
+          name: 'Gender',
           type: 'bar',
           data: data,
           label: {
-            show: true,
+            show: false,
             position: 'right',
-            valueAnimation: true
           }
         }
       ],
       legend: {
-        show: true
+        show:false,
+        bottom: '10',
+        textStyle: {
+          fontSize: 14,
+          color: '#fff'
+        }
       },
-      animationDuration: 0,
-      animationDurationUpdate: 3000,
-      animationEasing: 'linear',
-      animationEasingUpdate: 'linear'
+      color:[ 
+        '#5B34D5','#E2DAFB','#AE786E',
+      ],
     };
         this.genderchart.setOption(barcharts);
      }
-      
-     
-      
+    
       constructor() { }
-    
-    
     
     }
     
+

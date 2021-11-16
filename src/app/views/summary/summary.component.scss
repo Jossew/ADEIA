@@ -28,7 +28,8 @@
    justify-content: center;
    width: 100%;
    text-align: center;
-   background: linear-gradient(180deg, rgba(12,8,28,1) 0%, rgba(0,0,0,1) 100%);
+   background: linear-gradient(180deg, rgb(19, 13, 43) 0%, rgba(0,0,0,1) 100%);
+   background: linear-gradient(180deg, #170D35 0%, black 100%);
    h1{
      font-size: 2.5rem;
      margin: 2rem 0 0.5rem 0;
@@ -98,7 +99,7 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-// justify-content: space-between;
+  justify-content: space-between;
 }
 .tabs::before,
 .tabs::after {
@@ -109,8 +110,9 @@
   clear: both;
 }
 .tab {
-//  flex: 1;
+ flex: 1;
   text-align: left;
+  flex: 1;
   &:nth-child(2){
     text-align: center;
   }
@@ -125,8 +127,7 @@
   position: relative;
   display: block;
   line-height: 2.75em;
-  height: 3em;
-  padding: 0 1.618em;
+  height: 2.5em;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
@@ -134,6 +135,7 @@
   color: #616161;
   font-size: 1.2rem;
   font-weight: 600;
+  border-bottom: thin solid #616161;
 }
 
 .tab-label:hover {
@@ -158,6 +160,8 @@
   font-weight: 700;
   color:white;
   text-decoration: none;
+  border-bottom: 2px solid white;
+  font-style: italic;
 }
 .tab-switch:checked + label + .tab-content {
   z-index: 2;

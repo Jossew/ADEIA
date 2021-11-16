@@ -1,19 +1,31 @@
-.gender-wrap{
-    display:flex;
+.filters{
+    display: flex;
+    justify-content: center;
+    width: 22rem;
+    border: thin solid #616161;
+    border-radius: 3px;
+    margin: 2rem auto 0 auto;
+    p{
+        transform: translateY(15px);
+    }
+    .mat-form-field{
+        margin: 0 0 0 1rem;
+        width:6rem;
+    }
 }
-
 
 .top-bucket{
     padding: 1rem;
     flex: 1;
 }
 .gender-wrap{
-    margin: 2rem;
+    margin: 3rem 2rem 2rem 2rem;
+    width: 100%;
+    display:flex;
     h2{
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        letter-spacing: 6px;
+        font-size: 14px;
     }
 }
 .report-section{
@@ -21,13 +33,16 @@
     position: relative;
     flex: 1;
     flex-direction: column;
-    margin: 0 1rem;
+    margin: 0 3rem;
 }
 .cat-1{
     animation: catone 1.5s ease;
 }
 .cat-2{
     animation: cattwo 1.5s ease;
+}
+.chart-wrap{
+    flex: 1
 }
 @keyframes catone{
     from {
@@ -56,7 +71,6 @@
     display: flex;
     justify-content: flex-end;
     padding: 0 2rem 0 0;
-
     button{
         border: thin solid black;
         margin-left: 0.5rem;

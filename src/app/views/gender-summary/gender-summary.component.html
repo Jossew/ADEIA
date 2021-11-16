@@ -1,43 +1,32 @@
-
+<div class="filters">
+    <p>Filter by</p>
+    <mat-form-field>
+        <mat-label>Ethnicity</mat-label>
+        <mat-select>
+            <mat-option>Clear</mat-option>
+            <mat-option value="valid">Valid option</mat-option>
+            <mat-option value="invalid">Invalid option</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Age</mat-label>
+        <mat-select>
+            <mat-option>Clear</mat-option>
+            <mat-option value="valid">Valid option</mat-option>
+            <mat-option value="invalid">Invalid option</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
 
 <div class="gender-wrap">
-    <div class="report-section cat-2">
-        <div id="genderchart" echarts theme="dark" class="pies" style="min-height: 300px; max-height: 300px; width: 500px"></div>
+    <div class="report-section cat-2 chart-wrap">
+        <div id="genderchart" echarts theme="dark" class="pies" style="min-height: 300px; height: 20rem; width:100%">
+        </div>
     </div>
     <div class="report-section cat-1">
-       <h2>Females</h2>
+        <h2>Most represented Females</h2>
         <div class="img-grid">
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=2)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=2)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=2)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=2)">
-            </div>
-            <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
-            </div>
-        </div> 
-    </div>
-
-    <div class="report-section cat-2">
-        <h2>Males</h2>
-        <div class="img-grid">
-            <div class="card span-2 "
+                <div class="card span-2 "
                 style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=36)"></div>
             <div class="card span-1 "
                 style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=37)"></div>
@@ -49,15 +38,27 @@
             <div class="card span-1 "
                 style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=39)"></div>
 
-            <div class="card span-3 "
+            <div class="card span-2 "
                 style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=36)"></div>
-
+        </div>
+    </div>
+    <div class="report-section cat-2">
+        <h2>Most represented Males</h2>
+        <div class="img-grid">
+            <div class="card span-3"
+                style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=36)"></div>
+            <div class="card span-1 "
+                style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=37)"></div>
             <div class="card span-1 "
                 style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=38)"></div>
+            <div class="top-bucket card span-1">
+                <p>90% of the ads include females and only 10% of the ads include males</p>
+            </div>
             <div class="card span-1 "
                 style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=39)"></div>
 
+            <div class="card span-1 "
+                style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=36)"></div>
         </div>
     </div>
-
-  
+</div>
