@@ -16,7 +16,6 @@ export class SummaryComponent implements OnInit {
   
 
 
- // private myChart: any = null;
  private agePie: any = null;
  private genderPie: any = null;
  private ethnicityPie: any = null;
@@ -30,7 +29,6 @@ export class SummaryComponent implements OnInit {
 
 
 
-
  private InitPipe(): void {
     this.agePie = echarts.init((document.getElementById('piechartage')) as any);
     this.genderPie = echarts.init((document.getElementById('piechartgender')) as any);
@@ -38,11 +36,8 @@ export class SummaryComponent implements OnInit {
     this.diversityScore = echarts.init((document.getElementById('scorechart')) as any);
 
 
-const fontWeight = {
-  fontWeight: 'bold',
-};
-const color = {};
-const piecharts = {
+
+const genderpie = {
   tooltip: {
     trigger: 'item'
   },
@@ -52,48 +47,131 @@ const piecharts = {
     title: [
     {
       left: 'center',
-      text: 'CHART TITLE',
+      text: 'GENDER',
       textStyle: {
         fontSize: 14,
         color: '#fff'
     }
     },
+    {
+   //   subtext: 'updated 1hr ago',
+      left:'50%',
+      bottom: '0%',
+      textAlign: 'center'
+    },
   ],
   color:[ 
-   '#5B34D5','#fff','#B19DEB','#616161','#c4ccd3','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
+  '#D53A54', '#5B34D5',
 ],
   series: [
     {
-      name: 'Diversity',
+      name: 'GENDER',
       type: 'pie',
       radius: ['40%', '70%'],
-      avoidLabelOverlap: false,
       label: {
-        show: false,
-        position: 'center'
-      },
-      emphasis: {
-        label: {
-          show: true,
-          fontWeight:  fontWeight,
-          color: color,
-        }
-      },
-      labelLine: {
-        show: false
+        color:'#616161'
       },
       data: [
-        { value: 1048, name: 'Male' },
-        { value: 735, name: 'Female' },
-        { value: 580, name: 'Unknown'},
+        { value: 600, name: 'Female', },
+        { value: 300, name: 'Male' },
       ]
     }
   ]
 };
+this.genderPie.setOption(genderpie);
+
+const agepie = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    show: false,
+  },
+    title: [
+    {
+      left: 'center',
+      text: 'AGE',
+      textStyle: {
+        fontSize: 14,
+        color: '#fff'
+    }
+    },
+    {
+    //  subtext: 'updated 1hr ago',
+      left:'50%',
+      bottom: '0%',
+      textAlign: 'center'
+    },
+  ],
+  color:[ 
+   '#5B34D5','#fff','#B19DEB','#3AD564','#c4ccd3','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
+],
+  series: [
+    {
+      name: 'AGE',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      label: {
+        color:'#616161'
+      },
+      data: [
+        { value: 30, name: '20-25' },
+        { value: 40, name: '26-30' },
+        { value: 20, name: '31-35' },
+        { value: 10, name: '36-40' },
+      ]
+    }
+  ]
+};
+this.agePie.setOption(agepie);
 
 
-
-
+const ethnicitypie = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    show: false,
+  },
+    title: [
+    {
+      left: 'center',
+      text: 'ETHNICITY',
+      textStyle: {
+        fontSize: 14,
+        color: '#fff'
+    }
+    },
+    {
+    //  subtext: 'updated 1hr ago',
+      left:'50%',
+      bottom: '0%',
+      textAlign: 'center'
+    },
+  ],
+  color:[ 
+   '#5B34D5','#fff','#B19DEB','#3AD564','#51839E','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
+],
+  series: [
+    {
+      name: 'ETHNICITY',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      label: {
+        color:'#616161'
+      },
+      data: [
+        { value: 300, name: 'Asian' },
+        { value: 600, name: 'Black' },
+        { value: 300, name: 'Indian' },
+        { value: 600, name: 'Latino' },
+        { value: 600, name: 'Middle Eastern' },
+        { value: 600, name: 'White' },
+      ]
+    }
+  ]
+};
+this.ethnicityPie.setOption(ethnicitypie);
 
 
 
@@ -106,7 +184,7 @@ const gaugeData = [
     },
     detail: {
       valueAnimation: true,
-      offsetCenter: ['0%', '-30%'],
+      offsetCenter: ['0%', '-35%'],
     }
   },
   {
@@ -117,7 +195,7 @@ const gaugeData = [
     },
     detail: {
       valueAnimation: true,
-      offsetCenter: ['0%', '10%']
+      offsetCenter: ['0%', '5%']
     }
   },
   {
@@ -128,7 +206,7 @@ const gaugeData = [
     },
     detail: {
       valueAnimation: true,
-      offsetCenter: ['0%', '50%']
+      offsetCenter: ['0%', '45%']
     }
   }
 ];
@@ -140,7 +218,7 @@ const scorechart = {
   title: [
     {
       left: 'center',
-      text: 'DIVERSITY SCORE',
+      text: 'DIVERSITY SCORE for DOVE',
       textStyle: {
         fontSize: 14,
         color: '#fff'
@@ -201,13 +279,6 @@ const scorechart = {
     }
   ]
 };
-
-
-
-
-    this.agePie.setOption(piecharts);
-    this.genderPie.setOption(piecharts);
-    this.ethnicityPie.setOption(piecharts);
     this.diversityScore.setOption(scorechart);
  }
   

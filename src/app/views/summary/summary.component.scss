@@ -34,6 +34,7 @@
      font-size: 2.5rem;
      margin: 2rem 0 0.5rem 0;
      font-weight: normal !important;
+     letter-spacing: 4px;
    }
    .subtext{
      line-height: 1.5rem;
@@ -46,7 +47,7 @@
    .overview-data{
      display:flex;
      justify-content: center;
-     margin: 1rem;
+     margin: 1rem 1rem 0 1rem;
      border-radius: 3px;
     .summary-content{
       display: flex;
@@ -60,6 +61,10 @@
         .pies{
           width:100%;
           height:15rem;
+        }
+        p{
+          color:#616161;;
+          font-size: 12px;
         }
       }
     }

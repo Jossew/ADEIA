@@ -30,50 +30,57 @@ export class GenderSummaryComponent implements OnInit {
           textStyle: {
             fontSize: 14,
             color: '#fff'
-          }
-        }],
-      xAxis: {
-        max: 'dataMax',
+        }
+        },
+      ],
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        }
+      },
+      legend: {
+        bottom: 0,
         textStyle: {
           fontSize: 14,
-          color: '#fff'
-        },
-        splitLine:{
-          show:true,
-          lineStyle: {
-            color:'#616161'
-          },
+          color: '#616161'
+      }
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '15%',
+        containLabel: true
+      },
+      color:[ 
+        '#5B34D5','#E2DAFB'
+      ],
+      xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+          splitLine:{
+            show:true,
+            lineStyle:{
+              color: '#616161'
+            },
         },
       },
       yAxis: {
         type: 'category',
-        data: ['Male', 'Female', 'Mixed',],
-        animationDuration: 300,
-        animationDurationUpdate: 300,
+        data: ['Female', 'Male',]
       },
       series: [
         {
-          realtimeSort: true,
-          name: 'Gender',
+          name: 'Dove',
           type: 'bar',
-          data: data,
-          label: {
-            show: false,
-            position: 'right',
-          }
-        }
-      ],
-      legend: {
-        show:false,
-        bottom: '10',
-        textStyle: {
-          fontSize: 14,
-          color: '#fff'
-        }
-      },
-      color:[ 
-        '#5B34D5','#E2DAFB','#AE786E',
-      ],
+          data: [19325, 23438, ]
+        },
+        {
+          name: 'Beauty Category',
+          type: 'bar',
+          data: [18203, 23489,]
+        },
+      ]
     };
         this.genderchart.setOption(barcharts);
      }
