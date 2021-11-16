@@ -19,6 +19,7 @@
 
 .main{
     width: 100%;
+    border-bottom: thin solid #616161
 }
 
  .container{
@@ -27,38 +28,53 @@
    justify-content: center;
    width: 100%;
    text-align: center;
+   background: linear-gradient(180deg, rgba(12,8,28,1) 0%, rgba(0,0,0,1) 100%);
    h1{
-     font-size: 3rem;
+     font-size: 2.5rem;
      margin: 2rem 0 0.5rem 0;
+     font-weight: normal !important;
    }
    .subtext{
      line-height: 1.5rem;
      text-transform: initial;
      max-width: 60%;
      margin: 0 auto;
-     padding: 1rem;
+     padding: 0.5rem;
+     color: #ccc;
    }
-  .summary-content{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem auto 0 auto;
-    flex-wrap: wrap;
-    border-bottom: thin solid white;
-    .chart-box{
-      width: 20%;
-      .pies{
-        width:100%;
-        height:15rem;
+   .overview-data{
+     display:flex;
+     justify-content: center;
+     margin: 1rem;
+     border-radius: 3px;
+    .summary-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.5rem 0 0;
+      flex-wrap: wrap;
+      border-right: thin solid #616161;
+      .chart-box{
+        width: 20rem;
+        .pies{
+          width:100%;
+          height:15rem;
+        }
       }
     }
-    .chart-box{
-      width: 20%;
+    .chart-box-score{
+      width: 25rem;
+      margin: 0 0 0 0.5rem;
       .score{
         width:100%;
-        height:30vh;
+        height:25rem;
       }
+    }
+   }
+   .summary{
+    margin-top: -108px; width: 33rem;
+    p{
+      font-size: 12px;
     }
   }
  } 
@@ -82,7 +98,7 @@
   position: relative;
   min-height: 100vh;
   display: flex;
- justify-content: space-between;
+// justify-content: space-between;
 }
 .tabs::before,
 .tabs::after {
@@ -93,7 +109,7 @@
   clear: both;
 }
 .tab {
-  flex: 1;
+//  flex: 1;
   text-align: left;
   &:nth-child(2){
     text-align: center;
@@ -116,7 +132,6 @@
   transition: all 0.25s;
   text-transform: uppercase;
   color: #616161;
-  text-decoration: underline;
   font-size: 1.2rem;
   font-weight: 600;
 }

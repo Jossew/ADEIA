@@ -12,6 +12,7 @@
   padding: 0 1rem;
   padding-left: 2rem;
   border-bottom: thin solid white;
+  border-bottom: thin solid #616161;
 }
 
 .wrapper header p {

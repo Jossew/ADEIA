@@ -52,7 +52,7 @@ const piecharts = {
     title: [
     {
       left: 'center',
-      text: 'Chart Title',
+      text: 'CHART TITLE',
       textStyle: {
         fontSize: 14,
         color: '#fff'
@@ -60,8 +60,8 @@ const piecharts = {
     },
   ],
   color:[ 
-    '#5B34D5','#fff','#FF9800','#81C784','#c4ccd3','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
-  ],
+   '#5B34D5','#fff','#B19DEB','#616161','#c4ccd3','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
+],
   series: [
     {
       name: 'Diversity',
@@ -86,11 +86,13 @@ const piecharts = {
         { value: 1048, name: 'Male' },
         { value: 735, name: 'Female' },
         { value: 580, name: 'Unknown'},
-        { value: 580, name: 'Something else',},
       ]
     }
   ]
 };
+
+
+
 
 
 
@@ -100,18 +102,18 @@ const gaugeData = [
     value: 20,
     name: 'Perfect',
     title: {
-      offsetCenter: ['0%', '-30%']
+      offsetCenter: ['0%', '-50%']
     },
     detail: {
       valueAnimation: true,
-      offsetCenter: ['0%', '-20%']
+      offsetCenter: ['0%', '-30%'],
     }
   },
   {
     value: 40,
     name: 'Good',
     title: {
-      offsetCenter: ['0%', '0%']
+      offsetCenter: ['0%', '-10%']
     },
     detail: {
       valueAnimation: true,
@@ -126,12 +128,24 @@ const gaugeData = [
     },
     detail: {
       valueAnimation: true,
-      offsetCenter: ['0%', '40%']
+      offsetCenter: ['0%', '50%']
     }
   }
 ];
 
 const scorechart = {
+  color:[ 
+    '#5B34D5','#E2DAFB','#AE786E',
+  ],
+  title: [
+    {
+      left: 'center',
+      text: 'DIVERSITY SCORE',
+      textStyle: {
+        fontSize: 14,
+        color: '#fff'
+    }
+    }],
   series: [
     {
       type: 'gauge',
@@ -146,14 +160,15 @@ const scorechart = {
         roundCap: true,
         clip: false,
         itemStyle: {
-          borderWidth: 1,
-          borderColor: '#464646'
+          borderWidth: 0,
+          borderColor: '#ccc'
         }
       },
       axisLine: {
         lineStyle: {
-          width: 40
-        }
+          width: 40,
+          opacity: 0.05 ,
+        },
       },
       splitLine: {
         show: false,
@@ -169,7 +184,9 @@ const scorechart = {
       },
       data: gaugeData,
       title: {
-        fontSize: 14
+        fontSize: 13,
+      //  color: '#616161',
+      color: '#FFF',
       },
       detail: {
         width: 50,
