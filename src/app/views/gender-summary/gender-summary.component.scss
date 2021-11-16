@@ -18,11 +18,16 @@
 .top-bucket{
     padding: 1rem;
     flex: 1;
+    color:#616161;
+    b{
+        color: white;
+    }
 }
 .gender-wrap{
     margin: 3rem 2rem 2rem 2rem;
     width: 100%;
     display:flex;
+    flex-wrap: wrap;
     h2{
         text-align: center;
         text-transform: uppercase;

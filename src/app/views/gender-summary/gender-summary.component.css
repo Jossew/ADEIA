@@ -20,12 +20,18 @@
 .top-bucket {
   padding: 1rem;
   flex: 1;
+  color: #616161;
+}
+
+.top-bucket b {
+  color: white;
 }
 
 .gender-wrap {
   margin: 3rem 2rem 2rem 2rem;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .gender-wrap h2 {
