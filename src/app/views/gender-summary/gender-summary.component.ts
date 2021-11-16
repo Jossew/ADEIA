@@ -26,7 +26,7 @@ export class GenderSummaryComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'GENDER SOMETHING SPLIT',
+          text: 'GENDER SPLIT',
           textStyle: {
             fontSize: 14,
             color: '#fff'
