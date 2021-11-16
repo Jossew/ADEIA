@@ -141,6 +141,11 @@
   font-size: 1.2rem;
   font-weight: 600;
   border-bottom: thin solid #616161;
+  span{
+    text-transform: lowercase;
+    font-weight: 400;
+    opacity: 0.5;
+  }
 }
 
 .tab-label:hover {

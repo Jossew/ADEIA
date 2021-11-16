@@ -22,7 +22,7 @@ export class EthnicitySummaryComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'GENDER SPLIT',
+          text: 'ETHNICITY SPLIT',
           textStyle: {
             fontSize: 14,
             color: '#fff'
@@ -63,18 +63,18 @@ export class EthnicitySummaryComponent implements OnInit {
       },
       yAxis: {
         type: 'category',
-        data: ['Female', 'Male',]
+        data: ['Asian', 'Black', 'Indian','Latino','Middle Eastern','White']
       },
       series: [
         {
           name: 'Dove',
           type: 'bar',
-          data: [19325, 23438, ]
+          data: [23, 29,13, 5,5, 33,]
         },
         {
           name: 'Beauty Category',
           type: 'bar',
-          data: [18203, 23489,]
+          data: [20, 26,9, 3,5, 39,]
         },
       ]
     };
