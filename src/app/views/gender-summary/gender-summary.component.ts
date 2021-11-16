@@ -18,10 +18,7 @@ export class GenderSummaryComponent implements OnInit {
   private InitPipe(): void {
     this.genderchart = echarts.init((document.getElementById('genderchart')) as any);
 
-    const data: number[] = [];
-    for (let i = 0; i < 5; ++i) {
-      data.push(Math.round(Math.random() * 200));
-    }
+  
     const barcharts = {
       title: [
         {

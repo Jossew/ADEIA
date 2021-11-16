@@ -17,42 +17,66 @@ export class EthnicitySummaryComponent implements OnInit {
   private InitPipe(): void {
     this.ethnicitychart = echarts.init((document.getElementById('ethnicitychart')) as any);
 
-    const data: number[] = [];
-    for (let i = 0; i < 5; ++i) {
-      data.push(Math.round(Math.random() * 200));
-    }
+
     const barcharts = {
+      title: [
+        {
+          left: 'center',
+          text: 'GENDER SPLIT',
+          textStyle: {
+            fontSize: 14,
+            color: '#fff'
+        }
+        },
+      ],
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        }
+      },
+      legend: {
+        bottom: 0,
+        textStyle: {
+          fontSize: 14,
+          color: '#616161'
+      }
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '15%',
+        containLabel: true
+      },
+      color:[ 
+        '#5B34D5','#E2DAFB'
+      ],
       xAxis: {
-        max: 'dataMax'
+        type: 'value',
+        boundaryGap: [0, 0.01],
+          splitLine:{
+            show:true,
+            lineStyle:{
+              color: '#616161'
+            },
+        },
       },
       yAxis: {
         type: 'category',
-        data: ['A', 'B', 'C', 'D', 'E'],
-        inverse: true,
-        animationDuration: 300,
-        animationDurationUpdate: 300,
-        max: 2 // only the largest 3 bars will be displayed
+        data: ['Female', 'Male',]
       },
       series: [
         {
-          realtimeSort: true,
-          name: 'X',
+          name: 'Dove',
           type: 'bar',
-          data: data,
-          label: {
-            show: true,
-            position: 'right',
-            valueAnimation: true
-          }
-        }
-      ],
-      legend: {
-        show: true
-      },
-      animationDuration: 0,
-      animationDurationUpdate: 3000,
-      animationEasing: 'linear',
-      animationEasingUpdate: 'linear'
+          data: [19325, 23438, ]
+        },
+        {
+          name: 'Beauty Category',
+          type: 'bar',
+          data: [18203, 23489,]
+        },
+      ]
     };
         this.ethnicitychart.setOption(barcharts);
      }
