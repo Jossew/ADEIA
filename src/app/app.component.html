@@ -1,45 +1,62 @@
 <div class="wrapper">
-   <header>
-     <p style="color: #fff"[routerLink]="['/home']">DIVERSITY<span style="font-weight: 200; color: #fff">/Measure.</span></p>
-     <!-- <img src="assets/images/adeia.png" style="width:5rem; padding:0.5rem"> -->
-     <!-- <div class="nav">
+    <header>
+        <p style="color: #fff" [routerLink]="['/home']">DIVERSITY<span
+                style="font-weight: 200; color: #fff">/Measure.</span></p>
+        <!-- <img src="assets/images/adeia.png" style="width:5rem; padding:0.5rem"> -->
+        <!-- <div class="nav">
         <button [routerLink]="['/age-summary']">Age</button>
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
         <button [routerLink]="['/gender-summary']">Gender</button>
      </div> -->
-    <p [routerLink]="['/media-library']" matTooltip="Your assets at a glance">Assets Library</p>
+        <p [routerLink]="['/media-library']" matTooltip="Your assets at a glance">Assets Library</p>
 
-    <p [routerLink]="['/settings']">
-            <img src="assets/images/icons/settings-outline.svg" matTooltip="Settings" class="settings" />Settings
-    </p> 
-    <div>
-        <mat-form-field>
-            <!-- <mat-label>Brand</mat-label> -->
-            <mat-select placeholder="Dove">
-                  <mat-option>Dove </mat-option>
-                  <mat-option>Olay</mat-option>
-                  <mat-option>L'Oréal</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-            <!-- <mat-label>Market</mat-label> -->
-            <mat-select placeholder="United Kingdom" multiple>
-                <mat-option>UK</mat-option>
-                <mat-option>US</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-            <!-- <mat-label>Category</mat-label> -->
-            <mat-select placeholder="Beauty">
-                <mat-option>Beauty</mat-option>
-            </mat-select>
-        </mat-form-field>
-    </div>
+        <p [routerLink]="['/settings']">
+            <!-- <img src="assets/images/icons/settings-outline.svg" matTooltip="Settings" class="settings" /> -->
+            Settings
+        </p>
+        <div>
+
+            <mat-form-field>
+                <!-- <mat-label>Market</mat-label> -->
+                <mat-select placeholder="UK">
+                    <mat-option>UK</mat-option>
+                    <mat-option>US</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <!-- <mat-label>Category</mat-label> -->
+                <mat-select placeholder="Beauty">
+                    <mat-option>Beauty</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <!-- <mat-label>Brand</mat-label> -->
+                <mat-select placeholder="Dove">
+                    <mat-option>Dove </mat-option>
+                    <mat-option>Olay</mat-option>
+                    <mat-option>L'Oréal</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                    <!-- <mat-label>Brand</mat-label> -->
+                    <mat-select placeholder="6 months">
+                        <mat-option>YTD </mat-option>
+                        <mat-option>All time</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field>
+                        <!-- <mat-label>Brand</mat-label> -->
+                        <mat-select placeholder="Instagram">
+                            <mat-option>Instagram </mat-option>
+                            <mat-option>All channels</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+        </div>
     </header>
-   <div class="main" [@routeAnim]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
-   </div>
-  <footer>
-    <!-- <p>© 2021 Publicis Groupe, all rights reserved</p> -->
-  </footer>
+    <div class="main" [@routeAnim]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+    <footer>
+        <!-- <p>© 2021 Publicis Groupe, all rights reserved</p> -->
+    </footer>
 </div>

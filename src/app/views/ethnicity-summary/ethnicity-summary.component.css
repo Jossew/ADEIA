@@ -4,8 +4,7 @@
   width: 22rem;
   border: thin solid #616161;
   border-radius: 3px;
-  margin: 0.5rem 1rem 1.5rem 0;
-  float: right;
+  margin: 0.5rem auto 1.5rem auto;
 }
 
 .filters p {

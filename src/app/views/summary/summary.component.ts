@@ -67,7 +67,7 @@ legend: {
 label: {
   formatter: '{b|{b}:}{per|{d}%}',
   backgroundColor: 'rgba(0,0,0,0.5)',
-  borderColor: '#666',
+ // borderColor: '#666',
   borderWidth: 1,
   borderRadius: 4,
   padding: [3, 4],
@@ -154,7 +154,7 @@ label: {
  // formatter: '{b|{b}：}{c}  {per|{d}%}',
   formatter: '{b|{b}:}{per|{d}%}',
   backgroundColor: 'rgba(0,0,0,0.5)',
-  borderColor: '#666',
+ // borderColor: '#666',
   borderWidth: 1,
   borderRadius: 4,
   padding: [3, 4],
@@ -237,7 +237,7 @@ legend: {
 label: {
   formatter: '{b|{b}:}{per|{d}%}',
   backgroundColor: 'rgba(0,0,0,0.5)',
-  borderColor: '#666',
+ // borderColor: '#666',
   borderWidth: 1,
   borderRadius: 4,
   padding: [3, 4],

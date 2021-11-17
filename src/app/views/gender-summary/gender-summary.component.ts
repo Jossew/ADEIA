@@ -82,6 +82,16 @@ export class GenderSummaryComponent implements OnInit {
         this.genderchart.setOption(barcharts);
      }
     
+
+
+
+
+
+
+
+
+
+
       constructor() { }
     
     }
