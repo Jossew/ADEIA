@@ -1,29 +1,57 @@
-.gender-wrap{
-    display:flex;
+.filters{
+    display: flex;
+    justify-content: center;
+    width: 22rem;
+    border: thin solid #616161;
+    border-radius: 3px;
+    margin: 0.5rem 1rem 1.5rem 0;
+    float:right;
+    p{
+        transform: translateY(15px);
+    }
+    .mat-form-field{
+        margin: 0 0 0 1rem;
+        width:6rem;
+    }
 }
-
 
 .top-bucket{
     padding: 1rem;
     flex: 1;
+    color:#616161;
+    b{
+        color: white;
+    }
 }
-.cat-1, .cat-2{
-    flex: 3;
-    margin: 0 2rem;
+.gender-wrap{
+    margin: 3rem 2rem 2rem 2rem;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
     h2{
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        letter-spacing: 6px;
+        font-size: 14px;
     }
+}
+.report-section{
+    display:flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 3rem;
+    max-width: 28% !important;
+    margin-bottom:4rem;
 }
 .cat-1{
     animation: catone 1.5s ease;
-    position: relative;
 }
 .cat-2{
     animation: cattwo 1.5s ease;
-    position: relative;
+}
+.chart-wrap{
+    flex: 1;
+    min-width: 28%;
 }
 @keyframes catone{
     from {
@@ -52,7 +80,6 @@
     display: flex;
     justify-content: flex-end;
     padding: 0 2rem 0 0;
-
     button{
         border: thin solid black;
         margin-left: 0.5rem;
