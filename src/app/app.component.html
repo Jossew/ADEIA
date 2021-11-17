@@ -7,10 +7,11 @@
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
         <button [routerLink]="['/gender-summary']">Gender</button>
      </div> -->
-    <p [routerLink]="['/media-library']" style="color:#616161; margin-left:-8rem !important">Video Library</p>
+    <p [routerLink]="['/media-library']" style="color:#616161;">Video Library</p>
 
     <p style="color:'#616161'">About</p>
     <div>
+        <img src="assets/images/icons/settings-outline.svg" matTooltip="Settings" [routerLink]="['/media-library']" class="settings" />
         <mat-form-field>
             <!-- <mat-label>Brand</mat-label> -->
             <mat-select placeholder="Dove">
