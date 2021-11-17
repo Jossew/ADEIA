@@ -26,6 +26,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { SettingsComponent } from './views/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MediaLibraryComponent,
     VideoInsightsComponent,
     StartMenuComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
