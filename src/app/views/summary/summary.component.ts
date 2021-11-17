@@ -38,12 +38,6 @@ export class SummaryComponent implements OnInit {
 
 
 const genderpie = {
-  tooltip: {
-    trigger: 'item'
-  },
-  legend: {
-    show: false,
-  },
     title: [
     {
       left: 'center',
@@ -63,6 +57,55 @@ const genderpie = {
   color:[ 
   '#D53A54', '#5B34D5',
 ],
+tooltip: {
+  trigger: 'item',
+  formatter: '{a} <br/>{b}: {c} ({d}%)'
+},
+legend: {
+  show: false,
+},
+label: {
+  formatter: '{b|{b}:}{per|{d}%}',
+  backgroundColor: 'rgba(0,0,0,0.5)',
+  borderColor: '#666',
+  borderWidth: 1,
+  borderRadius: 4,
+  padding: [3, 4],
+  rich: {
+    // a: {
+    //   color: '#616161',
+    //   lineHeight: 22,
+    //   align: 'center'
+    // },
+    // hr: {
+    //   borderColor: '#8C8D8E',
+    //   width: '100%',
+    //   borderWidth: 1,
+    //   height: 0
+    // },
+    c: {
+      color: '#fff',
+      fontSize: 14,
+      fontWeight: 'bold',
+      lineHeight: 33
+    },
+    b: {
+      color: '#fff',
+      fontSize: 14,
+      fontWeight: 'bold',
+      lineHeight: 33
+    },
+    per: {
+      color: '#fff',
+      backgroundColor: '#000',
+      padding: [6, 3],
+      borderRadius: 4
+    }
+  }
+},
+itemStyle: {
+  borderRadius: 4
+},
   series: [
     {
       name: 'GENDER',
@@ -82,17 +125,15 @@ this.genderPie.setOption(genderpie);
 
 const agepie = {
   tooltip: {
-    trigger: 'item'
-  },
-  legend: {
-    show: false,
+    trigger: 'item',
+    formatter: '{a} <br/>{b}: {c} ({d}%)'
   },
     title: [
     {
       left: 'center',
       text: 'AGE',
       textStyle: {
-        fontSize: 14,
+        fontSize: 13,
         color: '#fff'
     }
     },
@@ -106,6 +147,43 @@ const agepie = {
   color:[ 
    '#5B34D5','#fff','#B19DEB','#3AD564','#c4ccd3','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
 ],
+legend: {
+  show: false,
+},
+label: {
+ // formatter: '{b|{b}：}{c}  {per|{d}%}',
+  formatter: '{b|{b}:}{per|{d}%}',
+  backgroundColor: 'rgba(0,0,0,0.5)',
+  borderColor: '#666',
+  borderWidth: 1,
+  borderRadius: 4,
+  padding: [3, 4],
+  rich: {
+    // a: {
+    //   color: '#616161',
+    //   lineHeight: 22,
+    //   align: 'center'
+    // },
+    // hr: {
+    //   borderColor: '#8C8D8E',
+    //   width: '100%',
+    //   borderWidth: 1,
+    //   height: 0
+    // },
+    b: {
+      color: '#fff',
+      fontSize: 13,
+      fontWeight: 'bold',
+      lineHeight: 33
+    },
+    per: {
+      color: '#fff',
+      backgroundColor: '#000',
+      padding: [3, 4],
+      borderRadius: 4
+    }
+  }
+},
   series: [
     {
       name: 'AGE',
@@ -113,6 +191,9 @@ const agepie = {
       radius: ['40%', '70%'],
       label: {
         color:'#616161'
+      },
+      itemStyle: {
+        borderRadius: 4
       },
       data: [
         { value: 30, name: '20-25' },
@@ -128,10 +209,8 @@ this.agePie.setOption(agepie);
 
 const ethnicitypie = {
   tooltip: {
-    trigger: 'item'
-  },
-  legend: {
-    show: false,
+    trigger: 'item',
+    formatter: '{a} <br/>{b}: {c} ({d}%)'
   },
     title: [
     {
@@ -152,6 +231,42 @@ const ethnicitypie = {
   color:[ 
    '#5B34D5','#fff','#B19DEB','#3AD564','#51839E','#c23531','#2f4554','#61a0a8','#d48265','#91c7ae',  '#A5224A',
 ],
+legend: {
+  show: false,
+},
+label: {
+  formatter: '{b|{b}:}{per|{d}%}',
+  backgroundColor: 'rgba(0,0,0,0.5)',
+  borderColor: '#666',
+  borderWidth: 1,
+  borderRadius: 4,
+  padding: [3, 4],
+  rich: {
+    // a: {
+    //   color: '#616161',
+    //   lineHeight: 22,
+    //   align: 'center'
+    // },
+    // hr: {
+    //   borderColor: '#8C8D8E',
+    //   width: '100%',
+    //   borderWidth: 1,
+    //   height: 0
+    // },
+    b: {
+      color: '#fff',
+      fontSize: 13,
+      fontWeight: 'bold',
+      lineHeight: 33
+    },
+    per: {
+      color: '#fff',
+      backgroundColor: '#000',
+      padding: [3, 4],
+      borderRadius: 4
+    }
+  }
+},
   series: [
     {
       name: 'ETHNICITY',
@@ -159,6 +274,9 @@ const ethnicitypie = {
       radius: ['40%', '70%'],
       label: {
         color:'#616161'
+      },
+      itemStyle: {
+        borderRadius: 4
       },
       data: [
         { value: 300, name: 'Asian' },

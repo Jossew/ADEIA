@@ -1,17 +1,18 @@
 <div class="wrapper">
    <header>
-     <p [routerLink]="['/home']">DIVERSITY<span style="font-weight: 200">/Measure.</span></p>
+     <p style="color: #fff"[routerLink]="['/home']">DIVERSITY<span style="font-weight: 200; color: #fff">/Measure.</span></p>
      <!-- <img src="assets/images/adeia.png" style="width:5rem; padding:0.5rem"> -->
      <!-- <div class="nav">
         <button [routerLink]="['/age-summary']">Age</button>
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
         <button [routerLink]="['/gender-summary']">Gender</button>
      </div> -->
-    <p [routerLink]="['/media-library']" style="color:#616161;">Video Library</p>
+    <p [routerLink]="['/media-library']" matTooltip="Your assets at a glance">Assets Library</p>
 
-    <p style="color:'#616161'">About</p>
+    <p [routerLink]="['/settings']">
+            <img src="assets/images/icons/settings-outline.svg" matTooltip="Settings" class="settings" />Settings
+    </p> 
     <div>
-        <img src="assets/images/icons/settings-outline.svg" matTooltip="Settings" [routerLink]="['/settings']" class="settings" />
         <mat-form-field>
             <!-- <mat-label>Brand</mat-label> -->
             <mat-select placeholder="Dove">
