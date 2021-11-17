@@ -7,7 +7,7 @@
     margin-top: -3.7rem;
 
 .cover{
-  background-image: url("../../assets/images/start-1.jpg");
+  background-image: url("../../assets/images/start-1.jpeg");
   padding-bottom: 2.5rem;
   background-size: cover;
   width: 70%;
@@ -118,8 +118,11 @@
 
 // Temp stuff
 .intro {
-    color: rgba(0, 0, 0, 0.35);
-    text-transform: initial;
+  color: #616161;
+  text-transform: initial;
+  margin-top: 3em;
+  font-size: 12px;
+  text-align: right;
 }
 
 
@@ -215,9 +218,19 @@
     div{
       display: flex;
       flex-direction: column;
+      margin: 2rem 0 1rem 0;
       input{
         width: 100%;
         padding: 0.5rem
+      }
+      p{
+        font-size: 12px;
+        text-align: right;
+        margin: -1rem 0rem 0 0;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   
