@@ -113,3 +113,11 @@ p {
 .mat-tree {
   background: transparent;
 }
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled), .mat-primary {
+  color: #BDAEEE !important;
+}
+
+.mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: #BDAEEE !important;
+}

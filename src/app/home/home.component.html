@@ -3,19 +3,17 @@
     <div class="cover">
         <p style="position:absolute; top:1.5rem; left:1.5rem">--LOGO--</p>
         <div class="login-form">
-            <h1>LOGIN</h1>
+            <h1>ADEIA</h1>
             <!-- <p class="intro">Because Stellar thought lots of centralised non-fungible token until few wash trade, Silk
                 Road slept on a wash trade behind few bear! Decred limited some burned private chain! Since blockchain
                 threw away few peer-to-peer network, Binance Coin threw away the constant dolphin after few proof of
                 work. </p> -->
             <div>
                 <mat-form-field>
-                    <mat-label>Username</mat-label>
-                    <input matInput>
+                    <input matInput placeholder="Username">
                 </mat-form-field>
                 <mat-form-field>
-                    <mat-label>Password</mat-label>
-                    <input matInput>
+                    <input matInput placeholder="Password">
                 </mat-form-field>
                 <!-- Pop up start -->
                 <!-- <details>
@@ -24,8 +22,11 @@
                     <app-start-menu></app-start-menu>
                 </div>
             </details> -->
-                <button class="start-button" mat-raised-button [routerLink]="['/summary']">Login</button>
-            </div> <!-- Pop up end -->
+        </div> 
+            <div class="buttons">
+                    <button class="register-button" mat-raised-button>Register</button>
+                    <button class="start-button" mat-raised-button [routerLink]="['/summary']">Login</button>
+            </div>
         </div>
         <!-- <div class="headline">
             <div class="wrap">

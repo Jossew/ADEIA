@@ -10,7 +10,7 @@
   background-image: url("../../assets/images/start-1.jpg");
   padding-bottom: 2.5rem;
   background-size: cover;
-  width: 50%;
+  width: 70%;
   height: calc(100vh - 2.5rem);
   margin-top: -3.7rem;
 }
@@ -212,21 +212,47 @@
     -webkit-animation-fill-mode: forwards;
     opacity: 0;
 
+    div{
+      display: flex;
+      flex-direction: column;
+      input{
+        width: 100%;
+        padding: 0.5rem
+      }
+    }
+  
 
-
-    .start-button{
+    .buttons{
+      display:flex;
+      flex-direction: row;
+      padding: 1rem 0 0 0;
+      .start-button{
+        text-align: center;
+        padding: 0.8rem 1.5rem 0.8rem 1rem;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+        background: #5B34D5 !important;
+        width: 9rem;
+        margin: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 600;
+     }
+     .register-button{
       text-align: center;
       padding: 0.8rem 1.5rem 0.8rem 1rem;
       border-radius: 3px;
       color: white;
       cursor: pointer;
-      background: #5B34D5 !important;
+    //  background: #5B34D5 !important;
       width: 9rem;
-      margin: 3rem 0 0 64px;
+      margin: 0.5rem;
       text-transform: uppercase;
       letter-spacing: 4px;
       font-weight: 600;
-   }
+     }
+    }
   }
   @keyframes blurbinfo{
     from {

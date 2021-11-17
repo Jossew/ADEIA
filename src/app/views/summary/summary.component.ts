@@ -178,7 +178,7 @@ this.ethnicityPie.setOption(ethnicitypie);
 const gaugeData = [
   {
     value: 20,
-    name: 'Perfect',
+    name: 'GENDER',
     title: {
       offsetCenter: ['0%', '-50%']
     },
@@ -189,7 +189,7 @@ const gaugeData = [
   },
   {
     value: 40,
-    name: 'Good',
+    name: 'AGE',
     title: {
       offsetCenter: ['0%', '-10%']
     },
@@ -200,7 +200,7 @@ const gaugeData = [
   },
   {
     value: 60,
-    name: 'Commonly',
+    name: 'ETHNICITY',
     title: {
       offsetCenter: ['0%', '30%']
     },
