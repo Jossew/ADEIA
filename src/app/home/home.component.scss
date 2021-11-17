@@ -1,10 +1,19 @@
 .home-wrap{
-    background-image: url("../../assets/images/start.jpeg");
+    background:black;
     padding-bottom: 2.5rem;
     background-size: cover;
     width: 100%;
     height: calc(100vh - 2.5rem);
     margin-top: -3.7rem;
+
+.cover{
+  background-image: url("../../assets/images/start-1.jpg");
+  padding-bottom: 2.5rem;
+  background-size: cover;
+  width: 50%;
+  height: calc(100vh - 2.5rem);
+  margin-top: -3.7rem;
+}
 
     .headline{
         width: 50vh;
@@ -28,10 +37,11 @@
                 font-weight: 500;
                 font-size: 1.5rem;
                 text-transform: uppercase;
+                color:black;
             }
             p{
                 opacity: 0;
-                color: rgba(0, 0, 0, 0.35);
+                color: rgba(0, 0, 0, 1);
             }
         
             .gender{
@@ -116,19 +126,6 @@
 
 
 
-    .start-button{
-        text-align: center;
-        padding: 0.8rem 1.5rem 0.8rem 1rem;
-        border-radius: 3px;
-        color: white;
-        cursor: pointer;
-        background: #5B34D5;
-        width: 9rem;
-        margin: 3rem 0 0 64px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-weight: 600;
-     }
 
   
   details > .content {
@@ -205,15 +202,31 @@
 
 
 
-  .blurb{
+  .login-form{
     position: absolute; right: 3rem; top:20vh;width: 17rem;
     animation-name: blurbinfo;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-iteration-count: initial;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
     opacity: 0;
+
+
+
+    .start-button{
+      text-align: center;
+      padding: 0.8rem 1.5rem 0.8rem 1rem;
+      border-radius: 3px;
+      color: white;
+      cursor: pointer;
+      background: #5B34D5 !important;
+      width: 9rem;
+      margin: 3rem 0 0 64px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 600;
+   }
   }
   @keyframes blurbinfo{
     from {
