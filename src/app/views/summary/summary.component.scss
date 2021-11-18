@@ -32,7 +32,7 @@
    // background: linear-gradient(180deg, #170D35 0%, black 100%);
    h1{
      font-size: 2.5rem;
-     margin: 2rem 0 0.5rem 0;
+     margin: 2rem 0 0.8rem 0;
      font-weight: normal !important;
      letter-spacing: 4px;
      font-weight: bold !important;
@@ -44,6 +44,7 @@
      margin: 0 auto;
      padding: 0.5rem;
      color: #ccc;
+     font-size: 2rem;
    }
    .overview-data{
      display:flex;
@@ -139,14 +140,14 @@
   transition: all 0.25s;
   text-transform: uppercase;
   color: #616161;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
   border-bottom: thin solid #616161;
   span{
     text-transform: lowercase;
     font-weight: 400;
     opacity: 0.5;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -158,7 +159,7 @@
   width: 100%;
   position: absolute;
   z-index: 1;
-  top: 3rem;
+  top: 6rem;
   left: 0;
   padding: 1.618rem;
   opacity: 0;
