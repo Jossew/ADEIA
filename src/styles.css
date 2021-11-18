@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5 {
   font-weight: bold !important;
 }
 
-p, .mat-list-option, .mat-checkbox-label {
+p, .mat-list-option, .mat-checkbox-label, .mat-body, .mat-body-1, .mat-typography {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -41,7 +41,7 @@ button, a {
 }
 
 .add-button {
-  padding: 0rem 1rem !important;
+  padding: 0 1rem !important;
   text-transform: uppercase;
   font-size: 13px !important;
   background: black !important;

@@ -8,19 +8,19 @@ import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
  * Food data with nested structure.
  * Each node has a name and an optional list of children.
  */
-interface FoodNode {
+interface BenchmarkNode {
   name: string;
-  children?: FoodNode[];
+  children?: BenchmarkNode[];
 }
 
-const TREE_DATA: FoodNode[] = [
+const TREE_DATA: BenchmarkNode[] = [
   {
     name: 'Country Profile',
     children: [{name: 'Profile 1'}, {name: 'Profile 2'}, {name: 'Profile 3'}],
   },
   {
     name: 'Industry Profile',
-    children: [{name: 'Finance'}, {name: 'Retail'}, {name: 'Space'}],
+    children: [{name: 'Finance'}, {name: 'Retail'}, {name: 'Beauty'}],
   },
 ];
 
@@ -41,14 +41,14 @@ interface ExampleFlatNode {
 
 export class StartMenuComponent implements OnInit {
   
-  typesOfMarkets: string[] = ['Argentina', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Bangladesh ', 'Barbados', 'Belgium ', 'Belize', 'Benin', 'Bermuda', 'Bolivia' ];
+  typesOfMarkets: string[] = ['United Kingdom', 'USA', 'Argentina', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Bangladesh ', 'Barbados', 'Belgium ', 'Belize', 'Benin', 'Bermuda', 'Bolivia' ];
 
 
 
   ngOnInit(): void {
   }
 
-  private _transformer = (node: FoodNode, level: number) => {
+  private _transformer = (node: BenchmarkNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,

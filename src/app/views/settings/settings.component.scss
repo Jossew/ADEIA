@@ -4,23 +4,54 @@ h1{
 .content-wrap{
     display:flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 16px;
     .row{
         display:flex;
         flex-direction: row;
         padding: 0.5rem 1rem;
-        border-top: #616161 thin solid;
+        align-items: center;
+        font-weight: 500;
         div{
-            flex:1;
+           flex:1;
+        }
+        .cell{
+            text-align: left;
+            width: 15%;
+            flex:none;
         }
     }
-    .header{
+    .tools{
         font-weight: bold;
         display:flex;
         flex-direction: row;
-        padding: 0.5rem 1rem;
+        padding: 1rem;
+    }
+    .records{
+        background: #1B1C1E;
+        border-radius: 12px;
+        padding: 1rem 0;
+        box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+        .header{
+            display:flex;
+            flex-direction: row;
+            padding: 0.5rem 1rem 1rem 1rem;
+            align-items: center;
+            color: #616161;
+            font-weight: 500;
+        }
+        .row:nth-child(even){
+            background: #161719;
+        }
     }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -30,8 +61,8 @@ details > .content {
     padding: 24px;
     border-radius: 4px;
     position: fixed;
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    height: 90vh;
     top: 0;
     left: 0;
     right: 0;
@@ -53,7 +84,18 @@ details > .content {
   summary::marker{
       color:transparent;
   }
-  details[open] .start-button::after { 
+  .update-button{
+    padding: 0.5rem 1rem 0.5rem 0 !important;
+    text-transform: uppercase;
+    font-size: 11px !important;
+    border: thin solid #5C4696 !important;
+    margin-left: 1rem !important;
+    width:5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  details[open] .update-button::after { 
     content: "×"; 
     font-size: 20px;  
     position: fixed; 
@@ -67,12 +109,11 @@ details > .content {
     animation-timing-function: ease;
     animation-iteration-count: initial;
   }
-  details[open] .start-button::before {
+  details[open] .update-button::before {
     content: '';
     display: block;
     width: 100vw;
     height: 100vh;
-    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -96,3 +137,52 @@ details > .content {
     }
   }
 
+
+
+
+
+
+
+
+
+
+
+
+  .add-button{
+    padding: 0.5rem 1rem 0.5rem 0 !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    background: transparent !important;
+    border: thin solid #D2DF44 !important;
+    margin-left: 1rem !important;
+    width:5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  details[open] .add-button::after { 
+    content: "×"; 
+    font-size: 20px;  
+    position: fixed; 
+    right: 6vh;
+    top: 4vh;
+    padding: 5pt 10pt;
+    z-index: 9;
+    color:white;
+    animation-name: privacyclose;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+  }
+  details[open] .add-button::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+  }

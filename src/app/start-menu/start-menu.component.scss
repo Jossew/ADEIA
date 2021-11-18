@@ -1,7 +1,8 @@
 h1{
     color: white;
-    margin-top: 2rem;
+    margin: 2rem 0;
     font-size: 2rem;
+    text-align: center;
 }
 h2{
     color:white;
@@ -35,7 +36,7 @@ h2{
     }
 }
 .wrap{
-    width:56rem;
+    width:100%;
     margin:0 auto;
     padding: 2rem 0;
     .visualize-button{
@@ -46,4 +47,13 @@ h2{
         float: right;
         letter-spacing: 4px;
     }
+}
+
+
+
+.assets-box{
+    border: dashed thin grey;
+    border-radius: 3px;
+    padding: 2rem;
+    margin: 5rem;
 }
