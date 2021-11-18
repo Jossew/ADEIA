@@ -68,8 +68,8 @@ label: {
   formatter: '{b|{b}:}{per|{d}%}',
   backgroundColor: 'rgba(0,0,0,0.5)',
  // borderColor: '#666',
-  borderWidth: 1,
-  borderRadius: 4,
+ // borderWidth: 1,
+  //borderRadius: 4,
   padding: [3, 4],
   rich: {
     // a: {
@@ -91,7 +91,7 @@ label: {
     },
     b: {
       color: '#fff',
-      fontSize: 14,
+      fontSize: 16,
       fontWeight: 'bold',
       lineHeight: 33
     },
@@ -99,7 +99,9 @@ label: {
       color: '#fff',
       backgroundColor: '#000',
       padding: [6, 3],
-      borderRadius: 4
+      borderRadius: 4,
+      fontSize: 14,
+      fontWeight: 'bold',
     }
   }
 },
@@ -180,7 +182,9 @@ label: {
       color: '#fff',
       backgroundColor: '#000',
       padding: [3, 4],
-      borderRadius: 4
+      borderRadius: 4,
+      fontSize: 14,
+      fontWeight: 'bold',
     }
   }
 },
@@ -263,7 +267,9 @@ label: {
       color: '#fff',
       backgroundColor: '#000',
       padding: [3, 4],
-      borderRadius: 4
+      borderRadius: 4,
+      fontSize: 14,
+      fontWeight: 'bold',
     }
   }
 },
