@@ -19,10 +19,37 @@
 </div>
 
 <div class="gender-wrap">
-    <div class="report-section cat-2 chart-wrap">
-        <div id="genderchart" echarts theme="dark" class="pies" style="min-height: 300px; height: 20rem; width:100%">
-        </div>
-    </div>
+
+        <div class="report-section cat-2 chart-wrap wrapper chart-tabs">
+                <div class="tabs">
+                    <div class="tab">
+                        <input type="radio" name="css-tab" id="tab-1" checked class="tab-switch">
+                        <label for="tab-1" class="tab-label">Market</label>
+                        <div class="tab-content">
+                            one
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="css-tab" id="tab-2" class="tab-switch">
+                        <label for="tab-2" class="tab-label">Beauty Category</label>
+                        <div class="tab-content">
+                                <div id="genderchart" echarts theme="dark" class="pies" style="min-height: 300px; height: 20rem; width:100%"></div>
+   
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" name="css-tab" id="tab-3" class="tab-switch">
+                        <label for="tab-3" class="tab-label">Custom</label>
+                        <div class="tab-content">
+                            three
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+ 
+        
     <div class="report-section cat-1">
         <h2>Most represented Females</h2>
         <div class="img-grid">
@@ -57,3 +84,5 @@
     </div>
   
 </div>
+
+
