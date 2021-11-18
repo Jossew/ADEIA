@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@400;600&family=Noto+Sans:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,800&family=Roboto+Slab:wght@400;600;700&display=swap');
+@import "~eva-icons/style/eva-icons.css";
+
+
 html, body { height: 100%; }
 body { 
     margin: 0; 
@@ -40,7 +43,8 @@ button, a{
     text-transform: uppercase;
     font-size: 13px !important;
     background:black !important;
-    border: thin solid #616161 !important;
+    border: thin solid #5C4696 !important;
+    border: thin solid #333 !important;
     margin-left: 1rem !important;
 }
  h3{
@@ -111,3 +115,4 @@ button, a{
   .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
     background: #BDAEEE !important;
 }
+

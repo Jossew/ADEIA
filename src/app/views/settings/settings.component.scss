@@ -1,5 +1,12 @@
+.preferences-wrap{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 h1{
-    margin: 2rem 0;
+  margin: 3rem 0;
+  font-weight: 500 !important;
+  font-size: 1.5rem;
+  padding-left: 1rem;
 }
 .content-wrap{
     display:flex;
@@ -25,6 +32,11 @@ h1{
         display:flex;
         flex-direction: row;
         padding: 1rem;
+        h2{
+          transform: translateY(2px);
+          font-weight: bold !important;
+          padding-left: 1rem;
+        }
     }
     .records{
         background: #1B1C1E;
@@ -39,7 +51,7 @@ h1{
             color: #616161;
             font-weight: 500;
         }
-        .row:nth-child(even){
+        .row:nth-child(odd){
             background: #161719;
         }
     }
@@ -87,13 +99,19 @@ details > .content {
   .update-button{
     padding: 0.5rem 1rem 0.5rem 0 !important;
     text-transform: uppercase;
-    font-size: 11px !important;
-    border: thin solid #5C4696 !important;
+    font-size: 13px !important;
+    border: thin solid #333 !important;
     margin-left: 1rem !important;
     width:5rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    i{
+      font-size: 14px;
+      margin: 0 0.3rem 0 1rem;
+    }
   }
   details[open] .update-button::after { 
     content: "×"; 
@@ -149,16 +167,22 @@ details > .content {
 
 
   .add-button{
+    display: flex;
+    align-items: center;
     padding: 0.5rem 1rem 0.5rem 0 !important;
     text-transform: uppercase;
     font-size: 13px !important;
     background: transparent !important;
-    border: thin solid #D2DF44 !important;
     margin-left: 1rem !important;
-    width:5rem;
+    width:4.3rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-weight: 400;
+    i{
+      font-size: 16px;
+      margin: 0 0.3rem 0 1rem;
+    }
   }
   details[open] .add-button::after { 
     content: "×"; 
