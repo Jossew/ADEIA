@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MediaLibraryComponent implements OnInit {
 
+  selectedCheck = true;
+
   constructor() { }
 
   ngOnInit(): void {

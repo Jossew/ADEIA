@@ -4,186 +4,392 @@
 <div class="toolbar">
         <div class="item">
                 <p class="label">Total Assets</p>
-                <p class="kpi">5,658</p>
-        </div>
-        <h3>By brand:</h3>
-        <div class="item">
-                <p class="label">Dove</p>
-                <p class="kpi">3,345</p>
+                <p class="kpi"> 5,658</p>
         </div>
         <div class="item">
-                <p class="label">Olay</p>
-                <p class="kpi">2,313</p>
+                  <mat-checkbox [checked]="selectedCheck">Dove Assets <span class="kpi">(3,345)</span></mat-checkbox>      
         </div>
-        <div class="item">
+        <div class="item">     
+                        <mat-checkbox [checked]="selectedCheck">Olay Assets <span class="kpi">(2,313)</span></mat-checkbox>
+              </div>
+        <!-- <div class="item">
                 <mat-form-field class="example-full-width" appearance="fill">
                         <input type="search" placeholder="Search.." />
                 </mat-form-field>
-        </div>
+        </div> -->
 </div>
 
 
 
 <div class="img-grid">
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl13.png)">
         </div>
-        <div [routerLink]="['/video-insights']" class="card span-2 "
-                style="cursor: pointer; background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=1)">
+        <div [routerLink]="['/video-insights']" class="card span-2"
+        style="cursor: pointer; background-image: url(assets/images/girl3.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=2)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=4)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=5)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=6)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=7)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=8)">
+        <div class="card span-2 " style="background-image: url(assets/images/man4.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=9)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=10)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=11)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
         </div>
-        <div class="card span-3 " style="background-image: url(https://unsplash.it/600/600/?random&amp;amp;time=12)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=13)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=14)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl18.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=15)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl17.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=16)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=17)">
+        <div class="card span-2 " style="background-image: url(assets/images/man1.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=18)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=19)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=20)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=21)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=22)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=23)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=24)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=25)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=26)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=27)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=28)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=29)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=30)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=31)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=32)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=33)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=34)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=35)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=36)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=37)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=38)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=39)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=1)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=2)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=3)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=4)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=5)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=6)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=7)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=8)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=9)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=10)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=11)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
         </div>
-        <div class="card span-3 " style="background-image: url(https://unsplash.it/600/600/?random&amp;amp;time=12)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=13)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=14)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=15)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=16)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=17)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=18)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=19)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=20)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=21)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=22)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=23)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=24)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=25)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=26)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=27)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=28)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=29)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=30)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=31)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=32)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=33)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=34)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=35)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
         </div>
-        <div class="card span-2 " style="background-image: url(https://unsplash.it/400/400/?random&amp;amp;time=36)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=37)">
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=38)">
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
         </div>
-        <div class="card span-1 " style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=39)">
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
         </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl3.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl8.png)">
+        </div>
+        <div class="card span-3 " style="background-image: url(assets/images/girl12.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl5.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl10.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl14.png)">
+        </div>
+        <div class="card span-2 " style="background-image: url(assets/images/girl2.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl15.png)">
+        </div>
+        <div class="card span-1 " style="background-image: url(assets/images/girl7.png)">
+        </div>
+
+
+
+
+
 </div>
