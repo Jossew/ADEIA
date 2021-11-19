@@ -55,35 +55,39 @@
   background-position: 50% 50%;
   opacity: 0;
   animation: flicker 3s ease alternate forwards;
-  transition: transform 0.1s;
+  transition: all 1s ease-out;
   position: relative;
-  cursor: pointer;
   border-radius: 1px;
   position: relative;
+  cursor: pointer;
+  border: thin solid black;
 }
 
 .img-grid .card mat-checkbox {
   position: absolute;
-  bottom: 3px;
+  top: 3px;
 }
 
-.img-grid .card .info {
+.img-grid .card .info-text {
   display: none;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.8);
-  width: 23rem;
+  width: 12rem;
   padding: 1rem;
   transform: translate(2rem, 3rem);
 }
 
 .img-grid .card:hover {
-  transform: scale(1.5);
-  z-index: 10;
-  border: 8px solid white;
+  transform: scale(1.25);
+  border: 1px solid white !important;
 }
 
-.img-grid .card:hover .info {
+.img-grid .card:hover .info-text {
   display: flex;
+  z-index: 10;
+  position: absolute;
+  transform: scale(1.1);
+  top: 6rem;
 }
 
 .img-grid .span-2 {
