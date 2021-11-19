@@ -2,6 +2,11 @@
   display: flex;
   border-radius: 4px;
   padding: 1rem 0;
+  justify-content: space-between;
+}
+
+.toolbar .wrap {
+  display: flex;
 }
 
 .toolbar .item {
@@ -18,6 +23,19 @@
   font-weight: bold;
   font-size: 18px;
   margin: 0 0 0 0.4rem;
+}
+
+.toolbar .start-button {
+  text-align: center;
+  padding: 0.8rem 1.5rem 0.8rem 1rem;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  background: #5B34D5 !important;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
 }
 
 .img-grid {
@@ -39,12 +57,33 @@
   animation: flicker 3s ease alternate forwards;
   transition: transform 0.1s;
   position: relative;
+  cursor: pointer;
+  border-radius: 1px;
+  position: relative;
+}
+
+.img-grid .card mat-checkbox {
+  position: absolute;
+  bottom: 3px;
+}
+
+.img-grid .card .info {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  width: 23rem;
+  padding: 1rem;
+  transform: translate(2rem, 3rem);
 }
 
 .img-grid .card:hover {
-  transform: scale(1.15);
+  transform: scale(1.5);
   z-index: 10;
-  border: 2px solid white;
+  border: 8px solid white;
+}
+
+.img-grid .card:hover .info {
+  display: flex;
 }
 
 .img-grid .span-2 {

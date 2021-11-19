@@ -2,6 +2,7 @@
         <div class="report-nav" style="margin:-2rem 1rem 1rem 0; display:flex; justify-content: flex-end">
         </div> -->
 <div class="toolbar">
+        <div class="wrap">
         <div class="item">
                 <p class="label">Total Assets</p>
                 <p class="kpi"> 5,658</p>
@@ -12,6 +13,8 @@
         <div class="item">     
                         <mat-checkbox [checked]="selectedCheck">Olay Assets <span class="kpi">(2,313)</span></mat-checkbox>
               </div>
+        </div>
+        <button [routerLink]="['/video-insights']" mat-raised-button class="start-button" style="float:right">Analyse selected</button>
         <!-- <div class="item">
                 <mat-form-field class="example-full-width" appearance="fill">
                         <input type="search" placeholder="Search.." />
@@ -23,15 +26,50 @@
 
 <div class="img-grid">
         <div class="card span-1 " style="background-image: url(assets/images/girl13.png)">
+                <mat-checkbox></mat-checkbox>
+                <div class="info">
+                        <p>Age: 33</p>
+                        <p>Screen time: 7.5s</p>
+                        <p>Her face has a maximum screen presence of 19%
+                                        and minimum presence of 1%</p>
+                </div>
         </div>
-        <div [routerLink]="['/video-insights']" class="card span-2"
+        <div class="card span-2"
         style="cursor: pointer; background-image: url(assets/images/girl3.png)">
+        <mat-checkbox></mat-checkbox>
+        <div class="info">
+                <p>Age: 33</p>
+                <p>Screen time: 7.5s</p>
+                <p>Her face has a maximum screen presence of 19%
+                                and minimum presence of 1%</p>
+        </div>
         </div>
         <div class="card span-1 " style="background-image: url(assets/images/girl6.png)">
+                <mat-checkbox></mat-checkbox>
+                <div class="info">
+                        <p>Age: 33</p>
+                        <p>Screen time: 7.5s</p>
+                        <p>Her face has a maximum screen presence of 19%
+                                        and minimum presence of 1%</p>
+                </div>
         </div>
         <div class="card span-1 " style="background-image: url(assets/images/girl4.png)">
+                <mat-checkbox></mat-checkbox>
+                <div class="info">
+                        <p>Age: 33</p>
+                        <p>Screen time: 7.5s</p>
+                        <p>Her face has a maximum screen presence of 19%
+                                        and minimum presence of 1%</p>
+                </div>
         </div>
         <div class="card span-2 " style="background-image: url(assets/images/girl1.png)">
+                <mat-checkbox></mat-checkbox>
+                <div class="info">
+                        <p>Age: 33</p>
+                        <p>Screen time: 7.5s</p>
+                        <p>Her face has a maximum screen presence of 19%
+                                        and minimum presence of 1%</p>
+                </div>
         </div>
         <div class="card span-2 " style="background-image: url(assets/images/girl6.png)">
         </div>
