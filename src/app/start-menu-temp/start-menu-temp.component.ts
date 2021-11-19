@@ -29,13 +29,11 @@ interface ExampleFlatNode {
 
 
 @Component({
-  selector: 'app-start-menu',
-  templateUrl: './start-menu.component.html',
-  styleUrls: ['./start-menu.component.scss']
+  selector: 'app-start-menu-temp',
+  templateUrl: './start-menu-temp.component.html',
+  styleUrls: ['./start-menu-temp.component.scss']
 })
-
-
-export class StartMenuComponent implements OnInit {
+export class StartMenuTempComponent  implements OnInit {
   
   typesOfMarkets: string[] = ['United Kingdom', 'USA', 'Argentina', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Bangladesh ', 'Barbados', 'Belgium ', 'Belize', 'Benin', 'Bermuda', 'Bolivia' ];
 

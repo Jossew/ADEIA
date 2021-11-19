@@ -27,6 +27,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { SettingsComponent } from './views/settings/settings.component';
+import { StartMenuTempComponent } from './start-menu-temp/start-menu-temp.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SettingsComponent } from './views/settings/settings.component';
     VideoInsightsComponent,
     StartMenuComponent,
     SettingsComponent,
+    StartMenuTempComponent,
   ],
   imports: [
     BrowserModule,
