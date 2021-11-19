@@ -1,77 +1,20 @@
 .home-wrap {
+  display: flex;
   background: black;
   padding-bottom: 2.5rem;
   background-size: cover;
   width: 100%;
   height: calc(100vh - 2.5rem);
-  margin-top: -3.7rem;
+  margin-top: -7.7rem;
 }
 
 .home-wrap .cover {
   background-image: url("../../assets/images/start-1.jpeg");
   padding-bottom: 2.5rem;
   background-size: cover;
-  width: 70%;
-  height: calc(100vh - 2.5rem);
-  margin-top: -3.7rem;
-}
-
-.home-wrap .headline {
-  width: 50vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 14vh;
-  position: relative;
-  animation: headlines 1s forwards ease;
-}
-
-.home-wrap .headline h1 {
-  margin-bottom: 0.5rem;
-  width: 23rem;
-  font-size: 3rem;
-  line-height: 1.3;
-}
-
-.home-wrap .headline .wrap {
-  margin-top: 2rem;
-}
-
-.home-wrap .headline .wrap h2 {
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-  font-weight: 500;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: black;
-}
-
-.home-wrap .headline .wrap p {
-  opacity: 0;
-  color: black;
-}
-
-.home-wrap .headline .wrap .gender {
-  animation: headliner 1s ease  1s;
-}
-
-.home-wrap .headline .wrap .gender-info {
-  animation: info 1s ease 1s;
-}
-
-.home-wrap .headline .wrap .ethnicity {
-  animation: headliner 1s ease 2s;
-}
-
-.home-wrap .headline .wrap .ethnicity-info {
-  animation: info 1s ease 2s;
-}
-
-.home-wrap .headline .wrap .age {
-  animation: headliner 1s ease 3s;
-}
-
-.home-wrap .headline .wrap .age-info {
-  animation: info 1s ease 3s;
+  width: 65%;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .home-wrap .start {
@@ -83,6 +26,12 @@
 .home-wrap .start button {
   margin-top: 2rem;
   text-transform: uppercase;
+}
+
+.home-wrap .login-side {
+  width: 35%;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes headlines {
@@ -123,26 +72,13 @@
   }
 }
 
-.intro {
-  color: #616161;
-  text-transform: initial;
-  margin-top: 3em;
-  font-size: 12px;
-  text-align: right;
+.login-form {
+  width: 17rem;
+  margin: 0 auto;
 }
 
-.login-form {
-  position: absolute;
-  right: 3rem;
-  top: 20vh;
-  width: 17rem;
-  animation-name: blurbinfo;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-iteration-count: initial;
-  animation-delay: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-  opacity: 0;
+.login-form .mat-form-field {
+  margin-top: -1rem;
 }
 
 .login-form div {
@@ -152,15 +88,16 @@
 }
 
 .login-form div input {
-  width: 100%;
+  width: 90%;
   padding: 0.5rem;
 }
 
 .login-form div p {
   font-size: 12px;
   text-align: right;
-  margin: -1rem 0rem 0 0;
+  margin: -1rem 0.4rem 0 0;
   cursor: pointer;
+  padding: 0.3rem 0;
 }
 
 .login-form div p:hover {
@@ -209,4 +146,11 @@
     top: 20vh;
     opacity: 1;
   }
+}
+
+.intro {
+  color: #999;
+  text-transform: initial;
+  margin-top: 3em;
+  text-align: right;
 }

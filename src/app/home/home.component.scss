@@ -1,70 +1,21 @@
 .home-wrap{
+    display:flex;
     background:black;
     padding-bottom: 2.5rem;
     background-size: cover;
     width: 100%;
     height: calc(100vh - 2.5rem);
-    margin-top: -3.7rem;
+    margin-top: -7.7rem;
 
 .cover{
   background-image: url("../../assets/images/start-1.jpeg");
   padding-bottom: 2.5rem;
   background-size: cover;
-  width: 70%;
-  height: calc(100vh - 2.5rem);
-  margin-top: -3.7rem;
-}
+  width: 65%;
+  height: 100vh;
+  background-repeat: no-repeat;
 
-    .headline{
-        width: 50vh;
-        display: flex;
-        flex-direction: column;
-        padding-top: 14vh;
-        position: relative;
-        animation: headlines 1s forwards ease;
-        h1{
-            margin-bottom:0.5rem;
-            width:23rem;
-            font-size: 3rem;
-            line-height: 1.3;
-        }
-     
-        .wrap{
-            margin-top: 2rem;
-            h2{
-                margin-bottom: 1rem;
-                margin-top: 1.5rem;
-                font-weight: 500;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-                color:black;
-            }
-            p{
-                opacity: 0;
-                color: rgba(0, 0, 0, 1);
-            }
-        
-            .gender{
-                animation: headliner 1s ease  1s;
-            }
-            .gender-info{
-                animation: info 1s ease 1s;
-            }
-            .ethnicity{
-                animation: headliner 1s ease 2s;
-            }
-            .ethnicity-info{
-                animation: info 1s ease 2s;
-            }
-            .age{
-                animation: headliner 1s ease 3s;
-            }
-            .age-info{
-                animation: info 1s ease 3s;
-            }
-        }
-     
-    }
+}
     .start{
         position: relative;
         left:-10rem;
@@ -74,7 +25,11 @@
             text-transform: uppercase;
         }
     }
-
+    .login-side{
+      width:35%;
+      display:flex;
+      align-items: center;
+    }
 }
 
 
@@ -116,48 +71,41 @@
 
 
 
-// Temp stuff
-.intro {
-  color: #616161;
-  text-transform: initial;
-  margin-top: 3em;
-  font-size: 12px;
-  text-align: right;
-}
 
 
 
-
-
-
-  
 
 
 
 
   .login-form{
-    position: absolute; right: 3rem; top:20vh;width: 17rem;
-    animation-name: blurbinfo;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: initial;
-    animation-delay: 0.5s;
-    -webkit-animation-fill-mode: forwards;
-    opacity: 0;
-
+    // position: absolute; right: 3rem; top:20vh;width: 17rem;
+    // animation-name: blurbinfo;
+    // animation-duration: 2s;
+    // animation-timing-function: ease;
+    // animation-iteration-count: initial;
+    // animation-delay: 0.5s;
+    // -webkit-animation-fill-mode: forwards;
+    // opacity: 0;
+    width: 17rem;
+    margin: 0 auto;
+    .mat-form-field{
+      margin-top: -1rem;
+    }
     div{
       display: flex;
       flex-direction: column;
       margin: 2rem 0 1rem 0;
       input{
-        width: 100%;
+        width: 90%;
         padding: 0.5rem
       }
       p{
         font-size: 12px;
         text-align: right;
-        margin: -1rem 0rem 0 0;
+        margin: -1rem 0.4rem 0 0;
         cursor: pointer;
+        padding: 0.3rem 0;
         &:hover{
           text-decoration: underline;
         }
@@ -207,3 +155,65 @@
       opacity: 1;;
     }
   }
+
+
+
+// Temp stuff
+.intro {
+  color: #999;
+  text-transform: initial;
+  margin-top: 3em;
+  text-align: right;
+}
+
+
+//   .headline{
+//     width: 50vh;
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 14vh;
+//     position: relative;
+//     animation: headlines 1s forwards ease;
+//     h1{
+//         margin-bottom:0.5rem;
+//         width:23rem;
+//         font-size: 3rem;
+//         line-height: 1.3;
+//     }
+ 
+//     .wrap{
+//         margin-top: 2rem;
+//         h2{
+//             margin-bottom: 1rem;
+//             margin-top: 1.5rem;
+//             font-weight: 500;
+//             font-size: 1.5rem;
+//             text-transform: uppercase;
+//             color:black;
+//         }
+//         p{
+//             opacity: 0;
+//             color: rgba(0, 0, 0, 1);
+//         }
+    
+//         .gender{
+//             animation: headliner 1s ease  1s;
+//         }
+//         .gender-info{
+//             animation: info 1s ease 1s;
+//         }
+//         .ethnicity{
+//             animation: headliner 1s ease 2s;
+//         }
+//         .ethnicity-info{
+//             animation: info 1s ease 2s;
+//         }
+//         .age{
+//             animation: headliner 1s ease 3s;
+//         }
+//         .age-info{
+//             animation: info 1s ease 3s;
+//         }
+//     }
+ 
+// }
