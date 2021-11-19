@@ -1,58 +1,77 @@
 <div class="wrapper">
-    <header>
-        <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
-            style="width:7rem; padding:0.5rem; cursor: pointer;">
-        <!-- <div class="nav">
+  <header>
+    <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
+      style="width:7rem; padding:0.5rem; cursor: pointer;">
+    <!-- <div class="nav">
         <button [routerLink]="['/age-summary']">Age</button>
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
         <button [routerLink]="['/gender-summary']">Gender</button>
      </div> -->
-        <p [routerLink]="['/media-library']" matTooltip="Library">Assets Library</p>
+    <p [routerLink]="['/media-library']" matTooltip="Library">Assets Library</p>
 
-        <p [routerLink]="['/settings']"> Preferences </p>
+    <p [routerLink]="['/settings']"> Preferences </p>
 
-        <div>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
+        <div class="sidenav">
+          <div>
             <mat-form-field>
-                <!-- <mat-label>Market</mat-label> -->
-                <mat-select placeholder="UK">
-                    <mat-option>UK</mat-option>
-                    <mat-option>US</mat-option>
-                </mat-select>
+              <!-- <mat-label>Market</mat-label> -->
+              <mat-select placeholder="UK">
+                <mat-option>UK</mat-option>
+                <mat-option>US</mat-option>
+              </mat-select>
             </mat-form-field>
+          </div>
+          <div>
             <mat-form-field>
-                <!-- <mat-label>Category</mat-label> -->
-                <mat-select placeholder="Beauty">
-                    <mat-option>Beauty</mat-option>
-                </mat-select>
+              <!-- <mat-label>Category</mat-label> -->
+              <mat-select placeholder="Beauty">
+                <mat-option>Beauty</mat-option>
+              </mat-select>
             </mat-form-field>
+          </div>
+          <div>
             <mat-form-field>
-                <!-- <mat-label>Brand</mat-label> -->
-                <mat-select placeholder="Dove">
-                    <mat-option>Dove </mat-option>
-                    <mat-option>Olay</mat-option>
-                    <mat-option>L'Oréal</mat-option>
-                </mat-select>
+              <!-- <mat-label>Brand</mat-label> -->
+              <mat-select placeholder="Dove">
+                <mat-option>Dove </mat-option>
+                <mat-option>Olay</mat-option>
+                <mat-option>L'Oréal</mat-option>
+              </mat-select>
             </mat-form-field>
+          </div>
+          <div>
             <mat-form-field>
-                <!-- <mat-label>Brand</mat-label> -->
-                <mat-select placeholder="6 months">
-                    <mat-option>YTD </mat-option>
-                    <mat-option>All time</mat-option>
-                </mat-select>
+              <!-- <mat-label>Brand</mat-label> -->
+              <mat-select placeholder="6 months">
+                <mat-option>YTD </mat-option>
+                <mat-option>All time</mat-option>
+              </mat-select>
             </mat-form-field>
+          </div>
+          <div>
             <mat-form-field>
-                <!-- <mat-label>Brand</mat-label> -->
-                <mat-select placeholder="Instagram">
-                    <mat-option>Instagram </mat-option>
-                    <mat-option>All channels</mat-option>
-                </mat-select>
+              <!-- <mat-label>Brand</mat-label> -->
+              <mat-select placeholder="Instagram">
+                <mat-option>Instagram </mat-option>
+                <mat-option>All channels</mat-option>
+              </mat-select>
             </mat-form-field>
+          </div>
         </div>
-    </header>
-    <div class="main" [@routeAnim]="prepareRoute(outlet)">
-        <router-outlet #outlet="outlet"></router-outlet>
-    </div>
-    <footer>
-        <!-- <p>© 2021 Publicis Groupe, all rights reserved</p>  -->
-    </footer>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <i (click)="sidenav.toggle()" class="eva eva-options-2-outline menu"></i>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+  </header>
+  <div class="main" [@routeAnim]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <footer>
+    <!-- <p>© 2021 Publicis Groupe, all rights reserved</p>  -->
+  </footer>
 </div>
