@@ -11,7 +11,7 @@
 
     <p [routerLink]="['/settings']"> Preferences </p>
 
-    <mat-sidenav-container>
+    <mat-sidenav-container *ngIf="showNav">
       <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
         <div class="sidenav">
           <div>
@@ -58,6 +58,10 @@
                 <mat-option>All channels</mat-option>
               </mat-select>
             </mat-form-field>
+          </div>
+          <div (click)="logOut();" class="logout">
+            <i class="eva eva-log-out-outline"></i>
+            Logout
           </div>
         </div>
       </mat-sidenav>
