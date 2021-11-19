@@ -1,17 +1,31 @@
-import { Component, Optional } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { trigger, transition, style, animate, query, group, keyframes, animateChild } from '@angular/animations';
-import { fader} from './route-animations';
+import { Component, Optional, OnInit } from '@angular/core';
+import {
+  RouterOutlet,
+  Router,
+  ActivatedRoute,
+  NavigationStart,
+} from '@angular/router';
+import {
+  trigger,
+  transition,
+  style,
+  animate,
+  query,
+  group,
+  keyframes,
+  animateChild,
+} from '@angular/animations';
+import { fader } from './route-animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 
-  animations:[
-//    slider,
+  animations: [
+    //    slider,
     fader,
-  ]
+  ],
   // animations: [
   //   trigger('routeAnim', [
   //     transition('* => *', [
@@ -53,15 +67,35 @@ import { fader} from './route-animations';
   //   ])
   // ]
 })
+export class AppComponent implements OnInit {
+  showNav: any;
+  url: any;
+  constructor(public route: ActivatedRoute, private router: Router) {
+    // this.url = router.url;
+    router.events.forEach((event) => {
+      if (event instanceof NavigationStart) {
+        if (event.url == '/home') {
+          this.showNav = false;
+        } else {
+          this.showNav = true;
+        }
+      }
+    });
+  }
 
-
-export class AppComponent {
+  ngOnInit() {}
 
   prepareRoute(outlet: RouterOutlet) {
-    // if(outlet.isActivated)
-   // return outlet.activatedRoute.snapshot.url
-    return outlet && outlet.activatedRouteData && 
-    outlet.activatedRouteData['animation']
+    // console.log(this.url);
+    return (
+      outlet &&
+      outlet.activatedRouteData &&
+      outlet.activatedRouteData['animation']
+    );
+  }
+
+  logOut() {
+    this.showNav = false;
+    this.router.navigate(['', 'home']);
   }
 }
-
