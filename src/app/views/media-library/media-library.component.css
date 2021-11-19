@@ -1,7 +1,21 @@
 .toolbar {
   display: flex;
-  background: black;
+  background: white;
   border-radius: 4px;
+}
+
+.toolbar h3 {
+  color: black;
+}
+
+.toolbar p {
+  color: black;
+  padding: 0 0.3rem;
+}
+
+.toolbar .item {
+  display: flex;
+  margin: 1rem;
 }
 
 .card:nth-child(1) {

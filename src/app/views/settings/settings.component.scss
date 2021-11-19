@@ -25,6 +25,15 @@ h1{
             text-align: left;
             width: 15%;
             flex:none;
+            font-size: 13px;
+            &:first-child{
+              width:9rem;
+            }
+            &:nth-child(2){
+              font-weight: bold;
+              color:white;
+              font-size: 15px;
+            }
         }
     }
     .tools{
@@ -48,8 +57,10 @@ h1{
             flex-direction: row;
             padding: 0.5rem 1rem 1rem 1rem;
             align-items: center;
-            color: #616161;
-            font-weight: 500;
+            .cell{
+              color: #999;
+              font-weight: 500;
+            }
         }
         .row:nth-child(odd){
             background: #161719;
@@ -111,6 +122,9 @@ details > .content {
     i{
       font-size: 14px;
       margin: 0 0.3rem 0 1rem;
+    }
+    &:hover{
+      color:white;
     }
   }
   details[open] .update-button::after { 

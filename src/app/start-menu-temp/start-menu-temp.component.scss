@@ -1,3 +1,17 @@
+.header{
+    display:flex;
+    flex-direction: column;
+    h1{
+        font-size: 20px;
+        font-weight: 600 !important;
+    }
+    div{
+       input{
+           background: transparent;
+       }
+    }
+}
+
 h1{
     color: white;
     margin: 2rem 0;
@@ -11,7 +25,6 @@ h2{
 }
 .filter-panels{
     display:flex;
-    justify-content: center;
     flex-wrap: wrap;
     .filter-box{
         width:21rem;
@@ -55,5 +68,4 @@ h2{
     border: dashed thin grey;
     border-radius: 3px;
     padding: 2rem;
-    margin: 5rem;
 }
