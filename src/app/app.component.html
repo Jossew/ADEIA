@@ -1,8 +1,7 @@
 <div class="wrapper">
     <header>
-        <!-- <p style="color: #fff" [routerLink]="['/summary']">DIVERSITY<span
-                style="font-weight: 200; color: #fff">/Measure.</span></p> -->
-        <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg" style="width:7rem; padding:0.5rem; cursor: pointer;"> 
+        <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
+            style="width:7rem; padding:0.5rem; cursor: pointer;">
         <!-- <div class="nav">
         <button [routerLink]="['/age-summary']">Age</button>
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
@@ -10,12 +9,9 @@
      </div> -->
         <p [routerLink]="['/media-library']" matTooltip="Library">Assets Library</p>
 
-        <p [routerLink]="['/settings']">
-            <!-- <img src="assets/images/icons/settings-outline.svg" matTooltip="Settings" class="settings" /> -->
-            Preferences
-        </p>
-        <div>
+        <p [routerLink]="['/settings']"> Preferences </p>
 
+        <div>
             <mat-form-field>
                 <!-- <mat-label>Market</mat-label> -->
                 <mat-select placeholder="UK">
@@ -38,25 +34,25 @@
                 </mat-select>
             </mat-form-field>
             <mat-form-field>
-                    <!-- <mat-label>Brand</mat-label> -->
-                    <mat-select placeholder="6 months">
-                        <mat-option>YTD </mat-option>
-                        <mat-option>All time</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <mat-form-field>
-                        <!-- <mat-label>Brand</mat-label> -->
-                        <mat-select placeholder="Instagram">
-                            <mat-option>Instagram </mat-option>
-                            <mat-option>All channels</mat-option>
-                        </mat-select>
-                    </mat-form-field>
+                <!-- <mat-label>Brand</mat-label> -->
+                <mat-select placeholder="6 months">
+                    <mat-option>YTD </mat-option>
+                    <mat-option>All time</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <!-- <mat-label>Brand</mat-label> -->
+                <mat-select placeholder="Instagram">
+                    <mat-option>Instagram </mat-option>
+                    <mat-option>All channels</mat-option>
+                </mat-select>
+            </mat-form-field>
         </div>
     </header>
     <div class="main" [@routeAnim]="prepareRoute(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
     </div>
     <footer>
-         <!-- <p>© 2021 Publicis Groupe, all rights reserved</p>  -->
+        <!-- <p>© 2021 Publicis Groupe, all rights reserved</p>  -->
     </footer>
 </div>

@@ -13,7 +13,6 @@
         width:6rem;
     }
 }
-
 .top-bucket{
     padding: 1rem;
     flex: 1;
@@ -22,6 +21,10 @@
         color: white;
     }
 }
+
+
+
+
 .gender-wrap{
     margin: 3rem 2rem 2rem 2rem;
     width: 100%;
@@ -33,13 +36,83 @@
         font-size: 14px;
     }
 }
+
+
+
+
 .report-section{
     display:flex;
     position: relative;
     flex: 1;
     flex-direction: column;
     margin: 0 3rem;
+    //tabs
+    .chart-tabs {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .tabs {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+    }
+    .tabs::before,
+    .tabs::after {
+      content: "";
+      display: table;
+    }
+    .tabs::after {
+      clear: both;
+    }
+    .tab-switch {
+      display: none;
+    }
+    .tab-label {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      top: 0;
+      transition: all 0.25s;
+      text-transform: uppercase;
+      color: #616161;
+      font-size:14px;
+      border: 1px solid #616161;
+      border-radius: 1rem;
+      padding: 0.3rem 0.6rem;
+      margin: 0 0.3rem;
+    }
+
+    .tab-label:hover {
+      top: -0.25rem;
+      transition: top 0.25s;
+    }
+    .tab-content {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 3rem;
+      left: 0;
+      padding: 1.618rem;
+      opacity: 0;
+      transition: all 0.35s;
+    }
+    .tab-switch:checked + .tab-label {
+      transition: all 0.35s;
+      z-index: 1;
+      color:white;
+      border: 1px solid white;
+    }
+    .tab-switch:checked + label + .tab-content {
+      z-index: 2;
+      opacity: 1;
+      transition: all 0.35s;
+    }
 }
+
+
+
+
+//for image clusters
 .cat-1{
     animation: catone 1.5s ease;
 }
@@ -70,90 +143,5 @@
 
 
 
-//temp
-
-.report-nav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 2rem 0 0;
-    button{
-        border: thin solid black;
-        margin-left: 0.5rem;
-    }
-}
 
 
-
-//tabs
-.chart-tabs {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .tabs {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-  }
-  .tabs::before,
-  .tabs::after {
-    content: "";
-    display: table;
-  }
-  .tabs::after {
-    clear: both;
-  }
-  .tab-switch {
-    display: none;
-  }
-  .tab-label {
-    position: relative;
-    display: block;
-    line-height: 2.75em;
-    height: 2.5em;
-    cursor: pointer;
-    top: 0;
-    transition: all 0.25s;
-    text-transform: uppercase;
-    color: #616161;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-bottom: thin solid #616161;
-    span{
-      text-transform: lowercase;
-      font-weight: 400;
-      opacity: 0.5;
-      font-size: 1rem;
-    }
-  }
-  
-  .tab-label:hover {
-    top: -0.25rem;
-    transition: top 0.25s;
-  }
-  .tab-content {
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 3rem;
-    left: 0;
-    padding: 1.618rem;
-    opacity: 0;
-    transition: all 0.35s;
-  }
-  .tab-switch:checked + .tab-label {
-    border-bottom: 0;
-    transition: all 0.35s;
-    z-index: 1;
-    top: -0.0625rem;
-    font-weight: 700;
-    color:white;
-    text-decoration: none;
-    border-bottom: 2px solid white;
-    font-style: italic;
-  }
-  .tab-switch:checked + label + .tab-content {
-    z-index: 2;
-    opacity: 1;
-    transition: all 0.35s;
-  }
