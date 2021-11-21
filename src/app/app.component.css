@@ -22,23 +22,34 @@
   cursor: pointer;
 }
 
-.wrapper header .mat-form-field {
-  margin: 0 0 0 1rem;
+.wrapper header .filters {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper header .filters .mat-form-field {
+  margin: 0 0 -7px 1.2rem;
   width: 5rem;
 }
 
 .wrapper header p {
-  margin: 1rem 0 1rem 0 !important;
+  margin: 1rem 0rem 1rem 0 !important;
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 1.5rem;
   font-weight: 700;
-  color: #616161;
   cursor: pointer;
+  border-right: thin solid #333;
+  padding-right: 1rem;
+  padding: 9px 17px 9px 1px;
 }
 
 .wrapper header p:hover {
   color: white;
+  opacity: 0.6;
+}
+
+.wrapper header p i {
+  transform: translate(-1px, 2px);
 }
 
 .wrapper header .nav button:nth-child(2) {

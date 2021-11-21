@@ -7,57 +7,30 @@
         <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
         <button [routerLink]="['/gender-summary']">Gender</button>
      </div> -->
-    <p [routerLink]="['/media-library']" matTooltip="Library">Assets Library</p>
 
-    <p [routerLink]="['/settings']"> Preferences </p>
-
-    <div>
-
-
-      Category: Beauty
+    <div class="filters">
+      <p [routerLink]="['/media-library']">
+        <i class="eva eva-image-outline"></i> Assets Library</p>
+      <mat-form-field>
+        <mat-label>Category</mat-label>
+        <mat-select placeholder="Beauty" [(value)]="selected">
+          <mat-option value="domain">Beauty</mat-option>
+        </mat-select>
+      </mat-form-field>
       <mat-form-field floatLabel="always">
-        <mat-select placeholder="Market" [(ngModel)]="selectedMarket" >
+        <mat-select placeholder="Market" [(ngModel)]="selectedMarket">
           <mat-option *ngFor="let market of ['US', 'UK']" [value]="market">
             {{market}}
           </mat-option>
         </mat-select>
       </mat-form-field>
-<!--      <mat-form-field>-->
-<!--        &lt;!&ndash; <mat-label>Category</mat-label> &ndash;&gt;-->
-<!--        <mat-select placeholder="Beauty">-->
-<!--          <mat-option>Beauty</mat-option>-->
-<!--        </mat-select>-->
-<!--      </mat-form-field>-->
-<!--      <mat-form-field>-->
-<!--        &lt;!&ndash; <mat-label>Brand</mat-label> &ndash;&gt;-->
-<!--        <mat-select placeholder="Dove">-->
-<!--          <mat-option>Dove </mat-option>-->
-<!--          <mat-option>Olay</mat-option>-->
-<!--          <mat-option>L'Oréal</mat-option>-->
-<!--        </mat-select>-->
-<!--      </mat-form-field>-->
-<!--      <mat-form-field>-->
-<!--        &lt;!&ndash; <mat-label>Brand</mat-label> &ndash;&gt;-->
-<!--        <mat-select placeholder="6 months">-->
-<!--          <mat-option>YTD </mat-option>-->
-<!--          <mat-option>All time</mat-option>-->
-<!--        </mat-select>-->
-<!--      </mat-form-field>-->
-<!--      <mat-form-field>-->
-<!--        &lt;!&ndash; <mat-label>Brand</mat-label> &ndash;&gt;-->
-<!--        <mat-select placeholder="Instagram">-->
-<!--          <mat-option>Instagram </mat-option>-->
-<!--          <mat-option>All channels</mat-option>-->
-<!--        </mat-select>-->
-<!--      </mat-form-field>-->
     </div>
 
-    <mat-sidenav-container *ngIf="showNav">
+    <!-- <mat-sidenav-container *ngIf="showNav">
       <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
         <div class="sidenav">
           <div>
             <mat-form-field>
-              <!-- <mat-label>Market</mat-label> -->
               <mat-select placeholder="UK">
                 <mat-option>UK</mat-option>
                 <mat-option>US</mat-option>
@@ -66,7 +39,6 @@
           </div>
           <div>
             <mat-form-field>
-              <!-- <mat-label>Category</mat-label> -->
               <mat-select placeholder="Beauty">
                 <mat-option>Beauty</mat-option>
               </mat-select>
@@ -74,7 +46,6 @@
           </div>
           <div>
             <mat-form-field>
-              <!-- <mat-label>Brand</mat-label> -->
               <mat-select placeholder="Dove">
                 <mat-option>Dove </mat-option>
                 <mat-option>Olay</mat-option>
@@ -84,7 +55,6 @@
           </div>
           <div>
             <mat-form-field>
-              <!-- <mat-label>Brand</mat-label> -->
               <mat-select placeholder="6 months">
                 <mat-option>YTD </mat-option>
                 <mat-option>All time</mat-option>
@@ -93,7 +63,6 @@
           </div>
           <div>
             <mat-form-field>
-              <!-- <mat-label>Brand</mat-label> -->
               <mat-select placeholder="Instagram">
                 <mat-option>Instagram </mat-option>
                 <mat-option>All channels</mat-option>
@@ -107,10 +76,10 @@
         </div>
       </mat-sidenav>
 
-      <mat-sidenav-content>
+   <mat-sidenav-content>
         <i (click)="sidenav.toggle()" class="eva eva-options-2-outline menu"></i>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
+      </mat-sidenav-content> 
+    </mat-sidenav-container> -->
 
   </header>
   <div class="main" [@routeAnim]="prepareRoute(outlet)">

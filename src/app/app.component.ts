@@ -68,6 +68,7 @@ import { fader } from './route-animations';
   // ]
 })
 export class AppComponent implements OnInit {
+  selected = 'domain';
   showNav: any;
   url: any;
   selectedMarket ='US';
