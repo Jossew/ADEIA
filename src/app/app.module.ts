@@ -35,8 +35,7 @@ import {RenamePropertiesPipe} from "./shared/pipes/rename-properties.pipe";
 import {TruncatePipe} from "./shared/pipes/truncate.pipe";
 import {MatDialogModule} from "@angular/material/dialog";
 import {FormsModule} from "@angular/forms";
-import { CategoryChartComponent } from './views/gender-summary/category-chart/category-chart.component';
-import { CustomChartComponent } from './views/gender-summary/custom-chart/custom-chart.component';
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   declarations: [
@@ -79,6 +78,7 @@ import { CustomChartComponent } from './views/gender-summary/custom-chart/custom
     MatBadgeModule,
     MatTreeModule,
     MatDialogModule,
+    MatRadioModule,
     // NgxEchartsModule,
     NgxEchartsModule.forRoot({
       echarts

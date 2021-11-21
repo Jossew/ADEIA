@@ -39,10 +39,11 @@ interface ExampleFlatNode {
 
 
 export class StartMenuComponent implements OnInit {
-  
-  typesOfMarkets: string[] = ['United Kingdom', 'USA', 'Argentina', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Bangladesh ', 'Barbados', 'Belgium ', 'Belize', 'Benin', 'Bermuda', 'Bolivia' ];
 
+  typesOfMarkets: string[] = ['United Kingdom', 'USA', 'Brazil' ];
 
+  defaultSelected: string = 'USA';
+  selection: any;
 
   ngOnInit(): void {
   }

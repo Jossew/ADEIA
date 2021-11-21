@@ -20,6 +20,7 @@ export class SummaryComponent implements OnInit {
   navOpen: boolean = false;
 
   private diversityScore: any = null;
+  selectedBenchMark: string = 'Category';
 
 
   ngOnInit() {
@@ -336,15 +337,7 @@ export class SummaryComponent implements OnInit {
       color: [
         '#5B34D5', '#E2DAFB', '#AE786E',
       ],
-      title: [
-        {
-          left: 'center',
-          text: 'DIVERSITY SCORE for DOVE',
-          textStyle: {
-            fontSize: 14,
-            color: '#fff'
-          }
-        }],
+
       series: [
         {
           type: 'gauge',
