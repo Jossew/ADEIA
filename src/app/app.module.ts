@@ -38,6 +38,8 @@ import {FormsModule} from "@angular/forms";
 import {MatRadioModule} from "@angular/material/radio";
 import { CategoryChartComponent } from './views/gender-summary/category-chart/category-chart.component';
 import {  CustomChartComponent } from './views/gender-summary/custom-chart/custom-chart.component';
+import { CategoryAgeComponent } from './views/age-summary/category-age/category-age.component';
+import { CustomAgeComponent } from './views/age-summary/custom-age/custom-age.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import {  CustomChartComponent } from './views/gender-summary/custom-chart/custo
     RenamePropertiesPipe,
     TruncatePipe,
     CategoryChartComponent,
-    CustomChartComponent
+    CustomChartComponent,
+    CategoryAgeComponent,
+    CustomAgeComponent
   ],
   imports: [
     BrowserModule,

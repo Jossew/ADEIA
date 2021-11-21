@@ -16,10 +16,38 @@
     </div>
     
     <div class="gender-wrap">
-        <div class="report-section cat-2 chart-wrap">
-            <div  id="agechart" echarts theme="dark" class="pies" style="min-height: 300px; height: 35rem; width:100%">
-            </div>
-        </div>
+
+
+            <div class="report-section cat-2 chart-wrap wrapper chart-tabs">
+                    <div class="tabs">
+                      <div class="tab">
+                        <input type="radio" name="css-tab" id="tab-7" class="tab-switch" checked>
+                        <label for="tab-7" class="tab-label">Market</label>
+                        <div class="tab-content">
+                                <div  id="agechart" echarts theme="dark" class="pies" style="min-height: 300px; height: 35rem; width:100%">
+                                    </div>
+                        </div>
+                      </div>
+                      <div class="tab">
+                        <input type="radio" name="css-tab" id="tab-8" class="tab-switch" >
+                        <label for="tab-8" class="tab-label">Category (Beauty)</label>
+                        <div class="tab-content">
+                              <app-category-age></app-category-age>
+                      </div>
+                    </div>
+                    <div class="tab">
+                      <input type="radio" name="css-tab" id="tab-9" class="tab-switch">
+                      <label for="tab-9" class="tab-label">Custom</label>
+                      <div class="tab-content">
+                            <app-custom-age></app-custom-age>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+
+
         <div class="report-section cat-1">
                 <h2>Most represented in age group 20-25</h2>
                 <div class="img-grid">
