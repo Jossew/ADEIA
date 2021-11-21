@@ -202,3 +202,166 @@
   opacity: 1;
   transition: all 0.35s;
 }
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.sidenav-left {
+  width: 56px;
+  background: var(--panels);
+  overflow: hidden !important;
+  border-right: solid 0px var(--panels);
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .eva-menu-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .eva-menu-outline {
+  font-size: 22px !important;
+  margin-top: 10px;
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .eva-bell-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .eva-settings-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .eva-bell-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .eva-settings-outline {
+  font-size: 22px !important;
+  transform: translateY(-5px);
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .mat-mini-fab.mat-accent, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .mat-mini-fab.mat-accent {
+  color: white !important;
+  width: 50px;
+  height: 50px;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container button, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container button {
+  margin: 5px;
+  color: white;
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container img, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container img {
+  width: 2rem;
+}
+
+.sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container {
+  padding-bottom: 1rem;
+}
+
+.sidenav-clients {
+  width: 260px;
+  padding: 0.5rem 1rem;
+  background: #130d2b;
+  border-left: 0.15rem solid var(--borders);
+}
+
+.sidenav-clients .dark-button {
+  background: transparent !important;
+}
+
+.sidenav-full {
+  height: 95vh;
+  background: var(--background-color);
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.close-sidenav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+.close-sidenav i {
+  color: var(--font-color);
+  font-size: 26px;
+  margin: -0.5rem -0.5rem -1rem -0.5rem;
+}
+
+.sidenav-normal h1 {
+  margin: 0 0 0.67em 0;
+  color: var(--font-color);
+}
+
+.user-button {
+  background: #333;
+  width: 46px;
+  height: 46px;
+  font-weight: bold !important;
+  padding: 2px 0;
+  letter-spacing: 1px;
+}
+
+.user-button ::ng-deep .mat-button-wrapper {
+  border: 1px solid var(--font-color);
+  border-radius: 2rem;
+  width: 40px;
+  height: 40px;
+}
+
+.mat-badge-content {
+  right: 5px !important;
+  top: 4px !important;
+  background: var(--primary-accent);
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 300;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: var(--font-color);
+}
+
+.mat-menu-item span {
+  margin-left: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mat-menu-item i {
+  transform: translateY(1px);
+}
+
+.content-inside .stamp {
+  text-align: center;
+  position: fixed;
+  width: 25%;
+  top: 40vh;
+  left: calc(50% - 6rem);
+}
+
+.content-inside .stamp img {
+  opacity: 0.1;
+  width: 12rem;
+}
+
+.close-siden {
+  color: var(--font-color);
+  z-index: 999999;
+  height: 1.5em;
+  float: right;
+  margin-right: -5px;
+  padding: 0 0.2rem;
+  cursor: pointer;
+}

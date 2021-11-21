@@ -62,7 +62,6 @@
       margin: 0 0.5rem 0 0;
       flex-wrap: wrap;
       border-right: thin solid #616161;
-
       .chart-box {
         width: 21rem;
 
@@ -232,6 +231,14 @@
       flex-direction: column;
       align-items: center;
 
+      .eva-menu-outline{
+        font-size: 22px !important;
+        margin-top: 10px;
+      }
+      .eva-bell-outline, .eva-settings-outline{
+        font-size: 22px !important;
+        transform: translateY(-5px);
+      }
       .mat-mini-fab.mat-accent {
         color: white !important;
         width: 50px;
@@ -239,12 +246,10 @@
         box-shadow: none;
         border-radius: 0;
       }
-
       button {
         margin: 5px;
         color: white;
       }
-
       img {
         width: 2rem;
       }
@@ -304,18 +309,18 @@
 
 
 .user-button {
-  background: purple;
+  background: #333;
   width: 46px;
   height: 46px;
-  font-weight: 400;
+  font-weight: bold !important;
+  padding: 2px 0;
+  letter-spacing: 1px;
 
   ::ng-deep .mat-button-wrapper {
     border: 1px solid var(--font-color);
     border-radius: 2rem;
     width: 40px;
     height: 40px;
-    font-size: 0.85rem;
-    font-weight: 400;
   }
 }
 
