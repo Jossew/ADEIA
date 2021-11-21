@@ -89,3 +89,80 @@
   border: thin solid black;
   margin-left: 0.5rem;
 }
+
+.report-section {
+  display: flex;
+  position: relative;
+  width: 26%;
+  flex-direction: column;
+  margin: 0 3rem;
+}
+
+.report-section .chart-tabs {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.report-section .tabs {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+}
+
+.report-section .tabs::before,
+.report-section .tabs::after {
+  content: "";
+  display: table;
+}
+
+.report-section .tabs::after {
+  clear: both;
+}
+
+.report-section .tab-switch {
+  display: none;
+}
+
+.report-section .tab-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  color: #616161;
+  font-size: 14px;
+  border: 1px solid #616161;
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.3rem;
+}
+
+.report-section .tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+
+.report-section .tab-content {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 3rem;
+  left: 0;
+  padding: 1.618rem;
+  opacity: 0;
+  transition: all 0.35s;
+}
+
+.report-section .tab-switch:checked + .tab-label {
+  transition: all 0.35s;
+  z-index: 1;
+  color: white;
+  border: 1px solid white;
+}
+
+.report-section .tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}

@@ -19,10 +19,36 @@
 </div>
 
 <div class="gender-wrap">
-    <div class="report-section cat-2 chart-wrap">
-        <div id="ethnicitychart" echarts theme="dark" class="pies" style="min-height: 300px; height: 35rem; width:100%">
-        </div>
-    </div>
+
+        <div class="report-section cat-2 chart-wrap wrapper chart-tabs">
+                <div class="tabs">
+                  <div class="tab">
+                    <input type="radio" name="css-tab" id="tab-10" class="tab-switch" checked>
+                    <label for="tab-10" class="tab-label">Market</label>
+                    <div class="tab-content">
+                            <div id="ethnicitychart" echarts theme="dark" class="pies" style="min-height: 300px; height: 35rem; width:100%">
+                                </div>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="radio" name="css-tab" id="tab-11" class="tab-switch" >
+                    <label for="tab-11" class="tab-label">Category (Beauty)</label>
+                    <div class="tab-content">
+                          <app-category-chart></app-category-chart>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" name="css-tab" id="tab-12" class="tab-switch">
+                  <label for="tab-12" class="tab-label">Custom</label>
+                  <div class="tab-content">
+                        <app-custom-chart></app-custom-chart>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
     <div class="report-section cat-1">
         <h2>Most represented  among Asian</h2>
         <div class="img-grid">
