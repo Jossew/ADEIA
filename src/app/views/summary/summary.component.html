@@ -79,6 +79,15 @@
                       </div>
                     </div>
                     <div class="chart-box-score">
+                      <div class="filters">
+                      <p>Diversity Score for Dove by</p>
+                      <mat-form-field><mat-select [(value)]="selectedBenchMark">
+                      <mat-option value="Market">Market </mat-option>
+                      <mat-option value="Category">Category</mat-option>
+                      <mat-option value="Benchmark">Benchmark</mat-option>
+                    </mat-select>
+                      </mat-form-field>
+                      </div>
                       <div id="scorechart" echarts theme="dark" class="score"></div>
                     </div>
                   </div>
