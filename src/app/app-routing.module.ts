@@ -8,6 +8,8 @@ import {GenderSummaryComponent} from './views/gender-summary/gender-summary.comp
 import {MediaLibraryComponent} from './views/media-library/media-library.component';
 import {VideoInsightsComponent} from './views/video-insights/video-insights.component';
 import {SettingsComponent} from './views/settings/settings.component';
+import {StartMenuComponent } from './start-menu/start-menu.component';
+import {StartMenuTempComponent } from './start-menu-temp/start-menu-temp.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path: 'settings',
     component:SettingsComponent
+  },
+  {
+    path: 'start-menu',
+    component:StartMenuComponent
+  },
+  {
+    path: 'start-menu-temp',
+    component:StartMenuTempComponent
   },
 ];
 

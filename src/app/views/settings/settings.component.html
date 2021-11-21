@@ -1,33 +1,27 @@
 <div class="preferences-wrap">
-<h1>Preferences</h1>
+    <h1>Preferences</h1>
     <div class="content-wrap">
-       <div class="records">
-        <div class="tools">
-            <h2>Brands</h2> 
-            <details>
-                <summary class="add-button" mat-raised-button><i class="eva eva-plus-outline"></i> ADD</summary>
-                <div class="content">
-                    <app-start-menu-temp></app-start-menu-temp>
-                </div>
-            </details>
-        </div>
-        <div class="row header">
-            <div class="cell"></div>
-            <div class="cell">Brands</div>
-            <div class="cell">Category</div>
-            <div class="cell">Markets</div>
-            <div class="cell">Benchmark</div>
-            <div class="cell">Dimension</div>
-            <div class="cell">Assets</div>
-        </div>
-        <div class="row">
-                <div class="cell">        
-                    <details>
-                        <summary class="update-button"><i class="eva eva-edit-2-outline"></i> Update</summary>
-                        <div class="content">
-                            <app-start-menu></app-start-menu>
-                        </div>
-                    </details></div>
+        <div class="records">
+            <div class="tools">
+                <h2>Brands</h2>
+                <button class="add-button" mat-raised-button [routerLink]="['/start-menu-temp']"><i
+                        class="eva eva-plus-outline"></i> ADD</button>
+                <!-- <app-start-menu-temp></app-start-menu-temp> -->
+
+            </div>
+            <div class="row header">
+                <div class="cell"></div>
+                <div class="cell">Brands</div>
+                <div class="cell">Category</div>
+                <div class="cell">Markets</div>
+                <div class="cell">Benchmark</div>
+                <div class="cell">Dimension</div>
+                <div class="cell">Assets</div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <button class="update-button" mat-raised-button [routerLink]="['/start-menu']"><i
+                            class="eva eva-plus-outline"></i>Update</button></div>
                 <div class="cell">Dove</div>
                 <div class="cell">Beauty </div>
                 <div class="cell">UK</div>
@@ -35,14 +29,11 @@
                 <div class="cell">Gender, Age, Ethnicity</div>
                 <div class="cell">3,289 </div>
             </div>
-        <div class="row">
-            <div class="cell">        
-                <details>
-                    <summary class="update-button"><i class="eva eva-edit-2-outline"></i> Update</summary>
-                    <div class="content">
-                        <app-start-menu></app-start-menu>
-                    </div>
-                </details></div>
+            <div class="row">
+                <div class="cell">
+                    <button class="update-button" mat-raised-button [routerLink]="['/start-menu']"><i
+                            class="eva eva-plus-outline"></i>Update</button>
+                        </div>
             <div class="cell">Olay</div>
             <div class="cell">Beauty </div>
             <div class="cell">UK</div>
