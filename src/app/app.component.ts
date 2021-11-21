@@ -70,6 +70,7 @@ import { fader } from './route-animations';
 export class AppComponent implements OnInit {
   showNav: any;
   url: any;
+  selectedMarket ='US';
   constructor(public route: ActivatedRoute, private router: Router) {
     // this.url = router.url;
     router.events.forEach((event) => {
@@ -83,7 +84,9 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.selectedMarket ='US';
+  }
 
   prepareRoute(outlet: RouterOutlet) {
     // console.log(this.url);

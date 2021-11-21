@@ -1,0 +1,119 @@
+<div class="row">
+    <!-- <form>
+        <mat-form-field>
+            <input type="text" placeholder="Pick one" (keyup)="keyUp.next($event)"
+                   matInput [formControl]="myControl" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                <mat-option *ngFor="let option of allUserList" [value]="option">
+                    {{option.email}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form> -->
+    <!-- <button (click)="searchDialog()" type=button class="search-button">
+        <i class="eva eva-search-outline"></i>
+       Search..
+    </button> -->
+    <div class="clients">
+        <h1>Clients</h1>
+        <div class="client-btns">
+<!--            <button (click)="searchDialog()" type=button class="icon-btn">-->
+<!--                <img src="assets/images/search-icon.svg" />-->
+<!--            </button>-->
+
+          <button (click)="addClient()" type=button class="client-btn">
+                <i class="eva eva-plus-square-outline"></i> Add Client
+            </button>
+        </div>
+    </div>
+</div>
+
+<mat-menu #clientMenu="matMenu">
+    <ng-template matMenuContent let-aliasData="data">
+        <button mat-menu-item (click)="editClient(aliasData.client)">
+            <i class="eva eva-edit-2-outline"></i>
+            <span>Edit Client</span>
+        </button>
+        <button mat-menu-item (click)="addBrand(aliasData.client)">
+            <i class="eva eva-plus-square-outline"></i>
+            <span>Add Brands</span>
+        </button>
+    </ng-template>
+</mat-menu>
+
+<mat-menu #brandMenu="matMenu">
+    <ng-template matMenuContent let-aliasData="data">
+        <button mat-menu-item (click)="editBrand(aliasData.brand)">
+            <i class="eva eva-edit-2-outline"></i>
+            <span>Edit Brand</span>
+        </button>
+        <button mat-menu-item (click)="addCampaign(aliasData.brand)">
+            <i class="eva eva-plus-square-outline"></i>
+            <span>Manage Assets</span>
+        </button>
+    </ng-template>
+</mat-menu>
+
+<div class="client-menu" *ngIf="clientList">
+    <mat-tree [dataSource]="clientList" [treeControl]="treeControl" class="example-tree">
+        <!-- This is the tree node template for leaf nodes -->
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+            <li class="mat-tree-node">
+                <!-- use a disabled button to provide padding for tree leaf -->
+                <button mat-icon-button disabled></button>
+                <div *ngIf="node.client?.cat === 'client'" (click)="selectBrand(node);">
+                    <!-- <img [src]="node.client.logo.path">  -->
+                    <p [ngClass]="{'active-link':node.activeLink}">{{node.client.name | truncate: 50}}</p>
+                </div>
+                <div *ngIf="node.brand?.cat === 'brand'" (click)="selectBrand(node);">
+                    <!-- <img [src]="node.brand.logo.path">  -->
+<!--                    <button mat-icon-button disabled></button>-->
+                    <p [ngClass]="{'active-link':node.activeLink}">{{node.brand.name | truncate: 26}}</p>
+                </div>
+                <button mat-icon-button disabled *ngIf="node.cat === 'campaign'"></button>
+                <div *ngIf="node.cat === 'campaign'" (click)="selectBrand(node);">
+<!--                    <button mat-icon-button disabled></button>-->
+                    <i class="eva eva-file-outline"></i>
+                    <p [ngClass]="{'active-link':node.activeLink}">{{node.name}}</p>
+                </div>
+                <button class="node-options" mat-icon-button [matMenuTriggerFor]="clientMenu"
+                    [matMenuTriggerData]="{data: node}" *ngIf="node.client?.cat === 'client'">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <button class="node-options" mat-icon-button [matMenuTriggerFor]="brandMenu"
+                    [matMenuTriggerData]="{data: node}" *ngIf="node.brand?.cat === 'brand'">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+            </li>
+        </mat-tree-node>
+        <!-- This is the tree node template for expandable nodes -->
+        <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+            <li>
+                <div class="mat-tree-node">
+                    <button mat-icon-button disabled *ngIf="node.brand?.cat === 'brand'"></button>
+                    <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+                        <mat-icon class="mat-icon-rtl-mirror" (click)="clientExpand(treeControl,node)">
+                            {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                        </mat-icon>
+                    </button>
+                    <div (click)="selectBrand(node);">
+                        <!-- <img style="width:2rem; margin-right:0.5rem"
+                             [src]="node.client?.logo?.path || node.brand?.logo?.path"> -->
+                        <p [ngClass]="{'active-link':node.activeLink}">{{node.client?.name || node.brand?.name}}</p>
+                    </div>
+                    <button class="node-options" mat-icon-button [matMenuTriggerFor]="clientMenu"
+                        [matMenuTriggerData]="{data: node}" *ngIf="node.client?.cat === 'client'">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <button class="node-options" mat-icon-button [matMenuTriggerFor]="clientMenu"
+                        [matMenuTriggerData]="{data: node}" *ngIf="node.brand?.cat === 'brand'">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">
+                    <ng-container matTreeNodeOutlet></ng-container>
+                </ul>
+            </li>
+        </mat-nested-tree-node>
+    </mat-tree>
+</div>

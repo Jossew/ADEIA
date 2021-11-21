@@ -28,6 +28,13 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { SettingsComponent } from './views/settings/settings.component';
 import { StartMenuTempComponent } from './start-menu-temp/start-menu-temp.component';
+import {MatMenuModule} from "@angular/material/menu";
+import {MatBadgeModule} from "@angular/material/badge";
+import {PartnerClientsComponent} from "./views/partner-clients/partner-clients.component";
+import {RenamePropertiesPipe} from "./shared/pipes/rename-properties.pipe";
+import {TruncatePipe} from "./shared/pipes/truncate.pipe";
+import {MatDialogModule} from "@angular/material/dialog";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -42,12 +49,16 @@ import { StartMenuTempComponent } from './start-menu-temp/start-menu-temp.compon
     StartMenuComponent,
     SettingsComponent,
     StartMenuTempComponent,
+    PartnerClientsComponent,
+    RenamePropertiesPipe,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatSliderModule,
     MatFormFieldModule,
     MatCardModule,
@@ -60,11 +71,15 @@ import { StartMenuTempComponent } from './start-menu-temp/start-menu-temp.compon
     MatIconModule,
     MatTabsModule,
     MatTooltipModule,
+    MatMenuModule,
+    MatBadgeModule,
+    MatTreeModule,
+    MatDialogModule,
     NgxEchartsModule.forRoot({
       echarts
     }),
   ],
-  providers: [],
+  providers: [RenamePropertiesPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

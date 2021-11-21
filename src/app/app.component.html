@@ -11,6 +11,47 @@
 
     <p [routerLink]="['/settings']"> Preferences </p>
 
+    <div>
+
+
+      Category: Beauty
+      <mat-form-field floatLabel="always">
+        <mat-select placeholder="Market" [(ngModel)]="selectedMarket" >
+          <mat-option *ngFor="let market of ['US', 'UK']" [value]="market">
+            {{market}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+<!--      <mat-form-field>-->
+<!--        &lt;!&ndash; <mat-label>Category</mat-label> &ndash;&gt;-->
+<!--        <mat-select placeholder="Beauty">-->
+<!--          <mat-option>Beauty</mat-option>-->
+<!--        </mat-select>-->
+<!--      </mat-form-field>-->
+<!--      <mat-form-field>-->
+<!--        &lt;!&ndash; <mat-label>Brand</mat-label> &ndash;&gt;-->
+<!--        <mat-select placeholder="Dove">-->
+<!--          <mat-option>Dove </mat-option>-->
+<!--          <mat-option>Olay</mat-option>-->
+<!--          <mat-option>L'Oréal</mat-option>-->
+<!--        </mat-select>-->
+<!--      </mat-form-field>-->
+<!--      <mat-form-field>-->
+<!--        &lt;!&ndash; <mat-label>Brand</mat-label> &ndash;&gt;-->
+<!--        <mat-select placeholder="6 months">-->
+<!--          <mat-option>YTD </mat-option>-->
+<!--          <mat-option>All time</mat-option>-->
+<!--        </mat-select>-->
+<!--      </mat-form-field>-->
+<!--      <mat-form-field>-->
+<!--        &lt;!&ndash; <mat-label>Brand</mat-label> &ndash;&gt;-->
+<!--        <mat-select placeholder="Instagram">-->
+<!--          <mat-option>Instagram </mat-option>-->
+<!--          <mat-option>All channels</mat-option>-->
+<!--        </mat-select>-->
+<!--      </mat-form-field>-->
+    </div>
+
     <mat-sidenav-container *ngIf="showNav">
       <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
         <div class="sidenav">
