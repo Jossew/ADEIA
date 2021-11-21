@@ -32,7 +32,6 @@
         <input type="radio" name="css-tab" id="tab-4" class="tab-switch" checked>
         <label for="tab-4" class="tab-label">Market</label>
         <div class="tab-content">
-
           <div id="genderchart" echarts theme="dark" class="pies"
                style="min-height: 300px; height: 20rem; width:100%"></div>
         </div>
@@ -41,20 +40,14 @@
         <input type="radio" name="css-tab" id="tab-5" class="tab-switch" >
         <label for="tab-5" class="tab-label">Category (Beauty)</label>
         <div class="tab-content">
-          <div class="tab-content">
-            <div id="genderchart1" echarts theme="dark" class="pies"
-                 style="min-height: 300px; height: 20rem; width:100%"></div>
-        </div>
+              <app-category-chart></app-category-chart>
       </div>
     </div>
     <div class="tab">
       <input type="radio" name="css-tab" id="tab-6" class="tab-switch">
       <label for="tab-6" class="tab-label">Custom</label>
       <div class="tab-content">
-        <div class="tab-content">
-          <div id="genderchart3" echarts theme="dark" class="pies"
-               style="min-height: 300px; height: 20rem; width:100%"></div>
-        </div>
+            <app-custom-chart></app-custom-chart>
       </div>
     </div>
   </div>
