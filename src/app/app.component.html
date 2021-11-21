@@ -1,6 +1,6 @@
 <div class="wrapper">
   <header>
-    <div>
+    <div style="width:calc(100% - 24rem);">
         <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
         style="width:7rem; cursor: pointer;transform:translate(2px, 3px)">
   
@@ -8,13 +8,7 @@
         style="width:4rem; transform:translate(21px, -9px)">
     </div>
 
-    <!-- <div class="nav">
-        <button [routerLink]="['/age-summary']">Age</button>
-        <button [routerLink]="['/ethnicty-summary']">Ethincity</button>
-        <button [routerLink]="['/gender-summary']">Gender</button>
-     </div> -->
-
-    <div class="filters">
+    <div class="filters" style="width:24rem;">
       <p [routerLink]="['/media-library']">
         <i class="eva eva-image-outline"></i> Assets Library</p>
       <mat-form-field>
@@ -30,35 +24,13 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
+      <!-- <i class="eva eva-more-horizontal-outline"></i>  -->
     </div>
 
-    <!-- <mat-sidenav-container *ngIf="showNav">
+   <mat-sidenav-container *ngIf="showNav">
       <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
+          <i (click)="sidenav.toggle()" class="eva eva-close-outline"></i> 
         <div class="sidenav">
-          <div>
-            <mat-form-field>
-              <mat-select placeholder="UK">
-                <mat-option>UK</mat-option>
-                <mat-option>US</mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field>
-              <mat-select placeholder="Beauty">
-                <mat-option>Beauty</mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field>
-              <mat-select placeholder="Dove">
-                <mat-option>Dove </mat-option>
-                <mat-option>Olay</mat-option>
-                <mat-option>L'Oréal</mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
           <div>
             <mat-form-field>
               <mat-select placeholder="6 months">
@@ -83,9 +55,9 @@
       </mat-sidenav>
 
    <mat-sidenav-content>
-        <i (click)="sidenav.toggle()" class="eva eva-options-2-outline menu"></i>
+        <i (click)="sidenav.toggle()" class="eva eva-more-horizontal-outline"></i> 
       </mat-sidenav-content> 
-    </mat-sidenav-container> -->
+    </mat-sidenav-container> 
 
   </header>
   <div class="main" [@routeAnim]="prepareRoute(outlet)">

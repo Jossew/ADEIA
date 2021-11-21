@@ -57,6 +57,10 @@
   border-right: none;
 }
 
+.wrapper i {
+  cursor: pointer;
+}
+
 .wrapper .main {
   padding-bottom: 2.5rem;
   background-size: cover;
