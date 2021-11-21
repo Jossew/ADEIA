@@ -35,6 +35,7 @@ import {RenamePropertiesPipe} from "./shared/pipes/rename-properties.pipe";
 import {TruncatePipe} from "./shared/pipes/truncate.pipe";
 import {MatDialogModule} from "@angular/material/dialog";
 import {FormsModule} from "@angular/forms";
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import {FormsModule} from "@angular/forms";
     MatBadgeModule,
     MatTreeModule,
     MatDialogModule,
+    MatRadioModule,
     // NgxEchartsModule,
     NgxEchartsModule.forRoot({
       echarts
