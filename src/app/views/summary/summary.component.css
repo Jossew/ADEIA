@@ -1,3 +1,19 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  width: 22rem;
+  margin: 0.5rem auto 1.5rem auto;
+}
+
+.filters p {
+  transform: translateY(15px);
+}
+
+.filters .mat-form-field {
+  margin: 0 0 0 1rem;
+  width: 6rem;
+}
+
 .options-sidenav {
   padding: 20px;
 }
@@ -170,7 +186,6 @@
 }
 
 .tab-label:hover {
-  top: -0.25rem;
   transition: top 0.25s;
 }
 
