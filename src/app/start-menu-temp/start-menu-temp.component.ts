@@ -18,6 +18,9 @@ const TREE_DATA: BenchmarkNode[] = [
     name: 'Industry Profile',
     children: [{name: 'Finance'}, {name: 'Retail'}, {name: 'Beauty'}],
   },
+  {
+    name: 'Custom',
+  },
 ];
 
 /** Flat node with expandable and level information */
