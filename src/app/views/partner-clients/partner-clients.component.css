@@ -12,13 +12,14 @@
   color: var(--tool-accent);
   margin-bottom: 0;
   margin: 0;
+  transform: translateY(-21px);
 }
 
 .clients .client-btns {
   display: flex;
-  margin: 0.7rem 0.5rem  0 0;
+  margin: 0.7rem 0.5rem 0 0;
   justify-content: space-between;
-  border-bottom: thin solid var(--borders);
+  border-top: thin solid rgba(102, 102, 102, 0.5);
 }
 
 .clients .client-btns .secondary-btn {
@@ -28,10 +29,6 @@
 .clients .client-btns .icon-btn {
   height: auto;
   margin: 3px 0 0 0;
-}
-
-.clients .client-btns .icon-btn:hover {
-  transform: translateY(-3px);
 }
 
 .clients .client-btns .icon-btn img {
@@ -49,15 +46,14 @@
   list-style-type: none;
 }
 
-.example-tree ul:hover,
-.example-tree li:hover {
-  background: rgba(163, 147, 103, 0.2);
+.mat-tree-node:hover {
+  background: rgba(11, 8, 25, 0.3) !important;
 }
 
 .row {
   display: inline-block;
   width: 100%;
-  height: 7rem;
+  height: 5rem;
   margin-top: -1rem;
 }
 
@@ -97,8 +93,9 @@
 }
 
 .mat-tree-node div p {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 .mat-tree-node div:hover {
@@ -113,11 +110,17 @@
   background: rgba(245, 246, 248, 0);
 }
 
-.mat-tree-node:hover .node-options, .mat-tree-node:hover div, .mat-tree-node:hover .material-icons, .mat-tree-node:hover .eva {
+.mat-tree-node:hover .node-options,
+.mat-tree-node:hover div,
+.mat-tree-node:hover .material-icons,
+.mat-tree-node:hover .eva {
   color: var(--font-color) !important;
 }
 
-.active .node-options, .active div, .active .material-icons, .active .eva {
+.active .node-options,
+.active div,
+.active .material-icons,
+.active .eva {
   color: var(--font-color);
 }
 
@@ -153,7 +156,7 @@
 }
 
 .mat-search ::ng-deep .mat-form-field-wrapper {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .search-button {
@@ -183,4 +186,34 @@
   margin-left: -6px;
   margin-top: -2px;
   width: 25px;
+}
+
+.active-link:after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: var(--tool-accent);
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.client-btn {
+  border: 0 solid var(--tool-accent);
+  padding: 0;
+  background: transparent;
+  color: var(--font-color);
+  font-size: 12px;
+  opacity: 0.5;
+  transform: translateY(18px);
+}
+
+.client-btn:hover {
+  opacity: 1;
+}
+
+.client-btn .eva {
+  transform: translateY(2px);
+  color: var(--tool-accent);
 }

@@ -223,6 +223,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #0B0819;
 }
 
 .sidenav-left ::ng-deep .mat-drawer-inner-container .top-container, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container {
@@ -306,7 +307,8 @@
 }
 
 .user-button {
-  background: #333;
+  background: #13101C;
+  background: black;
   width: 46px;
   height: 46px;
   font-weight: bold !important;

@@ -112,3 +112,7 @@ button, a{
 .mat-drawer-container{
     z-index: 5 !important;
 }
+
+.mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgba(0,0,0,.7);
+}
