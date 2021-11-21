@@ -1,20 +1,33 @@
-.header{
-    display:flex;
-    flex-direction: column;
+.preferences-wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .back{
+      margin: 1rem 0 0 0;
+      i{
+        transform: translateY(2px);
+        margin-right: 3px;
+      }
+  }
     h1{
-        font-size: 20px;
-        font-weight: 600 !important;
+        margin: 3rem 0;
+        font-weight: 500 !important;
+        font-size: 1.5rem;
+        padding-left: 1rem;
     }
     div{
        input{
            background: transparent;
+           border: none;
+           border-bottom: thin solid black;
+           width: 100%;
        }
     }
-}
+
 
 h1{
     color: white;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     font-size: 2rem;
     text-align: center;
 }
@@ -24,24 +37,25 @@ h2{
     font-size: 2rem;
 }
 .filter-panels{
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
+    max-width: 70rem;
+    margin: 0 auto;
     .filter-box{
-        width:21rem;
+        width:15rem;
         margin: 1rem;
         padding: 1rem 3rem 3rem 3rem;
-        background: #121212;
+        background: white;
         border-radius: 3px;
         text-align: left;
         align-self: self-start;
         p{
-            color:white;
-            padding:1rem 0 0 0;
-            margin-bottom:0.5rem;
+            color:black;
+            font-weight: bold;
         }
         .filter-wrap{
             border: thin solid #5C5C5C;
-            height: 20rem;
+            height: 15rem;
             overflow-y: scroll;
             border-radius: 3px;
             padding: 0 1.5rem 0.5rem  1.5rem;
@@ -49,8 +63,8 @@ h2{
     }
 }
 .wrap{
-    width:100%;
-    margin:0 auto;
+    max-width: 1058px;
+    margin: 0 auto;
     padding: 2rem 0;
     .visualize-button{
         background: #5B34D5 !important;
@@ -65,7 +79,38 @@ h2{
 
 
 .assets-box{
-    border: dashed thin grey;
     border-radius: 3px;
     padding: 2rem;
+    border-radius: 3px;
+        color: black;
+        width: 80%;
+        border: thin dashed #616161;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    color: black;
+    i{
+        font-size: 22px;
+        margin-bottom:0.3rem;
+    }
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+}
+
+::ng-deep .preferences-wrap {
+   .mat-list-option {
+    color: black !important;
+    }
+    .mat-icon-button, .mat-checkbox, .mat-pseudo-checkbox{
+        color: black !important;
+    }
+    .mat-checkbox-background, .mat-pseudo-checkbox{
+        border: 1px solid  black !important;
+    }
+    .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate {
+        background: #69f0ae !important;
+    }
 }
