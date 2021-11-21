@@ -75,6 +75,7 @@ import {FormsModule} from "@angular/forms";
     MatBadgeModule,
     MatTreeModule,
     MatDialogModule,
+    // NgxEchartsModule,
     NgxEchartsModule.forRoot({
       echarts
     }),

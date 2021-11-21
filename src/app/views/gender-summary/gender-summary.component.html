@@ -1,74 +1,122 @@
-<div class="filters">
-    <p>Filter assets by</p>
-    <mat-form-field>
-        <mat-label>Ethnicity</mat-label>
-        <mat-select>
-            <mat-option>something</mat-option>
-        </mat-select>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Age</mat-label>
-        <mat-select>
-            <mat-option>some age</mat-option>
-        </mat-select>
-    </mat-form-field>
-</div>
+<!--<div class="filters">-->
+<!--  <p>Filter assets by</p>-->
+<!--  <mat-form-field>-->
+<!--    <mat-label>Ethnicity</mat-label>-->
+<!--    <mat-select>-->
+<!--      <mat-option>Black</mat-option>-->
+<!--      <mat-option>White</mat-option>-->
+<!--      <mat-option>Asian</mat-option>-->
+<!--      <mat-option>Indian</mat-option>-->
+<!--      <mat-option>Hispanic</mat-option>-->
+<!--      <mat-option>Middle Eastern</mat-option>-->
+<!--    </mat-select>-->
+<!--  </mat-form-field>-->
+<!--  <mat-form-field>-->
+<!--    <mat-label>Age</mat-label>-->
+<!--    <mat-select>-->
+<!--      <mat-option>0-2</mat-option>-->
+<!--      <mat-option>3-9</mat-option>-->
+<!--      <mat-option>10-19</mat-option>-->
+<!--      <mat-option>20-29</mat-option>-->
+<!--      <mat-option>0-19</mat-option>-->
+
+<!--    </mat-select>-->
+<!--  </mat-form-field>-->
+<!--</div>-->
 
 <div class="gender-wrap">
 
-    <div class="report-section cat-2 chart-wrap wrapper chart-tabs">
-        <div class="tabs">
-            <div class="tab">
-                <input type="radio" name="css-tab" id="tab-4" class="tab-switch" checked>
-                <label for="tab-4" class="tab-label">Market</label>
-                <div class="tab-content">
-                    <div id="genderchart" echarts theme="dark" class="pies"
-                        style="min-height: 300px; height: 20rem; width:100%"></div>
-                </div>
-            </div>
-            <div class="tab">
-                <input type="radio" name="css-tab" id="tab-5" class="tab-switch">
-                <label for="tab-5" class="tab-label">Category (Beauty)</label>
-                <div class="tab-content">
-                    two
-                </div>
-            </div>
-            <div class="tab">
-                <input type="radio" name="css-tab" id="tab-6" class="tab-switch">
-                <label for="tab-6" class="tab-label">Custom</label>
-                <div class="tab-content">
-                    three
-                </div>
-            </div>
+  <div class="report-section cat-2 chart-wrap wrapper chart-tabs">
+    <div class="tabs">
+      <div class="tab">
+        <input type="radio" name="css-tab" id="tab-4" class="tab-switch" checked>
+        <label for="tab-4" class="tab-label">Market</label>
+        <div class="tab-content">
+
+          <div id="genderchart" echarts theme="dark" class="pies"
+               style="min-height: 300px; height: 20rem; width:100%"></div>
         </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="css-tab" id="tab-5" class="tab-switch" >
+        <label for="tab-5" class="tab-label">Category (Beauty)</label>
+        <div class="tab-content">
+          <div class="tab-content">
+            <div id="genderchart1" echarts theme="dark" class="pies"
+                 style="min-height: 300px; height: 20rem; width:100%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tab" id="tab-6" class="tab-switch">
+      <label for="tab-6" class="tab-label">Custom</label>
+      <div class="tab-content">
+        <div class="tab-content">
+          <div id="genderchart3" echarts theme="dark" class="pies"
+               style="min-height: 300px; height: 20rem; width:100%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="report-section cat-1">
+  <h2>Most represented Females</h2>
+  <div class="img-grid">
+
+    <div class="card span-1 " *ngFor="let x of [1,2,3,4,5]"
+         [style.background-image]="'url(assets/images/girl' + x + '.png)'">
+      <div class="info-text">
+        <p>Age: 33</p>
+        <p>Screen time: 7.5s</p>
+        <p>Maximum screen presence of 19%
+          and minimum presence of 1%</p>
+      </div>
     </div>
 
-
-
-
-    <div class="report-section cat-1">
-        <h2>Most represented Females</h2>
-        <div class="img-grid">
-            <div class="card span-2 " style="background-image: url(assets/images/girl1.png)"></div>
-            <div class="card span-1 " style="background-image: url(assets/images/girl6.png)"></div>
-            <div class="card span-2 " style="background-image: url(assets/images/girl3.png)"></div>
-            <div class="top-bucket card span-1">
-                <p><b>90%</b> of Dove ads include females vs <b>95%</b> of the whole Beauty category</p>
-            </div>
-            <div class="card span-1 " style="background-image: url(assets/images/girl4.png)"></div>
-        </div>
+    <!--      <div class="card span-1 " style="background-image: url(assets/images/girl6.png)"></div>-->
+    <!--      <div class="card span-2 " style="background-image: url(assets/images/girl3.png)"></div>-->
+    <div class="top-bucket card span-1">
+      <p><b>90%</b> of Dove ads include females vs <b>95%</b> of the whole Beauty category</p>
     </div>
-    <div class="report-section cat-2">
-        <h2>Most represented Males</h2>
-        <div class="img-grid">
-            <div class="card span-2 " style="background-image: url(assets/images/man1.png)"></div>
-            <div class="card span-1 " style="background-image: url(assets/images/man2.png)"></div>
-            <div class="card span-2 " style="background-image: url(assets/images/man4.png)"></div>
-            <div class="top-bucket card span-1">
-                <p><b>30%</b> of Dove ads include males vs <b>15%</b> of the whole Beauty category</p>
-            </div>
-            <div class="card span-1 " style="background-image: url(assets/images/boy5.png)"></div>
-        </div>
+    <div class="card span-1 " *ngFor="let x of [6,7,8]"
+         [style.background-image]="'url(assets/images/girl' + x + '.png)'">
+      <div class="info-text">
+        <p>Age: 33</p>
+        <p>Screen time: 7.5s</p>
+        <p>Maximum screen presence of 19%
+          and minimum presence of 1%</p>
+      </div>
     </div>
+  </div>
+</div>
+
+
+<div class="report-section cat-2">
+  <h2>Most represented Males</h2>
+  <div class="img-grid">
+    <div class="card span-1 " *ngFor="let x of [1,2,3,4]"
+         [style.background-image]="'url(assets/images/man' + x + '.png)'">
+      <div class="info-text">
+        <p>Age: 33</p>
+        <p>Screen time: 7.5s</p>
+        <p>Maximum screen presence of 19%
+          and minimum presence of 1%</p>
+      </div>
+    </div>
+    <div class="top-bucket card span-1">
+      <p><b>30%</b> of Dove ads include males vs <b>15%</b> of the whole Beauty category</p>
+    </div>
+    <div class="card span-1 " *ngFor="let x of [5]" [style.background-image]="'url(assets/images/boy' + x + '.png)'">
+      <div class="info-text">
+        <p>Age: 33</p>
+        <p>Screen time: 7.5s</p>
+        <p>Maximum screen presence of 19%
+          and minimum presence of 1%</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
