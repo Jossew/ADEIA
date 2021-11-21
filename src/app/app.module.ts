@@ -40,6 +40,8 @@ import { CategoryChartComponent } from './views/gender-summary/category-chart/ca
 import {  CustomChartComponent } from './views/gender-summary/custom-chart/custom-chart.component';
 import { CategoryAgeComponent } from './views/age-summary/category-age/category-age.component';
 import { CustomAgeComponent } from './views/age-summary/custom-age/custom-age.component';
+import { CustomEthnicityComponent } from './views/etnicity/custom-ethnicity/custom-ethnicity.component';
+import { CategoryEthnicityComponent } from './views/etnicity/category-ethnicity/category-ethnicity.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { CustomAgeComponent } from './views/age-summary/custom-age/custom-age.co
     CategoryChartComponent,
     CustomChartComponent,
     CategoryAgeComponent,
-    CustomAgeComponent
+    CustomAgeComponent,
+    CustomEthnicityComponent,
+    CategoryEthnicityComponent
   ],
   imports: [
     BrowserModule,
