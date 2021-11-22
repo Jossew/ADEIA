@@ -26,7 +26,7 @@ export class CategoryAgeComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'AGE SPLIT',
+          text: 'Age Split',
           textStyle: {
             fontSize: 14,
             color: '#fff'
@@ -73,12 +73,12 @@ export class CategoryAgeComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [50, 138, 19, 12 ]
+          data: [30, 138, 28, 18 ]
         },
         {
           name: 'Beauty Category',
           type: 'bar',
-          data: [60, 150, 3, 2 ]
+          data: [40, 110, 3, 10 ]
         },
       ]
     };

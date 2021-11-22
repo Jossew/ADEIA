@@ -25,7 +25,7 @@ export class CustomAgeComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'AGE SPLIT',
+          text: 'Age Split',
           textStyle: {
             fontSize: 14,
             color: '#fff'
@@ -72,12 +72,12 @@ export class CustomAgeComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [50, 138, 19, 12 ]
+          data: [50, 118, 19, 16 ]
         },
         {
           name: 'Beauty Category',
           type: 'bar',
-          data: [60, 150, 3, 2 ]
+          data: [60, 120, 3, 4 ]
         },
       ]
     };

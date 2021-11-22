@@ -26,7 +26,7 @@ export class CategoryEthnicityComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'ETHNICITY SPLIT',
+          text: 'Ethnicity Split',
           textStyle: {
             fontSize: 14,
             color: '#fff'
@@ -73,12 +73,12 @@ export class CategoryEthnicityComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [23, 29,13, 5,5, 33,]
+          data: [23, 29,19, 2,5, 45,]
         },
         {
           name: 'Beauty Category',
           type: 'bar',
-          data: [20, 26,9, 3,5, 39,]
+          data: [22, 26,9, 3,6, 49,]
         },
       ]
     };

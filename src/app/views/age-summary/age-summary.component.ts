@@ -21,7 +21,7 @@ export class AgeSummaryComponent implements OnInit {
     title: [
       {
         left: 'center',
-        text: 'AGE SPLIT',
+        text: 'Age Split',
         textStyle: {
           fontSize: 14,
           color: '#fff'
