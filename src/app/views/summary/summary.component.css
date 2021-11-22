@@ -91,13 +91,22 @@
 }
 
 .container .overview-data .summary-content .chart-box p {
-  color: #616161;
-  font-size: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .container .overview-data .chart-box-score {
   width: 21rem;
   margin: 0 0 0 0.5rem;
+}
+
+.container .overview-data .chart-box-score p {
+  font-weight: bold;
+}
+
+.container .overview-data .chart-box-score .filters {
+  margin-bottom: -2rem;
 }
 
 .container .overview-data .chart-box-score .score {

@@ -40,7 +40,7 @@ export class SummaryComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'GENDER',
+       //   text: 'GENDER',
           textStyle: {
             fontSize: 14,
             color: '#fff'
@@ -90,8 +90,8 @@ export class SummaryComponent implements OnInit {
           },
           b: {
             color: '#fff',
-            fontSize: 16,
-            fontWeight: 'bold',
+            fontSize: 12,
+         //   fontWeight: 'bold',
             lineHeight: 33
           },
           per: {
@@ -132,7 +132,7 @@ export class SummaryComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'AGE',
+     //     text: 'AGE',
           textStyle: {
             fontSize: 13,
             color: '#fff'
@@ -173,9 +173,8 @@ export class SummaryComponent implements OnInit {
           // },
           b: {
             color: '#fff',
-            fontSize: 13,
-            fontWeight: 'bold',
-            lineHeight: 33
+            fontSize: 12,
+            //   fontWeight: 'bold',
           },
           per: {
             color: '#fff',
@@ -218,7 +217,7 @@ export class SummaryComponent implements OnInit {
       title: [
         {
           left: 'center',
-          text: 'ETHNICITY',
+       //   text: 'ETHNICITY',
           textStyle: {
             fontSize: 14,
             color: '#fff'
@@ -258,9 +257,8 @@ export class SummaryComponent implements OnInit {
           // },
           b: {
             color: '#fff',
-            fontSize: 13,
-            fontWeight: 'bold',
-            lineHeight: 33
+            fontSize: 12,
+            //   fontWeight: 'bold',
           },
           per: {
             color: '#fff',
