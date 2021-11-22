@@ -39,7 +39,6 @@
     width: 26%;
     flex-direction: column;
     margin: 0 3rem;
-    margin-bottom:4rem;
 }
 .cat-1{
     animation: catone 1.5s ease;
@@ -89,6 +88,7 @@
     width: 20%;
     flex-direction: column;
     margin: 0 6%;
+    max-height: 40rem;
     //tabs
     .chart-tabs {
       width: 100%;
