@@ -53,7 +53,7 @@ export class CategoryEthnicityComponent implements OnInit {
         containLabel: true
       },
       color:[ 
-        '#5B34D5','#E2DAFB'
+        '#5B34D5','#AE786E'
       ],
       xAxis: {
         type: 'value',
