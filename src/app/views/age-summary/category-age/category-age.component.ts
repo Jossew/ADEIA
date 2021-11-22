@@ -9,7 +9,7 @@ import * as echarts from 'echarts';
 })
 export class CategoryAgeComponent implements OnInit {
 
- 
+
   private ethnicitychart: any = null;
 
   constructor() { }
@@ -52,7 +52,7 @@ export class CategoryAgeComponent implements OnInit {
         bottom: '15%',
         containLabel: true
       },
-      color:[ 
+      color:[
         '#5B34D5','#AE786E'
       ],
       xAxis: {
@@ -73,22 +73,21 @@ export class CategoryAgeComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [30, 138, 28, 18 ]
+          data: [50, 38, 10, 2 ]
         },
         {
           name: 'Beauty Category',
+          data: [40, 25, 35,  5 ],
           type: 'bar',
-          data: [40, 110, 3, 10 ]
         },
       ]
     };
-  
+
         this.ethnicitychart.setOption(barcharts);
      }
-      
-     
-      
-    
-    
+
+
+
+
+
     }
-    

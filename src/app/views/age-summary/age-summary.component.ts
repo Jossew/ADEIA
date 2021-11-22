@@ -47,7 +47,7 @@ export class AgeSummaryComponent implements OnInit {
       bottom: '15%',
       containLabel: true
     },
-    color:[ 
+    color:[
       '#5B34D5','#AE786E'
     ],
     xAxis: {
@@ -68,23 +68,22 @@ export class AgeSummaryComponent implements OnInit {
       {
         name: 'Dove',
         type: 'bar',
-        data: [50, 138, 19, 12 ]
+        data: [50, 38, 10, 2 ]
       },
       {
-        name: 'Beauty Category',
+        name: 'Market',
         type: 'bar',
-        data: [60, 150, 3, 2 ]
+        data: [20, 35, 25,  20 ]
       },
     ]
   };
        this.agechart.setOption(barcharts);
     }
-     
-    
-     
+
+
+
      constructor() { }
-   
-   
-   
+
+
+
    }
-   

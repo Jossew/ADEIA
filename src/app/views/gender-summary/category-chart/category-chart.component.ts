@@ -71,22 +71,21 @@ export class CategoryChartComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [15325, 23494,]
+          data: [42, 58,]
         },
         {
-          name: 'Market',
+          name: 'Beauty Category',
           type: 'bar',
-          data: [12203, 18989,]
+          data: [45, 55,]
         },
       ]
     };
-  
+
         this.ethnicitychart.setOption(barcharts);
      }
-      
-     
-      
-    
-    
+
+
+
+
+
     }
-    
