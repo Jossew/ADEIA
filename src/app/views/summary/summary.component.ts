@@ -231,7 +231,7 @@ export class SummaryComponent implements OnInit {
         },
       ],
       color: [
-        '#5B34D5', '#fff', '#B19DEB', '#3AD564', '#51839E', '#c23531', '#2f4554', '#61a0a8', '#d48265', '#91c7ae', '#A5224A',
+        '#5B34D5', '#fff', '#B19DEB', '#3AD564', '#51839E', '#AE786E', '#2f4554', '#61a0a8', '#d48265', '#91c7ae', '#A5224A',
       ],
       legend: {
         show: false,
