@@ -36,9 +36,9 @@
 .report-section{
     display:flex;
     position: relative;
-    width: 26%;
+    width: 20%;
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 0 6%;
     margin-bottom:4rem;
 }
 .cat-1{
@@ -46,10 +46,6 @@
 }
 .cat-2{
     animation: cattwo 1.5s ease;
-}
-.chart-wrap{
-    flex: 1;
-    min-width: 28%;
 }
 @keyframes catone{
     from {
@@ -89,9 +85,9 @@
 .report-section{
     display:flex;
     position: relative;
-    width: 26%;
+    width: 21%;
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 0 6%;
     //tabs
     .chart-tabs {
       width: 100%;
@@ -121,7 +117,7 @@
       transition: all 0.25s;
       text-transform: uppercase;
       color: #616161;
-      font-size:14px;
+      font-size:12px;
       border: 1px solid #616161;
       border-radius: 1rem;
       padding: 0.3rem 0.6rem;
@@ -141,6 +137,7 @@
       padding: 1.618rem;
       opacity: 0;
       transition: all 0.35s;
+      border-top: thin solid #616161;
     }
     .tab-switch:checked + .tab-label {
       transition: all 0.35s;

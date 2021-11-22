@@ -39,12 +39,78 @@
   font-size: 14px;
 }
 
+.cat-1 {
+  animation: catone 1.5s ease;
+}
+
+.cat-2 {
+  animation: cattwo 1.5s ease;
+}
+
+@keyframes catone {
+  from {
+    top: -10rem;
+  }
+  to {
+    top: 0rem;
+  }
+}
+
+@keyframes cattwo {
+  from {
+    bottom: -10rem;
+  }
+  to {
+    bottom: 0rem;
+  }
+}
+
+.card {
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0;
+  animation: flicker 3s ease alternate forwards;
+  transition: all 1s ease-out;
+  position: relative;
+  border-radius: 1px;
+  position: relative;
+  cursor: pointer;
+  border: thin solid black;
+}
+
+.card mat-checkbox {
+  position: absolute;
+  top: 3px;
+}
+
+.card .info-text {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  width: 12rem;
+  padding: 1rem;
+  transform: translate(2rem, 3rem);
+}
+
+.card:hover {
+  transform: scale(1.25);
+  border: 1px solid white !important;
+}
+
+.card:hover .info-text {
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  transform: scale(1.1);
+  top: 6rem;
+}
+
 .report-section {
   display: flex;
   position: relative;
-  width: 26%;
+  width: 20%;
   flex-direction: column;
-  margin: 0 3rem;
+  margin: 0 6%;
 }
 
 .report-section .chart-tabs {
@@ -80,7 +146,7 @@
   transition: all 0.25s;
   text-transform: uppercase;
   color: #616161;
-  font-size: 14px;
+  font-size: 12px;
   border: 1px solid #616161;
   border-radius: 1rem;
   padding: 0.3rem 0.6rem;
@@ -101,6 +167,7 @@
   padding: 1.618rem;
   opacity: 0;
   transition: all 0.35s;
+  border-top: thin solid #616161;
 }
 
 .report-section .tab-switch:checked + .tab-label {
@@ -114,34 +181,4 @@
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
-}
-
-.cat-1 {
-  animation: catone 1.5s ease;
-}
-
-.cat-2 {
-  animation: cattwo 1.5s ease;
-}
-
-.chart-wrap {
-  flex: 1;
-}
-
-@keyframes catone {
-  from {
-    top: -10rem;
-  }
-  to {
-    top: 0rem;
-  }
-}
-
-@keyframes cattwo {
-  from {
-    bottom: -10rem;
-  }
-  to {
-    bottom: 0rem;
-  }
 }
