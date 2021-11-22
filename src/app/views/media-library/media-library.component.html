@@ -5,22 +5,20 @@
         <div class="wrap">
                 <div class="item">
                         <p class="label">Total Assets</p>
-                        <p class="kpi"> 1,039</p>
+                        <p class="kpi"> 5,658</p>
+                        <mat-checkbox [checked]="selectedCheck">Dove Assets <span class="kpi">(3,345)</span>
+                        </mat-checkbox>
+                        <mat-checkbox>Olay Assets <span class="kpi">(2,313)</span></mat-checkbox>
                 </div>
-                <!--        <div class="item">-->
-                <!--                  <mat-checkbox [checked]="selectedCheck">Dove Assets <span class="kpi">(3,345)</span></mat-checkbox>-->
-                <!--        </div>-->
-                <!--        <div class="item">-->
-                <!--                        <mat-checkbox>Olay Assets <span class="kpi">(2,313)</span></mat-checkbox>-->
-                <!--              </div>-->
+                <div class="item">
+                        <mat-form-field class="example-full-width">
+                                <input type="search" placeholder="Search.." />
+                        </mat-form-field>
+                       <div class="fake-filter">Sort by <p class="mat-select-arrow "></p></div>
+                </div>
         </div>
         <button [routerLink]="['/video-insights']" mat-raised-button class="start-button" style="float:right">Analyse
                 selected</button>
-        <!-- <div class="item">
-                <mat-form-field class="example-full-width" appearance="fill">
-                        <input type="search" placeholder="Search.." />
-                </mat-form-field>
-        </div> -->
 </div>
 
 
@@ -1227,7 +1225,8 @@
         </div>
         <div class="card span-1 c-4" style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=39)">
                 <mat-checkbox></mat-checkbox>
-        </div>    <div class="card span-1 c-2" style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
+        </div>
+        <div class="card span-1 c-2" style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=0)">
                 <mat-checkbox></mat-checkbox>
         </div>
         <div class="card span-1 c-1" style="background-image: url(https://unsplash.it/200/200/?random&amp;amp;time=1)">
