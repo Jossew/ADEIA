@@ -71,22 +71,20 @@ export class CustomChartComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [19325, 23438,]
-        },
-        {
-          name: 'Market',
+          data: [68, 32,]
+        },{
+          name: 'Custom',
           type: 'bar',
-          data: [18203, 23489,]
+          data: [50, 50,]
         },
       ]
     };
-  
+
         this.ethnicitychart.setOption(barcharts);
      }
-      
-     
-      
-    
-    
+
+
+
+
+
     }
-    

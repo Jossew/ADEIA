@@ -116,8 +116,8 @@ export class SummaryComponent implements OnInit {
             color: '#616161'
           },
           data: [
-            {value: 600, name: 'Female',},
-            {value: 300, name: 'Male'},
+            {value: 32, name: 'Male'},
+            {value: 68, name: 'Female'},
           ]
         }
       ]
@@ -198,10 +198,12 @@ export class SummaryComponent implements OnInit {
             borderRadius: 3
           },
           data: [
-            {value: 30, name: '20-25'},
-            {value: 40, name: '26-30'},
-            {value: 20, name: '31-35'},
-            {value: 10, name: '36-40'},
+            {value: 0 , name: '0-9' },
+            {value: 3 , name: '10-19' },
+            {value: 36 , name:'20-29' },
+            {value: 38 , name: '30-39' },
+            {value: 20 , name: '40-49' },
+            {value: 3 , name: '50+' }
           ]
         }
       ]

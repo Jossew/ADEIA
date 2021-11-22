@@ -185,8 +185,316 @@ export class PartnerClientsComponent implements OnInit {
         "createdAt": "2021-04-09T09:05:04.684Z",
         "updatedAt": "2021-04-09T09:05:04.685Z",
         "__v": 0,
-
+        brandList: [
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Loreal Paris",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+        ],
         "id": "607018c0ba73051b08ca2ee5"
+      },
+      {
+        "_id": "602d442479d9dab2fc4cfb8d",
+        "user": "602459bb3f5bb136111f092e",
+        "client": {
+          "logo": {
+            "name": "1613124568001-fantalogo-svg.png",
+            "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/clients/1613124568001-fantalogo-svg.png?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=kv0q0ec8cMuizhEwl806iIrgx8s%3D"
+          },
+          "cat": "client",
+          "_id": "602653de17f1cb001e973043",
+          "name": "Nivea",
+          "id": "602653de17f1cb001e973043"
+        },
+        "__v": 0,
+        "brandList": [
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Dove",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Walls",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Surf",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Axe",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Ponds",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          }
+
+
+
+        ],
+        "id": "602d442479d9dab2fc4cfb8d"
+      },
+      {
+        "_id": "602d442479d9dab2fc4cfb8d",
+        "user": "602459bb3f5bb136111f092e",
+        "client": {
+          "logo": {
+            "name": "1613124568001-fantalogo-svg.png",
+            "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/clients/1613124568001-fantalogo-svg.png?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=kv0q0ec8cMuizhEwl806iIrgx8s%3D"
+          },
+          "cat": "client",
+          "_id": "602653de17f1cb001e973043",
+          "name": "Procter & Gamble",
+          "id": "602653de17f1cb001e973043"
+        },
+        "__v": 0,
+        "brandList": [
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Olay",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Walls",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Surf",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Axe",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Ponds",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          }
+
+
+
+        ],
+        "id": "602d442479d9dab2fc4cfb8d"
+      },
+      {
+        "_id": "602d442479d9dab2fc4cfb8d",
+        "user": "602459bb3f5bb136111f092e",
+        "client": {
+          "logo": {
+            "name": "1613124568001-fantalogo-svg.png",
+            "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/clients/1613124568001-fantalogo-svg.png?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=kv0q0ec8cMuizhEwl806iIrgx8s%3D"
+          },
+          "cat": "client",
+          "_id": "602653de17f1cb001e973043",
+          "name": "GSK",
+          "id": "602653de17f1cb001e973043"
+        },
+        "__v": 0,
+        "brandList": [
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Voltaren",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          },
+          {
+            "_id": "602d442479d9dab2fc4cfb8e",
+            "brand": {
+              "logo": {
+                "name": "1613124599372-fanta2.jpg",
+                "path": "https://publicis-belief.s3.eu-west-1.amazonaws.com/logos/brands/1613124599372-fanta2.jpg?AWSAccessKeyId=AKIAQQ3QG6SJQT3VGA5W&Expires=1638063443&Signature=bsvNStGK4JTZiQSolvlhlOmqYKc%3D"
+              },
+              "cat": "brand",
+              "_id": "602653fc17f1cb001e973045",
+              "name": "Sensodyne",
+              "client": "602653de17f1cb001e973043",
+              "createdBy": "60251f3617f1cb001e97302b",
+              "__v": 0,
+              "id": "602653fc17f1cb001e973045"
+            },
+            "client": "602653de17f1cb001e973043",
+            "user": "602459bb3f5bb136111f092e",
+            "__v": 0
+          }
+        ],
+        "id": "602d442479d9dab2fc4cfb8d"
       },
 
     ];
