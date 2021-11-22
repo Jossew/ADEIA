@@ -7,6 +7,8 @@
 
 .toolbar .wrap {
   display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .toolbar .item {
@@ -15,27 +17,42 @@
   margin: 1rem;
 }
 
+.toolbar .item .mat-checkbox {
+  margin: 0 0 0 1.5rem;
+}
+
 .toolbar .item .label {
   margin: 0;
 }
 
 .toolbar .item .kpi {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 0 0 0.4rem;
 }
 
 .toolbar .start-button {
   text-align: center;
-  padding: 0.8rem 1.5rem 0.8rem 1rem;
+  padding: 0.5rem 1rem !important;
   border-radius: 3px;
   color: white;
   cursor: pointer;
   background: #5B34D5 !important;
   margin: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
+  align-self: center;
+}
+
+.toolbar input {
+  background: transparent;
+  border: thin solid transparent;
+  border-bottom: thin solid white;
+  padding: 0.2rem 0;
+  margin: 0 0 0 1rem;
+  outline: 0;
+  transform: translateY(3px);
 }
 
 .img-grid {
@@ -129,4 +146,22 @@
 
 .card:nth-child(5) {
   background: #ffe66d;
+}
+
+.fake-filter {
+  display: flex;
+  align-items: center;
+  border-bottom: thin solid #fff;
+  width: 6rem;
+  justify-content: space-between;
+}
+
+.fake-filter .mat-select-arrow {
+  transform: translateY(0);
+  margin-left: 1rem;
+  margin-bottom: 0px;
+}
+
+.eva-search-outline {
+  transform: translate(-16px, 5px);
 }

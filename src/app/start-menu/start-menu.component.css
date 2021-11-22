@@ -1,3 +1,18 @@
+.background {
+  background-image: url("../../assets/images/start-1.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  margin-top: -1rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
 .preferences-wrap {
   max-width: 1440px;
   margin: 0 auto;
@@ -6,6 +21,9 @@
 .back {
   margin: 1rem 0 0 0;
   cursor: pointer;
+  color: black;
+  font-weight: bold;
+  padding: 1rem;
 }
 
 .back i {
@@ -122,7 +140,19 @@ h2 {
 }
 
 ::ng-deep .preferences-wrap .mat-pseudo-checkbox-checked, ::ng-deep .preferences-wrap .mat-pseudo-checkbox-indeterminate, ::ng-deep .preferences-wrap .mat-accent .mat-pseudo-checkbox-checked, ::ng-deep .preferences-wrap .mat-accent .mat-pseudo-checkbox-indeterminate {
-  background: #69f0ae !important;
+  background: #5B34D5  !important;
+}
+
+::ng-deep .preferences-wrap .mat-pseudo-checkbox::after {
+  color: white !important;
+}
+
+::ng-deep .preferences-wrap .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #5B34D5   !important;
+}
+
+::ng-deep .preferences-wrap .mat-radio-inner-circle {
+  background: #5B34D5  !important;
 }
 
 .chips {
@@ -141,4 +171,12 @@ h2 {
   border-radius: 1rem;
   float: left;
   margin: 0 0 0 0.5rem;
+}
+
+:host ::ng-deep .mat-radio-label-content {
+  color: black;
+}
+
+:host ::ng-deep .mat-radio-outer-circle {
+  color: black;
 }
