@@ -45,6 +45,10 @@
   width: 26%;
   flex-direction: column;
   margin: 0 3rem;
+  background: #111;
+  border-radius: 4px;
+  align-self: self-start;
+  margin-bottom: 2rem;
 }
 
 .cat-1 {
@@ -161,4 +165,8 @@
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
+}
+
+.chart-tabs {
+  background: transparent;
 }

@@ -46,6 +46,10 @@
   flex-direction: column;
   margin: 0 6%;
   max-height: 42rem;
+  background: #111;
+  border-radius: 4px;
+  align-self: self-start;
+  margin-bottom: 2rem;
 }
 
 .cat-1 {
@@ -91,11 +95,6 @@
   width: 21%;
   flex-direction: column;
   margin: 0 6%;
-}
-
-.report-section .chart-tabs {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .report-section .tabs {
@@ -161,4 +160,8 @@
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
+}
+
+.chart-tabs {
+  background: transparent;
 }
