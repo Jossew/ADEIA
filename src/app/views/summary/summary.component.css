@@ -147,16 +147,8 @@
 
 .tab {
   flex: 1;
-  text-align: left;
-  flex: 1;
-}
-
-.tab:nth-child(2) {
   text-align: center;
-}
-
-.tab:nth-child(3) {
-  text-align: right;
+  flex: 1;
 }
 
 .tab-switch {
@@ -173,7 +165,7 @@
   transition: all 0.25s;
   text-transform: uppercase;
   color: #616161;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   border-bottom: thin solid #616161;
 }
@@ -208,7 +200,7 @@
   font-weight: 700;
   color: white;
   text-decoration: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #5B34D5;
   font-style: italic;
 }
 
