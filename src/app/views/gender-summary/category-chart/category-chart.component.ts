@@ -71,7 +71,7 @@ export class CategoryChartComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [42, 58,]
+          data: [68, 32,]
         },
         {
           name: 'Beauty Category',

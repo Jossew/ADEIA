@@ -71,12 +71,11 @@ export class CustomChartComponent implements OnInit {
         {
           name: 'Dove',
           type: 'bar',
-          data: [42, 58,]
-        },
-        {
-          name: 'Brand Goals',
+          data: [68, 32,]
+        },{
+          name: 'Custom',
           type: 'bar',
-          data: [38, 62,]
+          data: [50, 50,]
         },
       ]
     };

@@ -65,7 +65,7 @@ export class GenderSummaryComponent implements OnInit {
       {
         name: 'Dove',
         type: 'bar',
-        data: [42, 58,]
+        data: [68, 32,]
       },
       {
         name: 'Market',

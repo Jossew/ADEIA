@@ -66,18 +66,19 @@ export class CustomAgeComponent implements OnInit {
       },
       yAxis: {
         type: 'category',
-        data: ['20-25', '26-30', '31-35','36-40' ]
+        data: ['0-9', '10-19', '20-29','30-39', '40-49', '50+' ]
       },
       series: [
         {
           name: 'Dove',
           type: 'bar',
-          data: [50, 38, 10, 2 ]
+          data: [0, 3, 36, 38, 20, 3]
+
         },
         {
           type: 'bar',
-          name: 'Brand Goals',
-          data: [25, 25, 25,  25 ]
+          name: 'Custom',
+          data: [0, 20, 20, 20, 20, 20 ]
 
         },
       ]

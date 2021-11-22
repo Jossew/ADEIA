@@ -67,17 +67,17 @@ export class CategoryAgeComponent implements OnInit {
       },
       yAxis: {
         type: 'category',
-        data: ['20-25', '26-30', '31-35','36-40' ]
+        data: ['0-9', '10-19', '20-29','30-39', '40-49', '50+' ]
       },
       series: [
         {
           name: 'Dove',
           type: 'bar',
-          data: [50, 38, 10, 2 ]
+          data: [0, 3, 36, 38, 20, 2 , 1]
         },
         {
           name: 'Beauty Category',
-          data: [40, 25, 35,  5 ],
+          data: [0, 8, 37, 33, 10, 2 , 10],
           type: 'bar',
         },
       ]
