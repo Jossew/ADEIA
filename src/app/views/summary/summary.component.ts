@@ -105,7 +105,7 @@ export class SummaryComponent implements OnInit {
         }
       },
       itemStyle: {
-        borderRadius: 4
+        borderRadius: 3
       },
       series: [
         {
@@ -195,7 +195,7 @@ export class SummaryComponent implements OnInit {
             color: '#616161'
           },
           itemStyle: {
-            borderRadius: 4
+            borderRadius: 3
           },
           data: [
             {value: 30, name: '20-25'},
@@ -279,7 +279,7 @@ export class SummaryComponent implements OnInit {
             color: '#616161'
           },
           itemStyle: {
-            borderRadius: 4
+            borderRadius: 3
           },
           data: [
             {value: 300, name: 'Asian'},
@@ -299,8 +299,13 @@ export class SummaryComponent implements OnInit {
       {
         value: 20,
         name: 'GENDER',
+
         title: {
-          offsetCenter: ['0%', '-50%']
+          offsetCenter: ['0%', '-50%'],
+           textStyle: {
+            fontSize: 13,
+            color: '#fff'
+          }
         },
         detail: {
           valueAnimation: true,
