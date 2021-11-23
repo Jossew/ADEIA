@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { trigger, state, style, transition, animate, group } from '@angular/animations';
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({

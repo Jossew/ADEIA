@@ -11,16 +11,17 @@
                         Road slept on a wash trade behind few bear! Decred limited some burned private chain! Since blockchain
                         threw away few peer-to-peer network, Binance Coin threw away the constant dolphin after few proof of
                         work. </p> -->
-                    <div [formGroup]="form">
+                    <div class="login-form__div" [formGroup]="form">
                         <mat-form-field>
-                            <input placeholder="Username" formControlName="username">
+                            <input matInput placeholder="Username" formControlName="username">
                         </mat-form-field>
                         <mat-form-field>
-                            <input placeholder="Password" formControlName="username">
+                            <input matInput placeholder="Password" formControlName="password">
                         </mat-form-field>
-                        <p>Forgotten password?</p>
+
+                      <app-forgotten-password></app-forgotten-password>
                 </div>
-                    <div class="buttons">
+                    <div class="login-form__div buttons">
                             <button class="register-button" mat-raised-button>Register</button>
                             <button class="start-button" mat-raised-button [routerLink]="['/summary']">Login</button>
                     </div>

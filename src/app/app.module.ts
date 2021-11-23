@@ -44,6 +44,7 @@ import { CustomEthnicityComponent } from './views/etnicity/custom-ethnicity/cust
 import { CategoryEthnicityComponent } from './views/etnicity/category-ethnicity/category-ethnicity.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
 import {MatInputModule} from "@angular/material/input";
+import { ForgottenPasswordComponent } from './home/forgotten-password/forgotten-password.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import {MatInputModule} from "@angular/material/input";
     CustomAgeComponent,
     CustomEthnicityComponent,
     CategoryEthnicityComponent,
-    AppMenuComponent
+    AppMenuComponent,
+    ForgottenPasswordComponent
   ],
   imports: [
     BrowserModule,
