@@ -71,8 +71,14 @@
     background-color: transparent !important;
   }
   .logout{
-    margin:1rem;
+    margin: 1rem 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 0.5rem
+    }
   }
   .menu{
     cursor: pointer;
@@ -85,7 +91,6 @@
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
     .sidenav {
-      overflow-y: scroll;
       padding-bottom: 4rem;
     }
   }

@@ -2,8 +2,7 @@ import { Component, Optional, OnInit } from '@angular/core';
 import {
   RouterOutlet,
   Router,
-  ActivatedRoute,
-  NavigationStart,
+  ActivatedRoute, NavigationEnd, RouterEvent,
 } from '@angular/router';
 import {
   trigger,
@@ -16,6 +15,7 @@ import {
   animateChild,
 } from '@angular/animations';
 import { fader } from './route-animations';
+import {filter} from "rxjs/operators";
 
 @Component({
   selector: 'app-root',
@@ -73,15 +73,16 @@ export class AppComponent implements OnInit {
   url: any;
   selectedMarket ='US';
   constructor(public route: ActivatedRoute, private router: Router) {
-    // this.url = router.url;
-    router.events.forEach((event) => {
-      if (event instanceof NavigationStart) {
-        if (event.url == '/home') {
+    router.events
+      .pipe(
+        filter((event): event is NavigationEnd => event instanceof NavigationEnd)
+      )
+      .subscribe((event) => {
+        if (event.urlAfterRedirects === '/home') {
           this.showNav = false;
         } else {
           this.showNav = true;
         }
-      }
     });
   }
   SIDEBAR_WIDTH = '60px';

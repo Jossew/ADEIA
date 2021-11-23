@@ -34,7 +34,7 @@ import {PartnerClientsComponent} from "./views/partner-clients/partner-clients.c
 import {RenamePropertiesPipe} from "./shared/pipes/rename-properties.pipe";
 import {TruncatePipe} from "./shared/pipes/truncate.pipe";
 import {MatDialogModule} from "@angular/material/dialog";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatRadioModule} from "@angular/material/radio";
 import { CategoryChartComponent } from './views/gender-summary/category-chart/category-chart.component';
 import {  CustomChartComponent } from './views/gender-summary/custom-chart/custom-chart.component';
@@ -43,6 +43,7 @@ import { CustomAgeComponent } from './views/age-summary/custom-age/custom-age.co
 import { CustomEthnicityComponent } from './views/etnicity/custom-ethnicity/custom-ethnicity.component';
 import { CategoryEthnicityComponent } from './views/etnicity/category-ethnicity/category-ethnicity.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -95,6 +96,8 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
     NgxEchartsModule.forRoot({
       echarts
     }),
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [RenamePropertiesPipe],
   bootstrap: [AppComponent]

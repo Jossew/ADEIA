@@ -1,5 +1,5 @@
-<app-app-menu [sideBarWidth]="SIDEBAR_WIDTH" ></app-app-menu>
-<div [style.padding-left]="SIDEBAR_WIDTH">
+<app-app-menu *ngIf="showNav" [sideBarWidth]="SIDEBAR_WIDTH"></app-app-menu>
+<div [style.padding-left]="showNav ? SIDEBAR_WIDTH : '0'">
   <div class="wrapper">
     <header>
       <div style="width:calc(100% - 24rem);">
@@ -51,7 +51,7 @@
                 </mat-form-field>
               </div>
               <div (click)="logOut();" class="logout">
-                <i class="eva eva-log-out-outline"></i>
+                <i class="logout__icon eva eva-log-out-outline"></i>
                 Logout
               </div>
             </div>

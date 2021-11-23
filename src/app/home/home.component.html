@@ -6,20 +6,20 @@
     <div class="login-side">
             <div class="login-form">
                     <!-- <h1>ADEIA</h1> -->
-                    <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg" style="width:12rem; padding:0 0 0.5rem 0"> 
+                    <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg" style="width:12rem; padding:0 0 0.5rem 0">
                     <!-- <p class="intro">Because Stellar thought lots of centralised non-fungible token until few wash trade, Silk
                         Road slept on a wash trade behind few bear! Decred limited some burned private chain! Since blockchain
                         threw away few peer-to-peer network, Binance Coin threw away the constant dolphin after few proof of
                         work. </p> -->
-                    <div>
+                    <div [formGroup]="form">
                         <mat-form-field>
-                            <input matInput placeholder="Username">
+                            <input placeholder="Username" formControlName="username">
                         </mat-form-field>
                         <mat-form-field>
-                            <input matInput placeholder="Password">
+                            <input placeholder="Password" formControlName="username">
                         </mat-form-field>
-                        <p>Forgotten password?</p> 
-                </div> 
+                        <p>Forgotten password?</p>
+                </div>
                     <div class="buttons">
                             <button class="register-button" mat-raised-button>Register</button>
                             <button class="start-button" mat-raised-button [routerLink]="['/summary']">Login</button>
