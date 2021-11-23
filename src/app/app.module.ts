@@ -47,6 +47,7 @@ import {MatInputModule} from "@angular/material/input";
 import { ForgottenPasswordComponent } from './home/forgotten-password/forgotten-password.component';
 import { ForgottenPasswordDialogComponent } from './home/forgotten-password/forgotten-password-dialog/forgotten-password-dialog.component';
 import { RegisterAccountComponent } from './home/register-account/register-account.component';
+import { RegisterAccountDialogComponent } from './home/register-account/register-account-dialog/register-account-dialog.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { RegisterAccountComponent } from './home/register-account/register-accou
     AppMenuComponent,
     ForgottenPasswordComponent,
     ForgottenPasswordDialogComponent,
-    RegisterAccountComponent
+    RegisterAccountComponent,
+    RegisterAccountDialogComponent
   ],
   imports: [
     BrowserModule,

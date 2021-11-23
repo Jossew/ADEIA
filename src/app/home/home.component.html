@@ -19,10 +19,12 @@
                             <input matInput placeholder="Password" formControlName="password">
                         </mat-form-field>
 
-                      <app-forgotten-password [email]="form.value.username"></app-forgotten-password>
+                      <app-forgotten-password [username]="form.value.username"></app-forgotten-password>
                 </div>
                     <div class="login-form__div buttons">
-                            <button class="register-button" mat-raised-button>Register</button>
+                      <div>
+                        <app-register-account></app-register-account>
+                      </div>
                             <button class="start-button" mat-raised-button [routerLink]="['/summary']">Login</button>
                     </div>
                       <p class="intro">Man braid godard vaporware, tote bag copper mug palo santo venmo. Organic poutine keffiyeh vice craft beer meggings. Portland semiotics tousled lyft yuccie pabst butcher glossier bushwick hexagon letterpress pop-up fingerstache. Blog sartorial irony ethical pug actually scenester PBR&B paleo kinfolk. Vinyl drinking vinegar iPhone, art party occupy biodiesel fingerstache fixie.</p>

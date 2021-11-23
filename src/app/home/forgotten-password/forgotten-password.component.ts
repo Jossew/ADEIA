@@ -8,7 +8,7 @@ import { ForgottenPasswordDialogComponent } from "./forgotten-password-dialog/fo
   styleUrls: ['./forgotten-password.component.scss']
 })
 export class ForgottenPasswordComponent implements OnInit {
-  @Input() email: string = '';
+  @Input() username: string = '';
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
@@ -17,11 +17,14 @@ export class ForgottenPasswordComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(ForgottenPasswordDialogComponent, {
       width: '320px',
-      data: { email: this.email }
+      data: { username: this.username }
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+    dialogRef.afterClosed().subscribe((username: string) => {
+      if(username) {
+        // API call to forgot password
+        console.log(username);
+      }
     });
   }
 }
