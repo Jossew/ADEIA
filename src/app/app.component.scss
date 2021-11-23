@@ -57,19 +57,6 @@
       background-size: cover;
       width: 100%;
       position: relative;
-      display: flex;
-
-      &__sidenav {
-        position: sticky;
-        top: 0;
-        flex: 0 0 auto;
-        z-index: 999;
-        align-self: flex-start
-      }
-
-      &__main-content {
-        flex: 1 1 auto;
-      }
     }
 
     footer{
