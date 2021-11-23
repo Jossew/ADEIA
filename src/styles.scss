@@ -28,7 +28,6 @@ p, .mat-list-option, .mat-checkbox-label, .mat-body, .mat-body-1, .mat-typograph
     font-family: 'Noto Sans', sans-serif !important;
 }
 
-
 button, a{
     cursor: pointer;
     font-family: 'Noto Sans', serif;
@@ -103,7 +102,7 @@ button, a{
   .mat-tree{
       background: transparent;
   }
-  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled), .mat-primary,
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled),
   .mat-form-field.mat-focused .mat-form-field-label {
       color: #fff !important;
   }

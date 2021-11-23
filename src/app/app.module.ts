@@ -45,6 +45,8 @@ import { CategoryEthnicityComponent } from './views/etnicity/category-ethnicity/
 import { AppMenuComponent } from './app-menu/app-menu.component';
 import {MatInputModule} from "@angular/material/input";
 import { ForgottenPasswordComponent } from './home/forgotten-password/forgotten-password.component';
+import { ForgottenPasswordDialogComponent } from './home/forgotten-password/forgotten-password-dialog/forgotten-password-dialog.component';
+import { RegisterAccountComponent } from './home/register-account/register-account.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,9 @@ import { ForgottenPasswordComponent } from './home/forgotten-password/forgotten-
     CustomEthnicityComponent,
     CategoryEthnicityComponent,
     AppMenuComponent,
-    ForgottenPasswordComponent
+    ForgottenPasswordComponent,
+    ForgottenPasswordDialogComponent,
+    RegisterAccountComponent
   ],
   imports: [
     BrowserModule,
