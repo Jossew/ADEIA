@@ -4,9 +4,9 @@
 
 
 html, body { height: 100%; }
-body { 
-    margin: 0; 
-    font-family: 'Noto Sans', sans-serif; 
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     background: #000;
@@ -17,19 +17,19 @@ h1, .mat-h1, .mat-headline, .mat-typography h1{
     font-weight: 800;
 }
 h1,h2,h3,h4,h5 {
-    font-family:  'Montserrat', 'Noto Sans', sans-serif !important; 
+    font-family:  'Montserrat', 'Noto Sans', sans-serif !important;
     text-transform: uppercase;
     font-weight: bold !important;
 }
-       
+
 p, .mat-list-option, .mat-checkbox-label, .mat-body, .mat-body-1, .mat-typography, .mat-mini-fab  {
-    font-family: 'Noto Sans', sans-serif !important; 
-}    
+    font-family: 'Noto Sans', sans-serif !important;
+}
 
 
 button, a{
     cursor: pointer;
-    font-family: 'Noto Sans', serif; 
+    font-family: 'Noto Sans', serif;
 }
 
 .mat-raised-button{
@@ -58,7 +58,7 @@ button, a{
 	grid-auto-rows: min-max(80px, auto);
     grid-auto-flow: dense;
     width: 100%;
-    .card { 
+    .card {
         min-height: 100px; background-size: cover; background-position: 50% 50%;
         opacity: 0;
         animation: flicker 3s ease alternate forwards;
@@ -77,7 +77,7 @@ button, a{
          opacity: 0;
         }
         100%{
-         opacity: 1; 
+         opacity: 1;
         }
       }
 }
@@ -107,10 +107,6 @@ button, a{
   }
   .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
     background: #fff !important;
-}
-
-.mat-drawer-container{
-    z-index: 5 !important;
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {

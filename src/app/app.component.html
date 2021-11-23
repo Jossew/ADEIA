@@ -3,7 +3,7 @@
     <div style="width:calc(100% - 24rem);">
         <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
         style="width:6rem; cursor: pointer;transform:translate(2px, 3px)">
-  
+
         <img [routerLink]="['/summary']" src="assets/images/dove-logo.png"
         style="width:4rem; transform:translate(21px, -6px); cursor: pointer;">
     </div>
@@ -27,38 +27,39 @@
       <!-- <i class="eva eva-more-horizontal-outline"></i>  -->
     </div>
 
-   <mat-sidenav-container *ngIf="showNav">
-      <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
-          <i (click)="sidenav.toggle()" class="eva eva-close-outline"></i> 
-        <div class="sidenav">
-          <div>
-            <mat-form-field>
-              <mat-select placeholder="6 months">
-                <mat-option>YTD </mat-option>
-                <mat-option>All time</mat-option>
-              </mat-select>
-            </mat-form-field>
+    <div class="app-sidenav-container">
+      <mat-sidenav-container *ngIf="showNav">
+        <mat-sidenav #sidenav class="sideNavigation" mode="side" position="end" [fixedInViewport]="true">
+          <i (click)="sidenav.toggle()" class="eva eva-close-outline"></i>
+          <div class="sidenav">
+            <div>
+              <mat-form-field>
+                <mat-select placeholder="6 months">
+                  <mat-option>YTD </mat-option>
+                  <mat-option>All time</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div>
+              <mat-form-field>
+                <mat-select placeholder="Instagram">
+                  <mat-option>Instagram </mat-option>
+                  <mat-option>All channels</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div (click)="logOut();" class="logout">
+              <i class="eva eva-log-out-outline"></i>
+              Logout
+            </div>
           </div>
-          <div>
-            <mat-form-field>
-              <mat-select placeholder="Instagram">
-                <mat-option>Instagram </mat-option>
-                <mat-option>All channels</mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
-          <div (click)="logOut();" class="logout">
-            <i class="eva eva-log-out-outline"></i>
-            Logout
-          </div>
-        </div>
-      </mat-sidenav>
+        </mat-sidenav>
 
-   <mat-sidenav-content>
-        <i (click)="sidenav.toggle()" class="eva eva-more-horizontal-outline"></i> 
-      </mat-sidenav-content> 
-    </mat-sidenav-container> 
-
+        <mat-sidenav-content>
+          <i (click)="sidenav.toggle()" class="eva eva-more-horizontal-outline"></i>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
   </header>
   <div class="main" [@routeAnim]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
