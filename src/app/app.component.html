@@ -1,11 +1,13 @@
-<div class="wrapper">
+<app-app-menu [sideBarWidth]="SIDEBAR_WIDTH" ></app-app-menu>
+<div [style.padding-left]="SIDEBAR_WIDTH">
+  <div class="wrapper">
   <header>
     <div style="width:calc(100% - 24rem);">
-        <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
-        style="width:6rem; cursor: pointer;transform:translate(2px, 3px)">
+      <img [routerLink]="['/summary']" src="assets/images/adeia_logo.svg"
+           style="width:6rem; cursor: pointer;transform:translate(2px, 3px)">
 
-        <img [routerLink]="['/summary']" src="assets/images/dove-logo.png"
-        style="width:4rem; transform:translate(21px, -6px); cursor: pointer;">
+      <img [routerLink]="['/summary']" src="assets/images/dove-logo.png"
+           style="width:4rem; transform:translate(21px, -6px); cursor: pointer;">
     </div>
 
     <div class="filters" style="width:22rem;">
@@ -61,10 +63,18 @@
       </mat-sidenav-container>
     </div>
   </header>
-  <div class="main" [@routeAnim]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
+
+    <div class="main">
+    <div class="main__main-content" style="flex: 1 1 auto" [@routeAnim]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
   </div>
   <footer>
     <!-- <p>© 2021 Publicis Groupe, all rights reserved</p>  -->
   </footer>
 </div>
+</div>
+
+
+
+

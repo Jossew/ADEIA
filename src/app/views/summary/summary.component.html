@@ -1,134 +1,65 @@
-<div>
-  <mat-sidenav-container class="sidenav-full">
-    <!--    lass="sideNavigation" mode="side" position="end" [fixedInViewport]="true"-->
-    <mat-sidenav #sidenav1 opened="true" mode="side" position="start" role="navigation" class="sidenav-left">
-      <!--TODO: include deets  here -->
-      <div class="top-container">
-
-        <button (click)="sidenav2.toggle()" class="nav-button nav-button-active"
-                style="background-color: transparent; border: none;">
-          <i class="eva eva-menu-outline"></i>
-          <!--          <img src="assets/images/burger.svg">-->
-        </button>
-        <button mat-mini-fab class="nav-button" style="background-color: transparent">
-          <i class="eva eva-bell-outline"></i>
-        </button>
-
-      </div>
-      <div class="bottom-container">
-        <!-- <button mat-mini-fab (click)="sidenav2.toggle()" mat-button class="nav-button">
-            <mat-icon>arrow_right_alt</mat-icon>
-        </button> -->
-        <button [routerLink]="['/settings']" mat-mini-fab mat-button class="nav-button" style="background-color: transparent">
-          <i class="eva eva-settings-outline"></i>
-        </button>
-        <!--         <button class="user-button" matBadge="3" matBadgeColor="warn"  mat-mini-fab color="white">-->
-        <!--            FD-->
-        <!--        </button>-->
-        <button class="user-button" mat-mini-fab color="white" [matMenuTriggerFor]="menu">
-          FD
-        </button>
-        <mat-menu #menu="matMenu" yPosition="above">
-          <button mat-menu-item [routerLink]="['/home']">
-            <i class="eva eva-log-out-outline"></i>
-            <span>Logout</span>
-          </button>
-        </mat-menu>
-
-      </div>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <!--<div class="content-inside">-->
-      <!--<app-header></app-header> -->
-      <!--<router-outlet></router-outlet>-->
-      <!--</div>-->
-      <!--<footer><p>© 2021 Publicis Groupe, all rights reserved</p></footer>-->
-      <!--<app-partner-clients></app-partner-clients>-->
-
-
-      <mat-sidenav-container class="sidenav-full">
-        <mat-sidenav #sidenav2 [(opened)]="navOpen" mode="over" position="start" role="navigation"
-                     class="sidenav-clients">
-          <span class="material-icons close-siden" (click)="sidenav2.toggle()">close</span>
-          <div fxLayout="column" class="sidenav-normal">
-            <app-partner-clients></app-partner-clients>
-          </div>
-
-        </mat-sidenav>
-        <mat-sidenav-content>
-          <div class="content">
-            <div class="content-inside">
-              <div class="main">
-                <div class="container">
-                  <h1>Overview </h1>
-                  <p class="subtext">Your assets at a glance
-                  </p>
-                  <div class="overview-data">
-                    <div class="summary-content">
-                      <div class="chart-box">
-                         <p>Gender</p>
-                        <div id="piechartgender" echarts theme="dark" class="pies"></div>
-                      </div>
-                      <div class="chart-box">
-                         <p>Age</p>
-                        <div id="piechartage" echarts theme="dark" class="pies"></div>
-                      </div>
-                      <div class="chart-box">
-                       <p>Ethnicity</p>
-                        <div id="piechartetnicity" echarts theme="dark" class="pies"></div>
-                      </div>
-                    </div>
-                    <div class="chart-box-score">
-                      <div class="filters">
-                      <p>Diversity Score by</p>
-                      <mat-form-field><mat-select [(value)]="selectedBenchMark">
-                      <mat-option value="Market">Market </mat-option>
-                      <mat-option value="Category">Category</mat-option>
-                      <mat-option value="Benchmark">Custom</mat-option>
-                    </mat-select>
-                      </mat-form-field>
-                      </div>
-                      <div id="scorechart" echarts theme="dark" class="score"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="wrapper">
-                <div class="tabs">
-                  <div class="tab">
-                    <input type="radio" name="css-tabs" id="tab-1" class="tab-switch">
-                    <label for="tab-1" class="tab-label">Gender</label>
-                    <div class="tab-content">
-                      <app-gender-summary></app-gender-summary>
-                    </div>
-                  </div>
-                  <div class="tab">
-                    <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-                    <label for="tab-2" class="tab-label">Age</label>
-                    <div class="tab-content">
-                      <app-age-summary></app-age-summary>
-                    </div>
-                  </div>
-                  <div class="tab">
-                    <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-                    <label for="tab-3" class="tab-label">Ethnicity</label>
-                    <div class="tab-content">
-                      <app-ethnicity-summary></app-ethnicity-summary>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+<div class="content">
+  <div class="content-inside">
+    <div class="main">
+      <div class="container">
+        <h1>Overview </h1>
+        <p class="subtext">Your assets at a glance
+        </p>
+        <div class="overview-data">
+          <div class="summary-content">
+            <div class="chart-box">
+              <p>Gender</p>
+              <div id="piechartgender" echarts theme="dark" class="pies"></div>
+            </div>
+            <div class="chart-box">
+              <p>Age</p>
+              <div id="piechartage" echarts theme="dark" class="pies"></div>
+            </div>
+            <div class="chart-box">
+              <p>Ethnicity</p>
+              <div id="piechartetnicity" echarts theme="dark" class="pies"></div>
             </div>
           </div>
-          <footer>
-            <!-- <p>© 2021 Publicis Groupe, all rights reserved</p> -->
-          </footer>
-        </mat-sidenav-content>
-      </mat-sidenav-container>
+          <div class="chart-box-score">
+            <div class="filters">
+              <p>Diversity Score by</p>
+              <mat-form-field><mat-select [(value)]="selectedBenchMark">
+                <mat-option value="Market">Market </mat-option>
+                <mat-option value="Category">Category</mat-option>
+                <mat-option value="Benchmark">Custom</mat-option>
+              </mat-select>
+              </mat-form-field>
+            </div>
+            <div id="scorechart" echarts theme="dark" class="score"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-1" class="tab-switch">
+          <label for="tab-1" class="tab-label">Gender</label>
+          <div class="tab-content">
+            <app-gender-summary></app-gender-summary>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+          <label for="tab-2" class="tab-label">Age</label>
+          <div class="tab-content">
+            <app-age-summary></app-age-summary>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+          <label for="tab-3" class="tab-label">Ethnicity</label>
+          <div class="tab-content">
+            <app-ethnicity-summary></app-ethnicity-summary>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

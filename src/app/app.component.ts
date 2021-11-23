@@ -84,6 +84,7 @@ export class AppComponent implements OnInit {
       }
     });
   }
+  SIDEBAR_WIDTH = '60px';
 
   ngOnInit() {
     this.selectedMarket ='US';

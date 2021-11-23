@@ -42,6 +42,7 @@ import { CategoryAgeComponent } from './views/age-summary/category-age/category-
 import { CustomAgeComponent } from './views/age-summary/custom-age/custom-age.component';
 import { CustomEthnicityComponent } from './views/etnicity/custom-ethnicity/custom-ethnicity.component';
 import { CategoryEthnicityComponent } from './views/etnicity/category-ethnicity/category-ethnicity.component';
+import { AppMenuComponent } from './app-menu/app-menu.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CategoryEthnicityComponent } from './views/etnicity/category-ethnicity/
     CategoryAgeComponent,
     CustomAgeComponent,
     CustomEthnicityComponent,
-    CategoryEthnicityComponent
+    CategoryEthnicityComponent,
+    AppMenuComponent
   ],
   imports: [
     BrowserModule,

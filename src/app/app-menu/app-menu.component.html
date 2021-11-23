@@ -1,0 +1,57 @@
+<div class="app-menu">
+  <mat-sidenav-container class="sidenav-full" autosize>
+    <mat-sidenav
+      [style.width]="sideBarWidth"
+      #sidenav1 opened="true" mode="side" position="start" role="navigation" class="sidenav-left">
+      <!--TODO: include deets  here -->
+      <div class="top-container">
+
+        <button (click)="sidenav2.toggle()" class="nav-button nav-button-active"
+                style="background-color: transparent; border: none;">
+          <i class="eva eva-menu-outline"></i>
+          <!--          <img src="assets/images/burger.svg">-->
+        </button>
+        <button mat-mini-fab class="nav-button" style="background-color: transparent">
+          <i class="eva eva-bell-outline"></i>
+        </button>
+      </div>
+      <div class="bottom-container">
+        <!-- <button mat-mini-fab (click)="sidenav2.toggle()" mat-button class="nav-button">
+            <mat-icon>arrow_right_alt</mat-icon>
+        </button> -->
+        <button [routerLink]="['/settings']" mat-mini-fab mat-button class="nav-button" style="background-color: transparent">
+          <i class="eva eva-settings-outline"></i>
+        </button>
+        <!--         <button class="user-button" matBadge="3" matBadgeColor="warn"  mat-mini-fab color="white">-->
+        <!--            FD-->
+        <!--        </button>-->
+        <button class="user-button" mat-mini-fab color="white" [matMenuTriggerFor]="menu">
+          FD
+        </button>
+        <mat-menu #menu="matMenu" yPosition="above">
+          <button mat-menu-item [routerLink]="['/home']">
+            <i class="eva eva-log-out-outline"></i>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="mat-drawer-content-visible">
+      <mat-sidenav-container class="sidenav-full" autosize>
+        <mat-sidenav #sidenav2 [(opened)]="navOpen" mode="over" position="start" role="navigation"
+                     class="sidenav-clients">
+          <span class="material-icons close-siden" (click)="sidenav2.toggle()">close</span>
+          <div class="sidenav-normal">
+            <app-partner-clients></app-partner-clients>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+
+          <footer>
+            <!-- <p>© 2021 Publicis Groupe, all rights reserved</p> -->
+          </footer>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

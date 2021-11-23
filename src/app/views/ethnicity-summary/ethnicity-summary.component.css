@@ -28,7 +28,6 @@
 
 .gender-wrap {
   margin: 3rem 2rem 2rem 2rem;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }

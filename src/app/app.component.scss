@@ -1,14 +1,15 @@
 .wrapper{
   position: relative;
   min-height: 100vh;
-  width: calc(98% - 4rem);
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+
     header{
         justify-content: space-between;
         display: flex;
         align-items: center;
-        padding: 0;
+        padding: 0 0.5rem;
         border-bottom: thin solid white;
         border-bottom: thin solid #616161;
         .settings{
@@ -52,11 +53,23 @@
     .main{
    //     background-image: url("../assets/images/justapic.jpeg");
   // background-image: url("../assets/images/start.jpeg");
-        padding-bottom: 2.5rem;
-        background-size: cover;
-        width: 100%;
-        height: calc(100vh - 2.5rem);
-        position: relative;
+      padding-bottom: 2.5rem;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+      display: flex;
+
+      &__sidenav {
+        position: sticky;
+        top: 0;
+        flex: 0 0 auto;
+        z-index: 999;
+        align-self: flex-start
+      }
+
+      &__main-content {
+        flex: 1 1 auto;
+      }
     }
 
     footer{

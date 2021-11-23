@@ -9,15 +9,12 @@ import * as echarts from 'echarts';
 
 
 export class SummaryComponent implements OnInit {
-
   typesOfCategories: string[] = ['Beauty', 'Fashion', 'Space', 'Finance'];
   typesOfClients: string[] = ['Loreal', 'Maybelline', 'Urban Decay', 'Clyde Space', 'Global Invacom Waveguide'];
-
 
   private agePie: any = null;
   private genderPie: any = null;
   private ethnicityPie: any = null;
-  navOpen: boolean = false;
 
   private diversityScore: any = null;
   selectedBenchMark: string = 'Category';
@@ -404,6 +401,4 @@ export class SummaryComponent implements OnInit {
 
   constructor() {
   }
-
-
 }
