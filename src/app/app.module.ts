@@ -48,6 +48,9 @@ import { ForgottenPasswordComponent } from './home/forgotten-password/forgotten-
 import { ForgottenPasswordDialogComponent } from './home/forgotten-password/forgotten-password-dialog/forgotten-password-dialog.component';
 import { RegisterAccountComponent } from './home/register-account/register-account.component';
 import { RegisterAccountDialogComponent } from './home/register-account/register-account-dialog/register-account-dialog.component';
+import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -106,6 +109,9 @@ import { RegisterAccountDialogComponent } from './home/register-account/register
     }),
     ReactiveFormsModule,
     MatInputModule,
+    MatAutocompleteModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [RenamePropertiesPipe],
   bootstrap: [AppComponent]
