@@ -6,17 +6,15 @@
   <h1>Edit Preferences</h1>
 
 
-  <div class="filter-panels">
+  <div [formGroup]="form" class="filter-panels">
     <div class="filter-box">
       <div>
         <p>Brand Name</p>
-        <input placeholder="DOVE">
+        <input formControlName="brandName">
       </div>
       <div class="chips">
         <p>Category</p>
-        <input placeholder="BEAUTY">
-
-
+        <input formControlName="category">
         <!--        <mat-form-field>-->
         <!--          <mat-select>-->
         <!--            <mat-option value="Market">Beauty</mat-option>-->
@@ -33,32 +31,23 @@
     <div class="filter-box">
       <p>Brand Market</p>
       <div class="filter-wrap">
-        <mat-list role="list">
-          <mat-list-item role="listitem" *ngFor="let x of typesOfMarkets; let i = index">
-            <mat-radio-button color="primary" [checked]="x === defaultSelected" [value]="i"
-                              (change)="selection = $event.value" style="color: black">
-              {{x}}
-            </mat-radio-button>
-          </mat-list-item>
-        </mat-list>
-
-<!--        <mat-selection-list #markets>-->
-<!--          <mat-list-option *ngFor="let market of typesOfMarkets">-->
-<!--            {{market}}-->
-<!--          </mat-list-option>-->
-<!--        </mat-selection-list>-->
+        <mat-radio-group aria-label="Select an option" formControlName="brandMarket">
+          <mat-radio-button class="brandMarket__single" *ngFor="let market of typesOfMarkets;"
+                            color="primary" [value]="market"
+                            (change)="selection = $event.value" style="color: black">
+            {{ market }}
+          </mat-radio-button>
+        </mat-radio-group>
       </div>
     </div>
 
     <div class="filter-box">
       <p>Dimensions of Interest</p>
       <div class="filter-wrap">
-        <mat-selection-list>
-          <mat-list-option *ngFor="let item of ['Gender', 'Age', 'Ethnicity'] let i = index"
-                           [selected]="item && i >= 0">
-            {{item}}
+        <mat-selection-list formControlName="dimensionsOfInterest">
+          <mat-list-option *ngFor="let item of ['Gender', 'Age', 'Ethnicity']" [value]="item">
+            {{ item }}
           </mat-list-option>
-
         </mat-selection-list>
       </div>
     </div>
@@ -66,9 +55,8 @@
     <div class="filter-box">
       <p>Benchmark of Interest</p>
       <div class="filter-wrap">
-        <mat-selection-list>
-          <mat-list-option *ngFor="let item of ['Market', 'Category', 'Custom'] let i = index"
-                           [selected]="item && i >= 0">
+        <mat-selection-list formControlName="benchmarkOfInterest">
+          <mat-list-option *ngFor="let item of ['Market', 'Category', 'Custom']" [value]="item">
             {{item}}
           </mat-list-option>
 
@@ -113,9 +101,9 @@
         <div class="buttons">
           <button class="add-button" mat-raised-button>Connect to Channel</button>
         </div>
-        <div class="chips">
+        <div class="chips" *ngIf="form.value.connectedInstagram">
           <p>Connected to Instagram:</p>
-          <div class="chip">@dove</div>
+          <div class="chip">{{ form.value.connectedInstagram }}</div>
         </div>
       </div>
     </div>

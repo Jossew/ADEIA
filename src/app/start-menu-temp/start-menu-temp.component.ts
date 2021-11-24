@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {FlatTreeControl} from '@angular/cdk/tree';
 import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
 
-
-
 interface BenchmarkNode {
   name: string;
   children?: BenchmarkNode[];
@@ -37,10 +35,7 @@ interface ExampleFlatNode {
   styleUrls: ['./start-menu-temp.component.scss']
 })
 export class StartMenuTempComponent  implements OnInit {
-  
   typesOfMarkets: string[] = ['United Kingdom', 'USA', 'Argentina', 'Australia', 'Austria', 'Bahamas', 'Bahrain', 'Bangladesh ', 'Barbados', 'Belgium ', 'Belize', 'Benin', 'Bermuda', 'Bolivia' ];
-
-
 
   ngOnInit(): void {
   }

@@ -4,10 +4,8 @@
         <div class="records">
             <div class="tools">
                 <h2>Brands</h2>
-                <button class="add-button" mat-raised-button [routerLink]="['/start-menu-temp']"><i
-                        class="eva eva-plus-outline"></i> ADD</button>
-                <!-- <app-start-menu-temp></app-start-menu-temp> -->
-
+                <button class="add-button" mat-raised-button [routerLink]="['/start-menu']">
+              <i class="eva eva-plus-outline"></i> ADD</button>
             </div>
             <div class="row header">
                 <div class="cell"></div>
@@ -20,20 +18,25 @@
             </div>
             <div class="row">
                 <div class="cell">
-                    <button class="update-button" mat-raised-button [routerLink]="['/start-menu']"><i
-                            class="eva eva-plus-outline"></i>Update</button></div>
+                    <button class="update-button" mat-raised-button [routerLink]="['/start-menu']"
+                            [state]="{ brandName: 'Dove', category: 'BEAUTY', brandMarket: 'USA', dimensionsOfInterest: ['Gender', 'Age', 'Ethnicity'],
+                            benchmarkOfInterest: ['Market', 'Category', 'Custom'], assets: [], connectedInstagram: '@dove' }">
+                      <i class="eva eva-plus-outline"></i>Update</button></div>
                 <div class="cell">Dove</div>
-                <div class="cell">Beauty </div>
+                <div class="cell">Beauty</div>
                 <div class="cell">UK</div>
-                <div class="cell">Custom </div>
+                <div class="cell">Custom</div>
                 <div class="cell">Gender, Age, Ethnicity</div>
-                <div class="cell">3,289 </div>
+                <div class="cell">3,289</div>
             </div>
             <div class="row">
                 <div class="cell">
-                    <button class="update-button" mat-raised-button [routerLink]="['/start-menu']"><i
-                            class="eva eva-plus-outline"></i>Update</button>
-                        </div>
+                  <button class="update-button" mat-raised-button [routerLink]="['/start-menu']"
+                          [state]="{ brandName: 'Dove', category: 'BEAUTY', brandMarket: 'USA', dimensionsOfInterest: ['Gender', 'Age', 'Ethnicity'],
+                            benchmarkOfInterest: ['Market', 'Category', 'Custom'], assets: [], connectedInstagram: '@dove' }">
+                      <i class="eva eva-plus-outline"></i>Update
+                    </button>
+                </div>
             <div class="cell">Olay</div>
             <div class="cell">Beauty </div>
             <div class="cell">UK</div>

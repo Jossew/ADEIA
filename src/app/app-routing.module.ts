@@ -42,15 +42,15 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    component:SettingsComponent
+    component: SettingsComponent
   },
   {
     path: 'start-menu',
-    component:StartMenuComponent
+    component: StartMenuComponent
   },
   {
     path: 'start-menu-temp',
-    component:StartMenuTempComponent
+    component: StartMenuTempComponent
   },
 ];
 
