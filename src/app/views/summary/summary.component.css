@@ -35,7 +35,6 @@
 
 .main {
   width: 100%;
-  border-bottom: thin solid #616161;
 }
 
 .container {
@@ -50,7 +49,6 @@
 .container h1 {
   font-size: 2rem;
   margin: 2rem 0 0.8rem 0;
-  font-weight: normal !important;
   letter-spacing: 1px;
   font-weight: bold !important;
   text-transform: capitalize;
@@ -96,15 +94,18 @@
   font-size: 14px;
   font-weight: bold;
   margin: -1rem 0 1rem 0;
+  text-decoration: underline;
 }
 
 .container .overview-data .chart-box-score {
-  width: 21rem;
+  width: 24rem;
   margin: 0 0 0 0.5rem;
 }
 
 .container .overview-data .chart-box-score p {
   font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .container .overview-data .chart-box-score .filters {
@@ -146,8 +147,7 @@
   justify-content: space-between;
 }
 
-.tabs::before,
-.tabs::after {
+.tabs::before, .tabs::after {
   content: "";
   display: table;
 }
@@ -159,7 +159,6 @@
 .tab {
   flex: 1;
   text-align: center;
-  flex: 1;
 }
 
 .tab-switch {
@@ -201,6 +200,7 @@
   padding: 1.618rem;
   opacity: 0;
   transition: all 0.35s;
+  overflow-x: hidden;
 }
 
 .tab-switch:checked + .tab-label {
@@ -230,73 +230,6 @@
   background: #eee;
 }
 
-.sidenav-left {
-  width: 56px;
-  background: var(--panels);
-  overflow: hidden !important;
-  border-right: solid 0px var(--panels);
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #0B0819;
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .eva-menu-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .eva-menu-outline {
-  font-size: 22px !important;
-  margin-top: 10px;
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .eva-bell-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .eva-settings-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .eva-bell-outline, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .eva-settings-outline {
-  font-size: 22px !important;
-  transform: translateY(-5px);
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container .mat-mini-fab.mat-accent, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container .mat-mini-fab.mat-accent {
-  color: white !important;
-  width: 50px;
-  height: 50px;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container button, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container button {
-  margin: 5px;
-  color: white;
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .top-container img, .sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container img {
-  width: 2rem;
-}
-
-.sidenav-left ::ng-deep .mat-drawer-inner-container .bottom-container {
-  padding-bottom: 1rem;
-}
-
-.sidenav-clients {
-  width: 260px;
-  padding: 0.5rem 1rem;
-  background: #130d2b;
-  border-left: 0.15rem solid var(--borders);
-}
-
-.sidenav-clients .dark-button {
-  background: transparent !important;
-}
-
-.sidenav-full {
-  height: 95vh;
-  background: var(--background-color);
-}
-
 .flex-spacer {
   flex: 1 1 auto;
 }
@@ -317,27 +250,6 @@
   color: var(--font-color);
   font-size: 26px;
   margin: -0.5rem -0.5rem -1rem -0.5rem;
-}
-
-.sidenav-normal h1 {
-  margin: 0 0 0.67em 0;
-  color: var(--font-color);
-}
-
-.user-button {
-  background: #181818;
-  width: 46px;
-  height: 46px;
-  font-weight: bold !important;
-  padding: 2px 0;
-  letter-spacing: 1px;
-}
-
-.user-button ::ng-deep .mat-button-wrapper {
-  border: 1px solid var(--font-color);
-  border-radius: 2rem;
-  width: 40px;
-  height: 40px;
 }
 
 .mat-badge-content {
@@ -373,14 +285,4 @@
 .content-inside .stamp img {
   opacity: 0.1;
   width: 12rem;
-}
-
-.close-siden {
-  color: var(--font-color);
-  z-index: 999999;
-  height: 1.5em;
-  float: right;
-  margin-right: -5px;
-  padding: 0 0.2rem;
-  cursor: pointer;
 }

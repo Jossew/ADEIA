@@ -8,15 +8,15 @@
         <div class="overview-data">
           <div class="summary-content">
             <div class="chart-box">
-              <p>Gender</p>
+              <p [routerLink]="['/gender-summary']">Gender</p>
               <div id="piechartgender" echarts theme="dark" class="pies"></div>
             </div>
             <div class="chart-box">
-              <p>Age</p>
+              <p [routerLink]="['/age-summary']">Age</p>
               <div id="piechartage" echarts theme="dark" class="pies"></div>
             </div>
             <div class="chart-box">
-              <p>Ethnicity</p>
+              <p [routerLink]="['/ethnicity-summary']">Ethnicity</p>
               <div id="piechartetnicity" echarts theme="dark" class="pies"></div>
             </div>
           </div>
@@ -36,6 +36,9 @@
       </div>
     </div>
 
+
+
+<!-- 
     <div class="wrapper">
       <div class="tabs">
         <div class="tab">
@@ -60,6 +63,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+
   </div>
 </div>

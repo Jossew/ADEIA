@@ -33,7 +33,6 @@
 
 .main {
   width: 100%;
-  border-bottom: thin solid #616161
 }
 
 .container {
@@ -88,15 +87,18 @@
           font-size: 14px;
           font-weight: bold;
           margin: -1rem 0 1rem 0;
+          text-decoration: underline
         }
       }
     }
 
     .chart-box-score {
-      width: 21rem;
+      width: 24rem;
       margin: 0 0 0 0.5rem;
       p{
         font-weight: bold;
+        margin-bottom: 1rem;
+        cursor: pointer;
       }
       .filters{
         margin-bottom: -2rem;
