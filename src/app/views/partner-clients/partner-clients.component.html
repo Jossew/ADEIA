@@ -21,7 +21,7 @@
 <!--                <img src="assets/images/search-icon.svg" />-->
 <!--            </button>-->
 
-          <button (click)="addClient()" type=button class="client-btn">
+          <button type=button class="client-btn" [routerLink]="'/clients/add'">
                 <i class="eva eva-plus-outline"></i> Add Client
             </button>
         </div>
@@ -30,7 +30,7 @@
 
 <mat-menu #clientMenu="matMenu">
     <ng-template matMenuContent let-aliasData="data">
-        <button mat-menu-item (click)="editClient(aliasData.client)">
+        <button mat-menu-item [routerLink]="'clients/edit/' + aliasData.client.id">
             <i class="eva eva-edit-2-outline"></i>
             <span>Edit Client</span>
         </button>

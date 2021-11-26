@@ -31,8 +31,6 @@ import { StartMenuTempComponent } from './start-menu-temp/start-menu-temp.compon
 import {MatMenuModule} from "@angular/material/menu";
 import {MatBadgeModule} from "@angular/material/badge";
 import {PartnerClientsComponent} from "./views/partner-clients/partner-clients.component";
-import {RenamePropertiesPipe} from "./shared/pipes/rename-properties.pipe";
-import {TruncatePipe} from "./shared/pipes/truncate.pipe";
 import {MatDialogModule} from "@angular/material/dialog";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatRadioModule} from "@angular/material/radio";
@@ -51,6 +49,8 @@ import { RegisterAccountDialogComponent } from './home/register-account/register
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
+import {SharedModule} from "./@shared/shared.module";
+import {AddEditClientComponent} from "./views/add-edit-client/add-edit-client.component";
 
 @NgModule({
   declarations: [
@@ -66,8 +66,6 @@ import {MatNativeDateModule} from "@angular/material/core";
     SettingsComponent,
     StartMenuTempComponent,
     PartnerClientsComponent,
-    RenamePropertiesPipe,
-    TruncatePipe,
     CategoryChartComponent,
     CustomChartComponent,
     CategoryAgeComponent,
@@ -78,42 +76,21 @@ import {MatNativeDateModule} from "@angular/material/core";
     ForgottenPasswordComponent,
     ForgottenPasswordDialogComponent,
     RegisterAccountComponent,
-    RegisterAccountDialogComponent
+    RegisterAccountDialogComponent,
+    AddEditClientComponent,
   ],
   imports: [
+    SharedModule,
     BrowserModule,
-    RouterModule.forRoot([]),
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatSliderModule,
-    MatFormFieldModule,
-    MatCardModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatSelectModule,
-    MatListModule,
-    MatTreeModule,
-    MatCheckboxModule,
-    MatIconModule,
-    MatTabsModule,
-    MatTooltipModule,
-    MatMenuModule,
-    MatBadgeModule,
-    MatTreeModule,
-    MatDialogModule,
-    MatRadioModule,
-    // NgxEchartsModule,
     NgxEchartsModule.forRoot({
       echarts
     }),
     ReactiveFormsModule,
-    MatInputModule,
-    MatAutocompleteModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
+
   ],
-  providers: [RenamePropertiesPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
