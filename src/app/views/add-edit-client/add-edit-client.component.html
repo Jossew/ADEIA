@@ -1,0 +1,48 @@
+<app-container>
+  <h2>{{ editMode ? 'Edit' : 'Add' }} Client</h2>
+  <form class="add-edit-form" [formGroup]="formGroup">
+    <div class="add-edit-form__row">
+      <div class="add-edit-form__input add-edit-form__input--fullWidth">
+        <mat-form-field appearance="legacy" class="add-edit-form__input--fullWidth">
+          <mat-label>Client Name</mat-label>
+          <input type="text" matInput formControlName="clientName">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="add-edit-form__row">
+      <div class="add-edit-form__input">
+        <h4 class="add-edit-form__title">Markets</h4>
+        <mat-selection-list formControlName="markets">
+          <mat-list-option *ngFor="let market of ['US', 'UK', 'EU']">
+            {{ market }}
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+
+      <div class="add-edit-form__input">
+        <h4 class="add-edit-form__title">Benchmarks</h4>
+        <mat-selection-list formControlName="benchmarks">
+          <mat-list-option *ngFor="let market of ['Benchmark 1', 'Benchmark 2', 'Benchmark 3']">
+            {{ market }}
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </div>
+
+    <div class="add-edit-form__row">
+      <div class="add-edit-form__input">
+        <h4 class="add-edit-form__title">Sub Brands</h4>
+        <mat-selection-list formControlName="subBrands">
+          <mat-list-option *ngFor="let subBrand of ['Brand 1', 'Brand 2', 'Brand 3']">
+            {{ subBrand }}
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </div>
+
+    <div class="add-edit-form__actions">
+      <button mat-flat-button color="primary" class="mat-button--large" (click)="formGroup.valid && submit()">Save</button>
+    </div>
+  </form>
+</app-container>

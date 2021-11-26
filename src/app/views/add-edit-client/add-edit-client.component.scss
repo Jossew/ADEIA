@@ -1,0 +1,23 @@
+.add-edit-form {
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -15px 15px;
+  }
+
+  &__input {
+    padding: 0 15px;
+
+    &, &--fullWidth {
+      width: 100%;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
