@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-add-edit-client',
@@ -8,7 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./add-edit-client.component.scss']
 })
 export class AddEditClientComponent implements OnInit {
-  editMode: boolean = false;
+  id: string;
   formGroup: FormGroup;
 
   constructor(private route: ActivatedRoute) {
@@ -19,9 +19,7 @@ export class AddEditClientComponent implements OnInit {
       subBrands: new FormControl(),
     });
 
-    if(route.snapshot.params.id) {
-      this.editMode = true;
-    }
+    this.id = route.snapshot.params.id;
   }
 
   ngOnInit(): void {

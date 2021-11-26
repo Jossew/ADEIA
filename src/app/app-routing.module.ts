@@ -34,7 +34,11 @@ const routes: Routes = [
   },
   {
     path: 'media-library',
-    component:MediaLibraryComponent
+    component: MediaLibraryComponent
+  },
+  {
+    path: 'media-library/:id',
+    component: MediaLibraryComponent
   },
   {
     path: 'video-insights',

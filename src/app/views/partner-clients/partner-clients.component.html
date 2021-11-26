@@ -47,7 +47,7 @@
             <i class="eva eva-edit-2-outline"></i>
             <span>Edit Brand</span>
         </button>
-        <button mat-menu-item (click)="addCampaign(aliasData.brand)">
+        <button mat-menu-item [routerLink]="'media-library/' + aliasData.brand._id">
             <i class="eva eva-plus-square-outline"></i>
             <span>Manage Assets</span>
         </button>
