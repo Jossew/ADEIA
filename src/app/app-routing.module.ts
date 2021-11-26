@@ -9,7 +9,7 @@ import {MediaLibraryComponent} from './views/media-library/media-library.compone
 import {VideoInsightsComponent} from './views/video-insights/video-insights.component';
 import {SettingsComponent} from './views/settings/settings.component';
 import {StartMenuComponent } from './start-menu/start-menu.component';
-import {StartMenuTempComponent } from './start-menu-temp/start-menu-temp.component';
+import {AddEditClientComponent} from "./views/add-edit-client/add-edit-client.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -34,7 +34,11 @@ const routes: Routes = [
   },
   {
     path: 'media-library',
-    component:MediaLibraryComponent
+    component: MediaLibraryComponent
+  },
+  {
+    path: 'media-library/:id',
+    component: MediaLibraryComponent
   },
   {
     path: 'video-insights',
@@ -49,8 +53,12 @@ const routes: Routes = [
     component: StartMenuComponent
   },
   {
-    path: 'start-menu-temp',
-    component: StartMenuTempComponent
+    path: 'clients/add',
+    component: AddEditClientComponent,
+  },
+  {
+    path: 'clients/edit/:id',
+    component: AddEditClientComponent,
   },
 ];
 

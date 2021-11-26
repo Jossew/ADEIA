@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {Observable, of} from "rxjs";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-media-library',
@@ -8,10 +9,13 @@ import {Observable, of} from "rxjs";
   styleUrls: ['./media-library.component.scss']
 })
 export class MediaLibraryComponent implements OnInit {
+  id: string;
   filtersForm: FormGroup;
   searchOptions$: Observable<any[]>;
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
+    this.id = route.snapshot.params.id;
+
     this.filtersForm = new FormGroup({
       searchString: new FormControl(),
       platform: new FormControl(),

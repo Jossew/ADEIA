@@ -1,0 +1,16 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+
+  &__wrapper {
+    display: inline-block;
+    background: #0B0819;
+    padding: 1.5rem 2rem;
+    min-width: 480px;
+  }
+
+  &--fullWidth {
+    display: block;
+  }
+}

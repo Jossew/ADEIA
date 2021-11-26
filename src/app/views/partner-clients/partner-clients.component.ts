@@ -6,7 +6,7 @@ import { delay, flatMap } from 'rxjs/operators';
 import { of, Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/internal/operators';
 import { FormControl } from '@angular/forms';
-import {RenamePropertiesPipe} from "../../shared/pipes/rename-properties.pipe";
+import {RenamePropertiesPipe} from "../../@shared/pipes/rename-properties.pipe";
 
 @Component({
   selector: 'app-partner-clients',
@@ -518,20 +518,8 @@ export class PartnerClientsComponent implements OnInit {
     // });
   }
 
-  addClient(): void {
-    // const dialogRef = this.dialog.open(DialogAddEditClientComponent, {
-    //   width: '490px',
-    // });
-    // dialogRef.afterClosed().subscribe((result) => {
-    //   if (result) {
-    //     this.clientList.push(this.renamePropertiesPipe.transform(result));
-    //     this.notify.success('Client Saved');
-    //     this.fetchData();
-    //   }
-    // });
-  }
-
   editClient(client:any): void {
+    console.log(client);
     // const dialogRef = this.dialog.open(DialogAddEditClientComponent, {
     //   width: '490px',
     //   data: { client },
